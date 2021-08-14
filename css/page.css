@@ -88,3 +88,16 @@
 .locationArea > div figure{display: flex; justify-content: space-between;}
 .locationArea > div figure figcaption{width: 50%;}
 .locationArea > div figure figcaption h4{font-size: 24px; font-weight: 800;}
+
+/* about as - news */
+.newsArea .newsList{}
+.newsArea .newsList li:not(:last-child){margin-bottom: 80px;}
+.newsArea .newsList li figure{display: flex;}
+.newsArea .newsList li figure img{width: 350px; border: 1px solid #e5e5e5; margin-right: 30px;}
+.newsArea .newsList li figure figcaption{position: relative; padding-bottom: 15px;}
+.newsArea .newsList li figure figcaption b{display: block; font-size: 14px; font-weight: 600; margin-bottom: 20px;}
+.newsArea .newsList li figure figcaption b time{font-family: 'Noto Sans KR',sans-serif; font-weight: 600;}
+.newsArea .newsList li figure figcaption b time::before{content: '| ';}
+.newsArea .newsList li figure figcaption h4{font-size: 24px; font-weight: 700; margin-bottom: 25px;}
+.newsArea .newsList li figure figcaption p{font-size: 14px; line-height: 24px;}
+.newsArea .newsList li figure figcaption a{position: absolute; left: 0; bottom: 0; font-size: 14px; color: #00b3e3;}
