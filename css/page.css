@@ -24,6 +24,7 @@
 .mainPage main .monitorArea .contentArea ol li p{color: #3a3a40; margin-bottom: 60px;}
 .mainPage main .monitorArea .contentArea ol li a{font-size: 14px; font-weight: 900; color: #3a3a40; padding-bottom: 11px; position: relative;}
 .mainPage main .monitorArea .contentArea ol li a::after{content: ''; position: absolute; left: 0; bottom: 0; width: 100%; height: 1px; background-color:#3a3a40;}
+/* 메인페이지 - 첫번째 화면 event*/
 .mainPage main .monitorArea .contentArea ol li:first-child .eventBox{position: absolute; right: 0; bottom: -50%; }
 .mainPage main .monitorArea .contentArea ol li:first-child .eventBox div{position: relative; z-index: 1; font-size: 14px; line-height: 24px; width: 260px; padding: 30px 20px; box-sizing: border-box; color: white; background-color: rgba(11, 175, 212, 0.6);}
 .mainPage main .monitorArea .contentArea ol li:first-child .eventBox img{position: absolute; right: -90px; bottom: -500px; z-index: 0; transition-duration: 1s; transition-property: bottom;}
@@ -59,4 +60,22 @@
 /* 메인페이지 - 세번째 화면 */
 .mainPage main .careArea{position: fixed; z-index: -10; left: 0; top: 0; width: 100%;  height: 100%; color: white; background: url('../images/mainBG01.png') no-repeat center / cover;  opacity: 0; transition-duration: 0.5s ,0s; transition-delay: 0s, 0.5s; transition-property: opacity , z-index;}
 .mainPage main .careArea.active{opacity:1; z-index: 12; transition-duration: 0.5s; transition-property: opacity;}
+
+
+/* 서브페이지 - about as */
+.subPage main{padding: 135px 0 200px;}
+.subPage main h2{font-size: 60px; font-weight: 900; margin-bottom: 60px;}
+.subPage main .subMenu{display: flex; margin-bottom: 110px;}
+.subPage main .subMenu li:not(:last-child){margin-right: 35px;}
+.subPage main .subMenu li a{font-size: 18px; font-weight: 600; padding-bottom: 15px; position: relative;}
+.subPage main .subMenu li a::after{content: ''; position: absolute; left: 50%; bottom: 0; width: 0; height: 2px; background-color: black;}
+.subPage main .subMenu li.active a::after , .subPage main .subMenu li:hover a::after {left: 0; width: 100%;}
+.subPage main .subMenu li:hover a::after{transition-duration: 0.5s; transition-property: left , width;}
+
+/* about as - helthCare */
+.helthCareArea::after{content: ''; display: block; height: 470px; background: url('../images/aboutUs_helthCareImg02.png') no-repeat center / cover;}
+.helthCareArea > div{background: url('../images/aboutUs_helthCareImg01.png') no-repeat right top 260px;}
+.helthCareArea > div strong{display: block; font-size: 48px; font-weight: 900; margin-bottom: 60px;}
+.helthCareArea > div p{font-size: 15px; line-height: 28px; color: #565656; text-transform: uppercase; margin-bottom: 150px;}
+.helthCareArea > div q{display: block; font-family: 'Libre Baskerville', serif; font-size: 28px; line-height: 48px; margin-bottom: 190px;}
 
