@@ -62,15 +62,18 @@
 .mainPage main .careArea.active{opacity:1; z-index: 12; transition-duration: 0.5s; transition-property: opacity;}
 
 
-/* 서브페이지 - about as */
+/* 서브페이지 */
 .subPage main{padding: 135px 0 200px;}
-.subPage main h2{font-size: 60px; font-weight: 900; margin-bottom: 60px;}
-.subPage main .subMenu{display: flex; margin-bottom: 110px;}
-.subPage main .subMenu li:not(:last-child){margin-right: 35px;}
-.subPage main .subMenu li a{font-size: 18px; font-weight: 600; padding-bottom: 15px; position: relative;}
-.subPage main .subMenu li a::after{content: ''; position: absolute; left: 50%; bottom: 0; width: 0; height: 2px; background-color: black;}
-.subPage main .subMenu li.active a::after , .subPage main .subMenu li:hover a::after {left: 0; width: 100%;}
-.subPage main .subMenu li:hover a::after{transition-duration: 0.5s; transition-property: left , width;}
+
+/* 서브페이지 - about as */
+.aboutUsArea h2{font-size: 60px; font-weight: 900; margin-bottom: 60px;}
+.aboutUsArea .subMenu{display: flex; margin-bottom: 110px;}
+.aboutUsArea .subMenu li:not(:last-child){margin-right: 35px;}
+.aboutUsArea .subMenu li a{font-size: 18px; font-weight: 600; padding-bottom: 15px; position: relative;}
+.aboutUsArea .subMenu li a::after{content: ''; position: absolute; left: 50%; bottom: 0; width: 0; height: 2px; background-color: black;}
+.aboutUsArea .subMenu li.active a::after , .subPage main .subMenu li:hover a::after {left: 0; width: 100%;}
+.aboutUsArea .subMenu li:hover a::after{transition-duration: 0.5s; transition-property: left , width;}
+.aboutUsArea strong{display: block; font-size: 42px; font-weight: 700; line-height: 54px; margin-bottom: 55px;}
 
 /* about as - helthCare */
 .helthCareArea::after{content: ''; display: block; height: 470px; background: url('../images/aboutUs_helthCareImg02.png') no-repeat center / cover;}
@@ -79,3 +82,9 @@
 .helthCareArea > div p{font-size: 15px; line-height: 28px; color: #565656; text-transform: uppercase; margin-bottom: 150px;}
 .helthCareArea > div q{display: block; font-family: 'Libre Baskerville', serif; font-size: 28px; line-height: 48px; margin-bottom: 190px;}
 
+/* about as - location */
+.locationArea > div .locationBox{margin-bottom: 100px;}
+.locationArea > div .locationBox img{width: 100%;}
+.locationArea > div figure{display: flex; justify-content: space-between;}
+.locationArea > div figure figcaption{width: 50%;}
+.locationArea > div figure figcaption h4{font-size: 24px; font-weight: 800;}
