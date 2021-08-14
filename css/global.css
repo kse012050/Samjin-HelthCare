@@ -1,13 +1,15 @@
-.mainPage{margin: 0 auto; height: 100vh; overflow: hidden;}
-.mainPage > div{height: 100%; width: 1220px; margin: 0 auto; position: relative;}
-.mainPage > div::before{content: ''; position: absolute; left: 895px; top: 0; width: 3000px; height: 100%; background: url('../images/mainBG.png') left;}
+.width1220{width: 1220px;}
+
+.mainPage{margin: 0 auto; height: 100vh; overflow: hidden; background-color: white; }
+.mainPage > div{height: 100%;  margin: 0 auto; position: relative;}
+.mainPage > div::before{content: ''; position: absolute; left: 895px; top: 0; width: 50vw; height: 100%; background: url('../images/mainBG.png') left;}
 .mainPage > div header{position: fixed; left: 0; top: 0; z-index: 1; width: 100%; height: 100%; padding: 65px 0 45px; box-sizing: border-box; pointer-events: none;}
-.mainPage > div header > div{width: 1220px; margin: 0 auto; height: 100%; display: flex; flex-direction: column; justify-content: space-between; }
+.mainPage > div header > div{ margin: 0 auto; height: 100%; display: flex; flex-direction: column; justify-content: space-between; }
 .mainPage > div header > div > div{display: flex; justify-content: space-between; pointer-events: auto;}
 .mainPage > div header > div > div h1{font-size: 22px; color: #3a3a40; text-transform: uppercase;}
-.mainPage > div header > div > div button{display: flex; width: 100px; padding: 0; flex-wrap: wrap; flex-direction: column; height: 15px; justify-content: space-between;}
-.mainPage > div header > div > div button span:first-child{height: 100%; font-size: 14px; color: white; margin-right: 30px;}
-.mainPage > div header > div > div button span:not(:first-child){width: 32px; height: 2px; background-color: white;}
+.mainPage > div header > div > div button.menuBtn{display: flex; width: 100px; padding: 0; flex-wrap: wrap; flex-direction: column; height: 15px; justify-content: space-between; }
+.mainPage > div header > div > div button.menuBtn span:first-child{height: 100%; font-size: 14px; color: white; margin-right: 30px;}
+.mainPage > div header > div > div button.menuBtn span:not(:first-child){width: 32px; height: 2px; background-color: white;}
 .mainPage > div header > div > nav{padding-top: 80px; width: 895px; border-top: 1px solid #d4d4d4; pointer-events: auto;}
 .mainPage > div header > div > nav ul{display: flex; margin-bottom: 65px;}
 .mainPage > div header > div > nav ul li:not(:last-child){margin-right: 60px;}
@@ -16,9 +18,36 @@
 .mainPage > div header > div > nav ul li a:hover::after{width: 100%; left: 0;}
 .mainPage > div header > div > nav p{font-size: 11px; font-weight: 900; color: rgba(58, 58, 64, 0.37);}
 
-.mainPage > div header.active{z-index: 20;}
+
+.mainPage > div header.active{z-index: 20; transition-delay: 0.5s; }
 .mainPage > div header.active > div > div h1{color: white;}
-.mainPage > div header.active > div > nav{width: 100%;}
+.mainPage > div header.active > div > nav{width: 100%; border-color:#a09696; transition: 0.5s 0.5s;}
 .mainPage > div header.active > div > nav ul li a{color: white;}
 .mainPage > div header.active > div > nav ul li a::after{background-color: white;}
 .mainPage > div header.active > div > nav p{color: rgba(173, 173, 173, 0.37);}
+
+.mainPage > div header.menuActive{z-index: 101; transition: 0.4s z-index; }
+.mainPage > div header.menuActive > div > div h1{color: white;}
+.mainPage > div header.menuActive > div > nav{opacity: 0; transition: 0.5s opacity;}
+.mainPage > div header.menuActive > div > div button.menuBtn span{transition-delay: 0.3s;}
+.mainPage > div header.menuActive > div > div button.menuBtn span:nth-child(2){transform: translateY(7px) rotate(45deg);}
+.mainPage > div header.menuActive > div > div button.menuBtn span:nth-child(3){opacity: 0;}
+.mainPage > div header.menuActive > div > div button.menuBtn span:nth-child(4){transform: translateY(-6px) rotate(-45deg);}
+
+
+.mainPage footer{position: fixed; left: 0; top: -100%; z-index: 102; width: 100%; height: 100%; background-color: #1c1c1e; display: flex; justify-content: center; align-items: center; transition: 0.5s top;}
+.mainPage footer > div{height: 100%; padding-top: 87px; box-sizing: border-box; display: flex; flex-direction: column;}
+.mainPage footer > div > nav{flex: 525; width: 100%; display: flex; justify-content: space-between; align-items: center;}
+.mainPage footer > div > nav > ul{ width: 100%; display: flex; justify-content: space-between;}
+.mainPage footer > div > nav > ul li a{color: white;}
+.mainPage footer > div > nav > ul > li > a{font-size: 48px; font-weight: 900; margin-bottom: 60px;}
+.mainPage footer > div > nav > ul > li > ul li a{font-size: 24px; font-weight: 700;}
+.mainPage footer > div > nav > ul > li > ul li:not(:last-child){margin-bottom: 25px;}
+.mainPage footer > div > div{flex: 325; display: flex; align-items: center; border-top: 1px solid rgba(173, 173, 173, 0.37);}
+.mainPage footer > div > div ul{display: flex; align-items: center; margin-right: 80px;}
+.mainPage footer > div > div ul li{width: 75px; height: 75px; background-color: white; border-radius: 100%; text-align: center; line-height: 75px;}
+.mainPage footer > div > div ul li:not(:last-child){margin-right: 40px;}
+.mainPage footer > div > div address *{color: rgba(173, 173, 173, 0.37); font-style: normal;}
+.mainPage footer > div > div address *:not(:last-child){margin-bottom: 10px;}
+
+.mainPage footer.active{top: 0; z-index: 100;}

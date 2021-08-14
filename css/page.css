@@ -1,16 +1,20 @@
 
 /* 메인 페이지 */
-.mainPage{background-color: white;}
-.mainPage main{height: 100vh;  position: relative;}
-.mainPage main > *{display: flex; justify-content: center; align-items: center;  width: 100%; height: 100%; padding: 87px 0 230px; box-sizing: border-box;}
-.mainPage main > * > div{width: 1220px;}
+.mainPage main{height: 100vh; }
+.mainPage main > div{height: 100%; position: relative;}
+.mainPage main > div > *{display: flex; justify-content: center; align-items: center;  width: 100%; height: 100%; padding: 87px 0 230px; box-sizing: border-box;}
 .mainPage main .contentArea{display: flex; align-items: flex-start; width: 100%;}
 .mainPage main .contentArea > *:not(:last-child){margin-right: 140px;}
 .mainPage main .contentArea .pageArea{font-size: 14px; font-weight: 900; display: flex;}
 .mainPage main .contentArea .pageArea span:first-child{display: flex; align-items: center;}
 .mainPage main .contentArea .pageArea span:first-child::after{content: ''; width: 40px; height: 1px; background-color: #d8d8d9; margin: 0 15px;}
 .mainPage main h2{font-size: 48px; line-height: 60px; margin-bottom: 70px;}
-.mainPage main p{line-height: 28px;}
+.mainPage main p{font-size: 19px; line-height: 28px;}
+
+.mainPage main .fullPager{position: fixed; left: 5vw; top: 0; height: 100%; display: flex; flex-direction: column; justify-content: center; z-index: 99;}
+.mainPage main .fullPager li{width: 13px; height: 13px; border-radius: 100%; background-color: black; opacity: 0.2; text-indent: -9999px; transition: 0.5s opacity;}
+.mainPage main .fullPager li:not(:last-child){margin-bottom: 15px;}
+.mainPage main .fullPager li.active{opacity: 1;}
 
 /* 메인페이지 - 첫번째 화면 */
 .mainPage main .monitorArea h2 div{width: 553px; height: 75px; background-image: url('../images/S-PATCHEX01.png'); background-repeat: no-repeat; text-indent: -9999px; margin-top: 15px;}
@@ -20,6 +24,31 @@
 .mainPage main .monitorArea .contentArea ol li p{color: #3a3a40; margin-bottom: 60px;}
 .mainPage main .monitorArea .contentArea ol li a{font-size: 14px; font-weight: 900; color: #3a3a40; padding-bottom: 11px; position: relative;}
 .mainPage main .monitorArea .contentArea ol li a::after{content: ''; position: absolute; left: 0; bottom: 0; width: 100%; height: 1px; background-color:#3a3a40;}
+.mainPage main .monitorArea .contentArea ol li:first-child .eventBox{position: absolute; right: 0; bottom: -50%; }
+.mainPage main .monitorArea .contentArea ol li:first-child .eventBox div{position: relative; z-index: 1; font-size: 14px; line-height: 24px; width: 260px; padding: 30px 20px; box-sizing: border-box; color: white; background-color: rgba(11, 175, 212, 0.6);}
+.mainPage main .monitorArea .contentArea ol li:first-child .eventBox img{position: absolute; right: -90px; bottom: -500px; z-index: 0; transition-duration: 1s; transition-property: bottom;}
+.mainPage main .monitorArea .contentArea ol li:first-child.active .eventBox img{bottom: -125px; animation: mainFirst 1s linear 1s infinite alternate;  }
+@keyframes mainFirst {
+    0%{bottom: -125px;}
+    100%{bottom: -100px;}
+}
+.mainPage main .monitorArea .contentArea ol li:nth-child(2) .eventBox{position: absolute; bottom: 0; left: -325px; width: 100%;  display: flex; justify-content: space-between;}
+.mainPage main .monitorArea .contentArea ol li:nth-child(2) .eventBox div{width: 50vw; height: 227px; position: absolute; top: -113.5px; transition-duration: 0.5s; transition-property: right , left;}
+.mainPage main .monitorArea .contentArea ol li:nth-child(2) .eventBox div::before ,.mainPage main .monitorArea .contentArea ol li:nth-child(2) .eventBox div::after{
+    content: ''; height: 100%; position: absolute; top: 0; 
+}
+.mainPage main .monitorArea .contentArea ol li:nth-child(2) .eventBox div:first-child{right: 200%;}
+.mainPage main .monitorArea .contentArea ol li:nth-child(2) .eventBox div:first-child::before{position: absolute; right: 0;  width: 278px; background: url('../images/main_secondImg01_1.png') no-repeat left top;}
+.mainPage main .monitorArea .contentArea ol li:nth-child(2) .eventBox div:first-child::after{position: absolute; right: 278px; width: 50vw; background: url('../images/main_secondImg01_2.png') repeat-x left top;}
+.mainPage main .monitorArea .contentArea ol li:nth-child(2) .eventBox div:last-child{left: 180%;}
+.mainPage main .monitorArea .contentArea ol li:nth-child(2) .eventBox div:last-child::before{position: absolute; left: 0; width: 278px; background: url('../images/main_secondImg02_1.png') no-repeat left top;}
+.mainPage main .monitorArea .contentArea ol li:nth-child(2) .eventBox div:last-child::after{position: absolute; left: 278px; width: 50vw; background: url('../images/main_secondImg01_2.png') repeat-x left top 12px / 28px;}
+.mainPage main .monitorArea .contentArea ol li:nth-child(2).active .eventBox div:first-child{right: 100%;}
+.mainPage main .monitorArea .contentArea ol li:nth-child(2).active .eventBox div:last-child{left: 80%;}
+
+.mainPage.active main .monitorArea h2 div{background-image: url('../images/S-PATCHEX02.png');}
+.mainPage.active{background-color: #73e5ff;  transition-duration: 0.5s; transition-property: background-color;}
+.mainPage.active main .monitorArea .pageArea span:first-child::after{background-color: black;}
 
 /* 메인페이지 - 두번째 화면 */
 .mainPage main div.videoArea{position: fixed; z-index: 11; left: 0; top: 100%; width: 100%;  height: 100%; background-color: rgba(0, 0, 0, 0.7); transition: 0.5s top;}
@@ -28,6 +57,6 @@
 .mainPage main div.videoArea.active{top: 0;}
 
 /* 메인페이지 - 세번째 화면 */
-.mainPage main .careArea{position: fixed; z-index: -10; left: 0; top: 0; width: 100%;  height: 100%; color: white; background: url('../images/mainBG01.png') no-repeat center / cover; transition: 0.5s opacity; opacity: 0;}
-.mainPage main .careArea.active{opacity:1; z-index: 12;}
+.mainPage main .careArea{position: fixed; z-index: -10; left: 0; top: 0; width: 100%;  height: 100%; color: white; background: url('../images/mainBG01.png') no-repeat center / cover;  opacity: 0; transition-duration: 0.5s ,0s; transition-delay: 0s, 0.5s; transition-property: opacity , z-index;}
+.mainPage main .careArea.active{opacity:1; z-index: 12; transition-duration: 0.5s; transition-property: opacity;}
 
