@@ -38,7 +38,6 @@ function mainScrollEvent(){
                     mainScrollNumb += 1;
                 }
                 mainAnimation(mainScrollNumb,delta);
-                mainPager(mainScrollNumb);
                 mainScrollBoolean = false;
                 setTimeout(function(){
                     mainScrollBoolean = true;
@@ -67,9 +66,5 @@ function mainScrollEvent(){
                 $('.mainPage main > div > *').eq(idx).addClass('active');
             }
         }
-    }
-
-    function mainPager(idx){
-        $('.mainPage main .fullPager').children().eq(idx).addClass('active').siblings().removeClass('active');
     }
 }
