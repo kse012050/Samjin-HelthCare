@@ -13,7 +13,7 @@
 .mainPage main > div .monitorArea{display: flex; flex-direction: column; height: 100%; position: relative;}
 .mainPage main > div .monitorArea::after{content: ''; position: absolute; left: 0; bottom:0; width: 100%; height: 25.8271vh; background:url('../images/mainBG.png') no-repeat center / cover;}
 .mainPage main > div .monitorArea > div{height: 100%; padding-bottom: 25.8271vh; box-sizing: border-box; display: flex; flex-direction: column;}
-.mainPage main > div .monitorArea > div h2 div{margin-top: 1.6008vh; width: 360px; height: 50px; background-image: url('../images/S-PATCHEX01.png'); background-repeat: no-repeat; background-position: center; background-size: cover; text-indent: -9999px;}
+.mainPage main > div .monitorArea > div h2 div{margin-top: 1.6008vh; width: 365px; height: 50px; background-image: url('../images/S-PATCHEX01.png'); background-repeat: no-repeat; background-position: center; background-size: cover; text-indent: -9999px;}
 .mainPage main > div .monitorArea > div .contentArea{flex: 1; display: flex; flex-direction: column;}
 .mainPage main > div .monitorArea > div .contentArea ol{position: relative; flex: 1;}
 .mainPage main > div .monitorArea > div .contentArea ol li{position: absolute; left: 0; top: 0; opacity: 0; z-index: -1; transition: 0.5s opacity; display: flex; flex-direction: column; height: 100%;}
