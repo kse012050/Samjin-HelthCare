@@ -1,0 +1,14 @@
+/* body{max-width: 533px; margin: 0 auto;} */
+.mobileWidth{width: calc(100% - 70px); max-width: 533px; margin: 0 auto;}
+
+/* h 937   1vh = 9.37*/
+.mainPage{overflow: hidden;}
+.mainPage header{position: fixed; left: 0; top: 0; width: 100%; padding-top: 5.3361vh;}
+.mainPage header > div > div{display: flex; justify-content: space-between;}
+.mainPage header > div > div h1{font-size: 22px; color: #3a3a40;}
+.mainPage header > div > div button{width: 32px;}
+.mainPage header > div > div button span{display: block; height: 2px; background-color: black;}
+.mainPage header > div > div button span:not(:last-child){margin-bottom: 4px;}
+.mainPage header > div > nav{display: none;}
+
+.mainPage footer{display: none;}
