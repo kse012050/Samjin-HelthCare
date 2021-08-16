@@ -1,7 +1,35 @@
 $(document).ready(function(){
+
+   
+
+    startAnimation();
     menuClickEvent();
     mainScrollEvent();
 });
+
+function startAnimation(){
+    $('.mainPage > div header').css({
+        'top' : -(parseInt($('.mainPage > div header').css('padding-top')) + parseInt($('.mainPage > div header > div > div').height())),
+        'height' : $(this).height() + (parseInt($('.mainPage > div header').css('padding-top')) + parseInt($('.mainPage > div header > div > div').height()))
+                    + (parseInt($('.mainPage > div header').css('padding-bottom')) + parseInt($('.mainPage > div header > div > nav').height())) 
+    })
+
+    setTimeout(function(){
+        $('.mainPage > span').css({
+            'width' : $(this).width() - (895 + $('.mainPage main').offset().left),
+            'opacity' : 0
+        })
+
+        $('.mainPage main > div').removeClass('startAni');
+        
+        setTimeout(function(){
+            $('.mainPage > div header').removeClass('startAni');
+            $('.mainPage > div header').removeAttr('style');
+            $('.contentArea ol li:first-child.active .eventBox .imgBox').removeClass('startAni');
+            $('.mainPage > span').css('pointer-events','none');
+        },500)
+    },1000)
+}
 
 function menuClickEvent(){
     $('.menuBtn').click(function(){
