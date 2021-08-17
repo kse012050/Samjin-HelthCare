@@ -1,4 +1,12 @@
 $(document).ready(function(){
+
+    setTimeout(function(){
+        $('.mainPage main > div .monitorArea > div .contentArea ol li').css({
+            'transition-duration' : '0.5s',
+            'transition-property' : 'opacity'
+        })
+    },100)
+
     menuClickEvent();
     mainScrollEvent();
 });
@@ -44,7 +52,23 @@ function mainScrollEvent(){
                 },500);
             }
         }
+    });
 
+    $('.mainPage').on('mousewheel',function(e){
+        var delta = e.originalEvent.wheelDelta;
+        
+        if(mainScrollBoolean){
+            if(delta > 0 && mainScrollNumb > 0){
+                mainScrollNumb -= 1;
+            }else if(delta < 0 && mainScrollNumb < mainScrollListNumb - 1){
+                mainScrollNumb += 1;
+            }
+            mainAnimation(mainScrollNumb,delta);
+            mainScrollBoolean = false;
+            setTimeout(function(){
+                mainScrollBoolean = true;
+            },500);
+        }
     });
     
     function mainAnimation(idx,delta){
@@ -53,12 +77,13 @@ function mainScrollEvent(){
             $('.mainPage main > div section .contentArea ol li').removeClass('active');
             $('.mainPage main > div section .contentArea ol li').eq(idx).addClass('active');
             $('.monitorArea .pageArea span:first-child').html('0' + (idx + 1));
-            if(idx == mainScrollFirstList){
+            if(idx == 2){
                 $('.mainPage').addClass('active');
             }else{
                 $('.mainPage').removeClass('active');
             }
         }else{
+            $('.mainPage').removeClass('active');
             idx = idx - (mainScrollFirstList);
             if(delta > 0){
                 $('.mainPage main > div > *').eq(idx + 1).removeClass('active');
