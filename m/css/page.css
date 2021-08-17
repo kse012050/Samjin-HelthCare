@@ -22,8 +22,8 @@
 .mainPage main > div .monitorArea > div .contentArea ol li{position: absolute; left: 0; top: 0; width: 100%; opacity: 0; z-index: -1; /* transition: 0.5s opacity; */ display: flex; flex-direction: column; height: 100%; padding-bottom: 25.8271vh; box-sizing: border-box;}
 .mainPage main > div .monitorArea > div .contentArea ol li.active{position: relative; opacity: 1; z-index: 10;}
 .mainPage main > div .monitorArea > div .contentArea ol li a{width: 9.688rem; line-height: 2.313rem; text-align: center; font-size: 0.750rem; font-weight: 700; color: white; background-color: #8d8d8e; border-radius: 0.625rem;}
-.mainPage main > div .monitorArea > div .contentArea ol li .videoArea{ flex: 1; display: flex; align-items: flex-end;}
-.mainPage main > div .monitorArea > div .contentArea ol li .videoArea img{width: 100%;}
+.mainPage main > div .monitorArea > div .contentArea ol li .videoArea{ flex: 1; display: flex; align-items: flex-end; background: url('../images/main_video.png') no-repeat center / cover;}
+/* .mainPage main > div .monitorArea > div .contentArea ol li .videoArea img{width: 100%;} */
 
 .mainPage main > div .monitorArea > div .contentArea ol li .eventBox{z-index: -1;}
 
