@@ -27,7 +27,7 @@ function startAnimation(){
             $('.mainPage > div header').removeAttr('style');
             $('.contentArea ol li:first-child.active .eventBox .imgBox').removeClass('startAni');
             $('.mainPage > span').css('pointer-events','none');
-        },500)
+        },1000)
     },1000)
 }
 
@@ -36,14 +36,14 @@ function menuClickEvent(){
         var menuText = '';
         $('header').toggleClass('menuActive');
         $('footer').toggleClass('active');
-        if($('header').hasClass('menuActive')){
+    /*     if($('header').hasClass('menuActive')){
             menuText = 'close';
         }else{
             menuText = 'menu';
-        }
-        setTimeout(function(){
+        } */
+      /*   setTimeout(function(){
             $('.menuBtn').children().eq(0).html(menuText);
-        },300)
+        },300) */
     })
 }
 
@@ -86,20 +86,23 @@ function mainScrollEvent(){
     })
     
     function mainAnimation(idx,delta){
-        console.log(idx);
+        // console.log(idx);
         if(idx <= (mainScrollFirstList)){
             $('header').removeClass('active');
             $('.mainPage main > div > *').removeClass('active');
             $('.mainPage main > div section .contentArea ol li').removeClass('active');
             $('.mainPage main > div section .contentArea ol li').eq(idx).addClass('active');
             if(idx == mainScrollFirstList){
-                $('.mainPage').addClass('active');
+                $('.mainPage').addClass('BGActive');
             }else{
-                $('.mainPage').removeClass('active');
+                $('.mainPage').removeClass('BGActive');
             }
             $('.monitorArea .pageArea span:first-child').html('0' + (idx + 1));
+            mainIframe(idx);
         }else{
+            mainIframe(idx);
             idx = idx - (mainScrollFirstList);
+
             if(delta > 0){
                 $('.mainPage main > div > *').eq(idx + 1).removeClass('active');
             }else{
@@ -111,5 +114,15 @@ function mainScrollEvent(){
 
     function mainPager(idx){
         $('.mainPage main .fullPager').children().eq(idx).addClass('active').siblings().removeClass('active');
+    }
+
+    function mainIframe(idx){
+        console.log(idx);
+        if(idx == 3){
+            console.log('시작');
+            $('.videoArea iframe')[0].contentWindow.postMessage('{"event":"command","func":"playVideo","args":""}','*');
+        }else{
+            $('.videoArea iframe')[0].contentWindow.postMessage('{"event":"command","func":"stopVideo","args":""}','*');
+        }
     }
 }
