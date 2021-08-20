@@ -20,11 +20,16 @@ function startAnimation(){
             'opacity' : 0
         })
 
-        $('.mainPage main > div').removeClass('startAni');
+        $('.mainPage main > div.startAni').css({
+            'left' : 0 ,
+            'transition-delay' : '0s'
+        })
         
         setTimeout(function(){
             $('.mainPage > div header').removeClass('startAni');
             $('.mainPage > div header').removeAttr('style');
+            $('.mainPage main > div').removeClass('startAni');
+            $('.mainPage main > div').removeAttr('style');
             $('.contentArea ol li:first-child.active .eventBox .imgBox').removeClass('startAni');
             $('.mainPage > span').css('pointer-events','none');
         },1000)
