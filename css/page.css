@@ -70,7 +70,7 @@
 .mainPage main .monitorArea .contentArea ul li:nth-child(2) .eventBox div:first-child{right: 200%;}  
 .mainPage main .monitorArea .contentArea ul li:nth-child(2) .eventBox div:first-child::before{position: absolute; right: 0;  width: 278px; background: url('../images/main_secondImg01_1.png') no-repeat left top;}
 .mainPage main .monitorArea .contentArea ul li:nth-child(2) .eventBox div:first-child::after{position: absolute; right: 278px; width: 50vw; background: url('../images/main_secondImg01_2.png') repeat-x left top;}
-.mainPage main .monitorArea .contentArea ul li:nth-child(2) .eventBox div:last-child{left: 180%;}
+.mainPage main .monitorArea .contentArea ul li:nth-child(2) .eventBox div:last-child{left: 100vw;}
 .mainPage main .monitorArea .contentArea ul li:nth-child(2) .eventBox div:last-child::before{position: absolute; left: 0; width: 278px; background: url('../images/main_secondImg02_1.png') no-repeat left top;}
 .mainPage main .monitorArea .contentArea ul li:nth-child(2) .eventBox div:last-child::after{position: absolute; left: 278px; width: 50vw; background: url('../images/main_secondImg01_2.png') repeat-x left top 12px / 28px;}
 .mainPage main .monitorArea .contentArea ul li:nth-child(2).active .eventBox div:first-child{right: 100%;}
