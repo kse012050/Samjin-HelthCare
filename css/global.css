@@ -168,12 +168,12 @@ header h1{font-size: 22px; color: #3a3a40; text-transform: uppercase;}
 .subPage footer > div > div.top select{width: 230px; height: 40px; font-size: 14px; font-weight: 300; color: white; background-color: transparent; padding: 0 15px; box-sizing: border-box;}
 .subPage footer > div > div.bottom > ul li:not(:last-child){margin-right: 30px;}
 .subPage footer > div > div.bottom > ul li a{display: inline-block; width: 80px; height: 80px; border: 1px solid white; border-radius: 100%;}
-.subPage footer > div > div.bottom{padding: 150px 0; color: white; position: relative;}
+.subPage footer > div > div.bottom{padding: 75px 0; color: white; position: relative;}
 .subPage footer > div > div.bottom h3{font-size: 18px; font-weight: 700; margin-bottom: 40px;}
 .subPage footer > div > div.bottom address{font-style: normal; opacity: 0.3;;}
 .subPage footer > div > div.bottom address *{display: block; font-size: 14px; color: white;}
 .subPage footer > div > div.bottom address *:not(:last-child){margin-bottom: 10px;}
-.subPage footer > div > div.bottom > div{position: absolute; right: 0; bottom: 150px;}
+.subPage footer > div > div.bottom > div{position: absolute; right: 0; bottom: 75px;}
 .subPage footer > div > div.bottom > div ul{display: flex; justify-content: flex-end; margin-bottom: 20px;}
 .subPage footer > div > div.bottom > div ul li a{text-indent: -9999px; width: 53px; height: 52px; background-repeat: no-repeat; background-position: center; background-size: cover;}
 .subPage footer > div > div.bottom > div ul li.youtube a{background-image: url('../images/youtube.png');}
