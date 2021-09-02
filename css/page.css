@@ -240,8 +240,9 @@
 .productsArea .appArea{margin-bottom: 100px;}
 .productsArea .appArea h2{margin-bottom: 165px;}
 .productsArea .appArea ol{display: flex;}
-.productsArea .appArea ol li{flex: 1; counter-increment: appCount; font-size: 24px; color: #1c1c1e; padding-bottom: 25px;}
-.productsArea .appArea ol li::before{content: counter(appCount);display: block; width: 30px; line-height: 30px; margin: 0 auto 25px; font-weight: 700; color: white; background-color: #0fb4da; border-radius: 100%;}
+.productsArea .appArea ol li{flex: 1; counter-increment: appCount; font-size: 24px; color: #1c1c1e; padding-bottom: 25px; position: relative;}
+.productsArea .appArea ol li::before{content: counter(appCount); font-size: 16px; display: block; width: 30px; line-height: 30px; margin: 0 auto 25px; font-weight: 700; color: white; background-color: #0fb4da; border-radius: 100%;}
+.productsArea .appArea ol li:not(:last-child)::after{content: ''; position: absolute; right: -7.5px; top: 53%; width: 15px; height: 30px; background: url('../images/product_nextIcon.png') no-repeat center / cover;}
 .productsArea .appArea ol li .downArea{margin-top: 40px; padding-top: 110px; padding-left: 40px; background: url('../images/product_appImg01.png') no-repeat center top;}
 .productsArea .appArea ol li .downArea a{display: flex; align-items: center; font-size: 15px; font-weight: 700; color: #8d8d8d;}
 .productsArea .appArea ol li .downArea a::before{content: ''; width: 23px; height: 23px; background-repeat: no-repeat; background-position: center; background-size: cover; margin-right: 5px;}

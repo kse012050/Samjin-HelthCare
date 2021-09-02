@@ -150,14 +150,24 @@ header h1{font-size: 22px; color: #3a3a40; text-transform: uppercase;}
 
 /* 서브페이지 header */
 .subPage header{ line-height: 100px; border-bottom: 1px solid #dedede; background-color: white; position: fixed; left: 0; top: 0; width: 100%; z-index: 10;}
+.subPage header::after{content: ''; position: absolute; left: 0; top: 100px; width: 100%; height: 1px; background-color: #dedede;}
 .subPage header > div{display: flex; justify-content: space-between; position: relative;}
 /* .subPage header > div > a{position: absolute; right: 25px; top: -50px;} */
-.subPage header > div nav ul{display: flex;}
-.subPage header > div nav ul li a{display: flex; align-items: center; height: 100%; padding: 0 30px; font-size: 16px; font-weight: 700; color: #3a3a40; text-transform: uppercase; position: relative;}
-.subPage header > div nav ul li:not(:last-child) a::after{content: ''; position: absolute; left: 50%; bottom: 0; width: 0%; height: 1px; background-color: black; transition-duration: 0.5s; transition-property: left, width;}
-.subPage header > div nav ul li:not(:last-child) a:hover::after{width: 100%; left: 0;}
-.subPage header > div nav ul li:not(:last-child).active a::before{content: ''; position: absolute; left: 0; bottom: 0; width: 100%; height: 1px; background-color: black; transition-duration: 0.5s; transition-property: left, width;}
-.subPage header > div nav ul li:not(:last-child).active:hover a::before{display: none;}
+.subPage header > div nav > ul{display: flex;}
+.subPage header > div nav > ul > li{height: 100%;}
+.subPage header > div nav > ul > li > a{display: flex; align-items: center; height: 100%; /* padding: 0 30px; */ font-size: 16px; font-weight: 700; color: #3a3a40; text-transform: uppercase; position: relative;}
+.subPage header > div nav > ul > li:not(:last-child) > a{padding: 0 30px;}
+.subPage header > div nav > ul > li:last-child > a{padding-left: 30px;}
+.subPage header > div nav > ul > li:not(:last-child) > a::after{content: ''; position: absolute; left: 50%; bottom: 0; width: 0%; height: 1px; background-color: black; transition-duration: 0.5s; transition-property: left, width;}
+.subPage header > div nav > ul > li:not(:last-child):hover > a::after{width: 100%; left: 0;}
+.subPage header > div nav > ul > li:not(:last-child).active > a::before{content: ''; position: absolute; left: 0; bottom: 0; width: 100%; height: 1px; background-color: black; transition-duration: 0.5s; transition-property: left, width;}
+/* .subPage header > div nav > ul > li:not(:last-child).active:hover > a::before{display: none;} */
+.subPage header > div nav > ul > li a.inquiry{width: 100px; background: url('../images/inquiry.png') no-repeat right center; text-indent: -9999px;}
+.subPage header > div nav > ul > li ul{text-align: center; padding: 15px 0; display: none;}
+.subPage header > div nav > ul > li ul li{line-height: 35px;}
+.subPage header > div nav > ul > li ul li a{display: inline-block; font-size: 14px; position: relative;}
+.subPage header > div nav > ul > li ul li > a::after{content: ''; position: absolute; left: 50%; bottom: 0; width: 0%; height: 1px; background-color: black; transition-duration: 0.5s; transition-property: left, width;}
+.subPage header > div nav > ul > li ul li:hover > a::after{width: 100%; left: 0;}
 
 /* 서브페이지 footer */
 .subPage footer{background-color: #1f2222; position: fixed; left: 0; bottom: 0; width: 100%; z-index: 0;}

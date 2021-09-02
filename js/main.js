@@ -4,6 +4,7 @@ $(document).ready(function(){
     startAnimation();
     mainScrollEvent();
     menuClickEvent();
+
     $('.nextBtn').click(function(e){
         e.stopPropagation();
         
