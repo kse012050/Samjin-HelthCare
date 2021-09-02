@@ -5,6 +5,7 @@
 .width1680{width: 1680px;}
 
 header h1{font-size: 22px; color: #3a3a40; text-transform: uppercase;}
+[class |= "material"]{font-family: 'Material Icons';}
 
 
 /* 메인페이지 header */
