@@ -5,6 +5,7 @@
 .mainPage main > div.startAni{left: -300px;}
 .mainPage main > div > *{display: flex; justify-content: center; align-items: center;  width: 100%; height: 100%; padding: calc(6.9370vh + 22px) 0 calc(4.8025vh + 19.7438vh); box-sizing: border-box;}
 .mainPage main > div > * > *{pointer-events: all;}
+
 .mainPage main .contentArea{display: flex; align-items: flex-start; width: 100%;}
 .mainPage main .contentArea > *:not(:last-child){margin-right: 140px;}
 .mainPage main .contentArea .pageArea{ display: flex;}
@@ -21,51 +22,63 @@
 
 /* 메인페이지 - 첫번째 화면 */
 .mainPage main .monitorArea h2 div{width: 553px; height: 75px; background-image: url('../images/S-PATCHEX01.png'); background-repeat: no-repeat; text-indent: -9999px; margin-top: 15px;}
-.mainPage main .monitorArea .contentArea ol{position: relative; flex: 1; z-index: 1;}
-.mainPage main .monitorArea .contentArea ol li{display: block; width: 100%; opacity: 0;  position: absolute; left: 0; top: 0; z-index: -1;}
-.mainPage main .monitorArea .contentArea ol li.active{display: block; position: static; opacity: 1; z-index: 1; transition: 0.5s opacity;}
-.mainPage main .monitorArea .contentArea ol li p{color: #3a3a40; margin-bottom: 60px;}
-.mainPage main .monitorArea .contentArea ol li a{font-size: 14px; font-weight: 900; color: #3a3a40; padding-bottom: 11px; position: relative;}
-.mainPage main .monitorArea .contentArea ol li a::after{content: ''; position: absolute; left: 0; bottom: 0; width: 100%; height: 1px; background-color:#3a3a40;}
-.mainPage main .monitorArea .contentArea ol li a::before{content: ''; position: absolute; left: 50%; bottom: 0; width: 0; height: 1px; background-color:#3a3a40;}
-.mainPage main .monitorArea .contentArea ol li a:hover::after{display: none;}
-.mainPage main .monitorArea .contentArea ol li a:hover::before{left: 0; width: 100%; transition: 0.5s left, 0.5s width;}
+/* .mainPage main > div > .monitorArea > div{height: 391px;} */
+.mainPage main .monitorArea .contentArea .test{flex: 1; height: 171px; position: relative; display: flex; align-items: flex-end;}
+.mainPage main .monitorArea .contentArea .test > div{width: 652px; height: 100%; position: relative; overflow: hidden; position: absolute; left: 0; top: 0; z-index: 1;}
+.mainPage main .monitorArea .contentArea .test > div ol{position: absolute; left: 0; top: 0; width: 2000px; z-index: 1;}
+.mainPage main .monitorArea .contentArea .test > div ol::after{content: ''; display: block; clear: both;}
+.mainPage main .monitorArea .contentArea .test > div ol li{float: left;}
+.mainPage main .monitorArea .contentArea .test > div ol li:not(:last-child){margin-right: 90px;}
+.mainPage main .monitorArea .contentArea .test > div ol li{display: block; opacity: 1; /*  position: absolute; left: 0; top: 0; z-index: -1; */ position: relative;}
+.mainPage main .monitorArea .contentArea .test > div ol li:not(:last-child):after{content: ''; position: absolute; right: -25px; top: 8px; width: 13px; height: 10px; background: url('../images/nextIcon.png') no-repeat center / cover;}
+.mainPage main .monitorArea .contentArea .test > div ol li.active{display: block;/*  position: static;  */opacity: 1; z-index: 1; transition: 0.5s opacity;}
+.mainPage main .monitorArea .contentArea .test > div ol li p{color: #3a3a40; opacity: 0.4; transition: 0.5s opacity;}
+.mainPage main .monitorArea .contentArea .test > div ol li.active p{opacity: 1;}
+.mainPage main .monitorArea .contentArea .test > a{font-size: 14px; font-weight: 900; color: #3a3a40; padding-bottom: 11px; position: relative;}
+.mainPage main .monitorArea .contentArea .test > a::after{content: ''; position: absolute; left: 0; bottom: 0; width: 100%; height: 1px; background-color:#3a3a40;}
+.mainPage main .monitorArea .contentArea .test > a::before{content: ''; position: absolute; left: 50%; bottom: 0; width: 0; height: 1px; background-color:#3a3a40;}
+.mainPage main .monitorArea .contentArea .test > a:hover::after{display: none;}
+.mainPage main .monitorArea .contentArea .test > a:hover::before{left: 0; width: 100%; transition: 0.5s left, 0.5s width;}
 /* 메인페이지 - 첫번째 화면 event*/
-.mainPage main .monitorArea .contentArea ol li:first-child .eventBox{position: absolute; right: 0; bottom: -50%; pointer-events: none; }
-.mainPage main .monitorArea .contentArea ol li:first-child.active .eventBox{pointer-events: all;}
-.mainPage main .monitorArea .contentArea ol li:first-child.active .eventBox .imgBox {position: absolute;  right: -90px; opacity: 0;  z-index: 102; bottom: -500px;  animation: mainFirst01 1s forwards;}
-.mainPage main .monitorArea .contentArea ol li:first-child .eventBox div.textBox{position: relative; z-index: 1; font-size: 14px; line-height: 24px; width: 260px; padding: 30px 20px; box-sizing: border-box; color: white; background-color: rgba(11, 175, 212, 0.6); opacity: 0; left: 100px; transition-duration: 0.5s; transition-property: left , opacity;}
-.mainPage main .monitorArea .contentArea ol li:first-child.active .imgBox:hover + .textBox{opacity: 1; left: 0;}
+.mainPage main .monitorArea .contentArea ul{position: absolute; left: 0; top: 0; width: 100%; height: 100%;}
+/* .mainPage main .monitorArea .contentArea ul li{opacity: 0;} */
+.mainPage main .monitorArea .contentArea ul li.active{opacity: 1;}
+.mainPage main .monitorArea .contentArea ul li:first-child .eventBox{position: absolute; right: 0; bottom: -50%; pointer-events: none; }
+.mainPage main .monitorArea .contentArea ul li:first-child .eventBox .imgBox{/* animation: mainFirst01 1s forwards alternate-reverse; */ opacity: 0;}
+.mainPage main .monitorArea .contentArea ul li:first-child.active .eventBox{pointer-events: all;}
+.mainPage main .monitorArea .contentArea ul li:first-child.active .eventBox .imgBox {position: absolute;  right: -90px; opacity: 0;  z-index: 102; bottom: -500px;  animation: mainFirst01 1s forwards;}
+.mainPage main .monitorArea .contentArea ul li:first-child .eventBox div.textBox{position: relative; z-index: 1; font-size: 14px; line-height: 24px; width: 260px; padding: 30px 20px; box-sizing: border-box; color: white; background-color: rgba(11, 175, 212, 0.6); opacity: 0; left: 100px; transition-duration: 0.5s; transition-property: left , opacity;}
+.mainPage main .monitorArea .contentArea ul li:first-child.active .imgBox:hover + .textBox{opacity: 1; left: 0;}
 @keyframes mainFirst01 {
     0%{bottom: -500px; opacity: 0;}
     50%{opacity: 1;}
     100%{bottom: -125px; opacity: 1;}
 }
-.mainPage main .monitorArea .contentArea ol li:first-child.active .eventBox .imgBox img{position: relative; animation: mainFirst02 1s linear 1s infinite alternate; }
+.mainPage main .monitorArea .contentArea ul li:first-child.active .eventBox .imgBox img{position: relative; animation: mainFirst02 1s linear 1s infinite alternate; }
 @keyframes mainFirst02 {
     0%{bottom: 0;}
     100%{bottom: -25px;}
 }
-.mainPage main .monitorArea .contentArea ol li:first-child.active .eventBox .imgBox.startAni{animation-name: none;}
+.mainPage main .monitorArea .contentArea ul li:first-child.active .eventBox .imgBox.startAni{animation-name: none;}
 
 /* 메인페이지 - 두번째 화면 event*/
-.mainPage main .monitorArea .contentArea ol li:nth-child(2) .eventBox{position: absolute; bottom: 0; left: -325px; width: 100%;  display: flex; justify-content: space-between;}
-.mainPage main .monitorArea .contentArea ol li:nth-child(2) .eventBox div{width: 50vw; height: 227px; position: absolute; top: -113.5px; transition-duration: 0.5s; transition-property: right , left;}
-.mainPage main .monitorArea .contentArea ol li:nth-child(2) .eventBox div::before ,.mainPage main .monitorArea .contentArea ol li:nth-child(2) .eventBox div::after{
+.mainPage main .monitorArea .contentArea ul li:nth-child(2) .eventBox{position: absolute; bottom: 0; left: -325px; width: 100%;  display: flex; justify-content: space-between;}
+.mainPage main .monitorArea .contentArea ul li:nth-child(2) .eventBox div{width: 50vw; height: 227px; position: absolute; top: -113.5px; transition-duration: 0.5s; transition-property: right , left;}
+.mainPage main .monitorArea .contentArea ul li:nth-child(2) .eventBox div::before ,.mainPage main .monitorArea .contentArea ul li:nth-child(2) .eventBox div::after{
     content: ''; height: 100%; position: absolute; top: 0; 
 }
-.mainPage main .monitorArea .contentArea ol li:nth-child(2) .eventBox div:first-child{right: 200%;}
-.mainPage main .monitorArea .contentArea ol li:nth-child(2) .eventBox div:first-child::before{position: absolute; right: 0;  width: 278px; background: url('../images/main_secondImg01_1.png') no-repeat left top;}
-.mainPage main .monitorArea .contentArea ol li:nth-child(2) .eventBox div:first-child::after{position: absolute; right: 278px; width: 50vw; background: url('../images/main_secondImg01_2.png') repeat-x left top;}
-.mainPage main .monitorArea .contentArea ol li:nth-child(2) .eventBox div:last-child{left: 180%;}
-.mainPage main .monitorArea .contentArea ol li:nth-child(2) .eventBox div:last-child::before{position: absolute; left: 0; width: 278px; background: url('../images/main_secondImg02_1.png') no-repeat left top;}
-.mainPage main .monitorArea .contentArea ol li:nth-child(2) .eventBox div:last-child::after{position: absolute; left: 278px; width: 50vw; background: url('../images/main_secondImg01_2.png') repeat-x left top 12px / 28px;}
-.mainPage main .monitorArea .contentArea ol li:nth-child(2).active .eventBox div:first-child{right: 100%;}
-.mainPage main .monitorArea .contentArea ol li:nth-child(2).active .eventBox div:last-child{left: 80%;}
+.mainPage main .monitorArea .contentArea ul li:nth-child(2) .eventBox div:first-child{right: 200%;}  
+.mainPage main .monitorArea .contentArea ul li:nth-child(2) .eventBox div:first-child::before{position: absolute; right: 0;  width: 278px; background: url('../images/main_secondImg01_1.png') no-repeat left top;}
+.mainPage main .monitorArea .contentArea ul li:nth-child(2) .eventBox div:first-child::after{position: absolute; right: 278px; width: 50vw; background: url('../images/main_secondImg01_2.png') repeat-x left top;}
+.mainPage main .monitorArea .contentArea ul li:nth-child(2) .eventBox div:last-child{left: 180%;}
+.mainPage main .monitorArea .contentArea ul li:nth-child(2) .eventBox div:last-child::before{position: absolute; left: 0; width: 278px; background: url('../images/main_secondImg02_1.png') no-repeat left top;}
+.mainPage main .monitorArea .contentArea ul li:nth-child(2) .eventBox div:last-child::after{position: absolute; left: 278px; width: 50vw; background: url('../images/main_secondImg01_2.png') repeat-x left top 12px / 28px;}
+.mainPage main .monitorArea .contentArea ul li:nth-child(2).active .eventBox div:first-child{right: 100%;}
+.mainPage main .monitorArea .contentArea ul li:nth-child(2).active .eventBox div:last-child{left: 80%;}
 
 /* 메인페이지 - 세번째 화면 event*/
-.mainPage main .monitorArea .contentArea ol li:nth-child(3) .eventBox{position: absolute; right: -80px; /* top: 100px; */ bottom: -100vh; width: 790px; height: 730px; background: url('../images/main_thirdImg.png') no-repeat center / cover; pointer-events: none; opacity: 0; transition-duration: 0.5s; transition-property: opacity , bottom;}
-.mainPage main .monitorArea .contentArea ol li:nth-child(3).active .eventBox{opacity: 1; /* top: -215px; */}
+.mainPage main .monitorArea .contentArea ul li:nth-child(3) .eventBox{position: absolute; right: -80px; /* top: 100px; */ bottom: -100vh; width: 790px; height: 730px; background: url('../images/main_thirdImg.png') no-repeat center / cover; pointer-events: none; opacity: 0; transition-duration: 0.5s; transition-property: opacity , bottom;}
+.mainPage main .monitorArea .contentArea ul li:nth-child(3).active .eventBox{opacity: 1; /* top: -215px; */}
 
 .mainPage.BGActive main .monitorArea h2 div{background-image: url('../images/S-PATCHEX02.png');}
 .mainPage.BGActive{background-color: #73e5ff;  transition-duration: 0.5s; transition-property: background-color;}

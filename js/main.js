@@ -30,7 +30,7 @@ function startAnimation(){
             $('.mainPage > div header').removeAttr('style');
             $('.mainPage main > div').removeClass('startAni');
             $('.mainPage main > div').removeAttr('style');
-            $('.contentArea ol li:first-child.active .eventBox .imgBox').removeClass('startAni');
+            $('.contentArea ul li:first-child.active .eventBox .imgBox').removeClass('startAni');
             $('.mainPage > span').css('pointer-events','none');
         },1000)
     },1000)
@@ -57,6 +57,7 @@ function mainScrollEvent(){
     var mainScrollFirstList = $('.mainPage main section .contentArea ol li').length - 1;
     var mainScrollListNumb = mainScrollList + mainScrollFirstList;
     var mainScrollPager = '';
+    var test = 0;
 
     for(var i = 0; i < mainScrollListNumb; i++){
         mainScrollPager += '<li>' + (i + 1)  + ' 페이지</li>';
@@ -101,10 +102,21 @@ function mainScrollEvent(){
             $('.mainPage main > div > *').removeClass('active');
             $('.mainPage main > div section .contentArea ol li').removeClass('active');
             $('.mainPage main > div section .contentArea ol li').eq(idx).addClass('active');
+            $('.mainPage main > div section .contentArea ul li').removeClass('active');
+            $('.mainPage main > div section .contentArea ul li').eq(idx).addClass('active');
+
+
+            test = 0;
+
+            for(var i = 0; i < idx; i++){
+                test = test + $('.mainPage main > div section .contentArea ol li').eq(i).outerWidth(true);
+            }
+            $('.mainPage main > div section .contentArea ol').animate({left : -test})
+            
             if(idx == mainScrollFirstList){
                 $('.mainPage').addClass('BGActive');
-                $('.mainPage main .monitorArea .contentArea ol li:nth-child(3) .eventBox').css({
-                    'bottom' : ($('.mainPage main .monitorArea .contentArea ol li:nth-child(3)').offset().top + $('.mainPage main .monitorArea .contentArea ol li:nth-child(3)').height()) - $(window).height()
+                $('.mainPage main .monitorArea .contentArea ul li:nth-child(3) .eventBox').css({
+                    'bottom' : ($('.mainPage main .monitorArea .contentArea ul li:nth-child(3)').offset().top + $('.mainPage main .monitorArea .contentArea ol li:nth-child(3)').height()) - $(window).height()
                 })
             }else{
                 $('.mainPage').removeClass('BGActive');
