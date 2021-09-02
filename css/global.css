@@ -173,7 +173,6 @@ header h1{font-size: 22px; color: #3a3a40; text-transform: uppercase;}
 .subPage footer{background-color: #1f2222; position: fixed; left: 0; bottom: 0; width: 100%; z-index: 0;}
 .subPage footer > div > div.top{height: 170px; display: flex; justify-content: space-between; align-items: center; border-bottom: 1px solid #323737;}
 .subPage footer > div > div.top ul{display: flex;}
-.subPage footer > div > div.top ul li{}
 .subPage footer > div > div.top ul li:not(:last-child){margin-right: 20px;}
 .subPage footer > div > div.top ul li a{font-size: 18px; font-weight: 300; color: white;}
 .subPage footer > div > div.top select{width: 230px; height: 40px; font-size: 14px; font-weight: 300; color: white; background-color: transparent; padding: 0 15px; box-sizing: border-box;}

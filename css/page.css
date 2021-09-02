@@ -103,7 +103,6 @@
 
 
 /* 서브페이지 */
-.subPage{}
 .subPage main{padding-bottom:200px; margin-top: 100px; margin-bottom: 440px; position: relative; z-index: 2; background-color: white;}
 .aboutUsArea{padding-top: 135px;}
 
@@ -162,7 +161,6 @@
 .productsArea .topArea > div p{font-size: 18px; line-height: 30px; color: #565656;} 
 .productsArea .topArea > div > img{position: absolute; right: -135px; top: 0;}
 
-.productsArea{}
 .productsArea > div{padding: 50px 0; background-color: #042127;}
 .productsArea > div ul{display: flex; justify-content: space-between;}
 .productsArea > div ul li{text-align: center; color: white;}
@@ -263,9 +261,7 @@
 .productsArea .resourceArea > div ul li:nth-child(2) a{background-image: url('../images/product_resourcIcon02.png');}
 
 .productsArea .infoArea h2{margin-bottom: 100px;}
-.productsArea .infoArea figure{}
 .productsArea .infoArea figure img{width: 100%; margin-bottom: 75px;}
-.productsArea .infoArea figure figcaption{}
 .productsArea .infoArea figure figcaption div{padding-bottom: 55px; margin-bottom: 55px; border-bottom: 1px solid #cccccc;}
 .productsArea .infoArea figure figcaption div::after{content: ''; display: block; clear: both;}
 .productsArea .infoArea figure figcaption div table{float: left; font-size: 18px; border-top: 4px solid black;}
