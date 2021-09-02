@@ -6,6 +6,7 @@
 
 header h1{font-size: 22px; color: #3a3a40; text-transform: uppercase;}
 
+
 /* 메인페이지 header */
 .mainPage{margin: 0 auto; height: 100vh; overflow: hidden; background-color: white; }
 .mainPage > span{ position: fixed; right: 0; top: 0; width: 100%; height: 100%; z-index: 1000; background:url('../images/mainStartBG.png'); transition-duration: 1s,1s; transition-timing-function: /* cubic-bezier(0,-0.5, 0, 1) */ cubic-bezier(.19,1,.22,1); transition-property: width , opacity; transition-delay: 0s , 1s;}
@@ -147,19 +148,34 @@ header h1{font-size: 22px; color: #3a3a40; text-transform: uppercase;}
 
 
 /* 서브페이지 header */
-.subPage header{line-height: 140px; border-bottom: 1px solid #dedede;}
-.subPage header > div{display: flex; justify-content: space-between;}
+.subPage header{ line-height: 100px; border-bottom: 1px solid #dedede; background-color: white; position: fixed; left: 0; top: 0; width: 100%; z-index: 10;}
+.subPage header > div{display: flex; justify-content: space-between; position: relative;}
+/* .subPage header > div > a{position: absolute; right: 25px; top: -50px;} */
 .subPage header > div nav ul{display: flex;}
-.subPage header > div nav ul li a{display: inline-block; padding: 0 30px; font-size: 17; font-weight: 700; color: #3a3a40; text-transform: uppercase;}
+.subPage header > div nav ul li a{display: flex; align-items: center; height: 100%; padding: 0 30px; font-size: 16px; font-weight: 700; color: #3a3a40; text-transform: uppercase; position: relative;}
+.subPage header > div nav ul li:not(:last-child) a::after{content: ''; position: absolute; left: 50%; bottom: 0; width: 0%; height: 1px; background-color: black; transition-duration: 0.5s; transition-property: left, width;}
+.subPage header > div nav ul li:not(:last-child) a:hover::after{width: 100%; left: 0;}
+.subPage header > div nav ul li:not(:last-child).active a::before{content: ''; position: absolute; left: 0; bottom: 0; width: 100%; height: 1px; background-color: black; transition-duration: 0.5s; transition-property: left, width;}
+.subPage header > div nav ul li:not(:last-child).active:hover a::before{display: none;}
 
 /* 서브페이지 footer */
-.subPage footer{background-color: #1f2222;}
-.subPage footer > div > ul{padding: 60px 0; display: flex; justify-content: flex-end; border-bottom: 1px solid #323737;}
-.subPage footer > div > ul li:not(:last-child){margin-right: 30px;}
-.subPage footer > div > ul li a{display: inline-block; width: 80px; height: 80px; border: 1px solid white; border-radius: 100%;}
-.subPage footer > div > div{padding: 150px 0; color: white; position: relative;}
-.subPage footer > div > div h3{font-size: 18px; font-weight: 700; margin-bottom: 40px;}
-.subPage footer > div > div address{font-style: normal;}
-.subPage footer > div > div address *{display: block; font-size: 14px; color: white;}
-.subPage footer > div > div address *:not(:last-child){margin-bottom: 10px;}
-.subPage footer > div > div > p{font-size: 14px; font-weight: 700; position: absolute; right: 0; top: 50%;}
+.subPage footer{background-color: #1f2222; position: fixed; left: 0; bottom: 0; width: 100%; z-index: 0;}
+.subPage footer > div > div.top{height: 170px; display: flex; justify-content: space-between; align-items: center; border-bottom: 1px solid #323737;}
+.subPage footer > div > div.top ul{display: flex;}
+.subPage footer > div > div.top ul li{}
+.subPage footer > div > div.top ul li:not(:last-child){margin-right: 20px;}
+.subPage footer > div > div.top ul li a{font-size: 18px; font-weight: 300; color: white;}
+.subPage footer > div > div.top select{width: 230px; height: 40px; font-size: 14px; font-weight: 300; color: white; background-color: transparent; padding: 0 15px; box-sizing: border-box;}
+.subPage footer > div > div.bottom > ul li:not(:last-child){margin-right: 30px;}
+.subPage footer > div > div.bottom > ul li a{display: inline-block; width: 80px; height: 80px; border: 1px solid white; border-radius: 100%;}
+.subPage footer > div > div.bottom{padding: 150px 0; color: white; position: relative;}
+.subPage footer > div > div.bottom h3{font-size: 18px; font-weight: 700; margin-bottom: 40px;}
+.subPage footer > div > div.bottom address{font-style: normal; opacity: 0.3;;}
+.subPage footer > div > div.bottom address *{display: block; font-size: 14px; color: white;}
+.subPage footer > div > div.bottom address *:not(:last-child){margin-bottom: 10px;}
+.subPage footer > div > div.bottom > div{position: absolute; right: 0; bottom: 150px;}
+.subPage footer > div > div.bottom > div ul{display: flex; justify-content: flex-end; margin-bottom: 20px;}
+.subPage footer > div > div.bottom > div ul li a{text-indent: -9999px; width: 53px; height: 52px; background-repeat: no-repeat; background-position: center; background-size: cover;}
+.subPage footer > div > div.bottom > div ul li.youtube a{background-image: url('../images/youtube.png');}
+.subPage footer > div > div.bottom > div p{font-size: 14px; font-weight: 700; }
+

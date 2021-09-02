@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>product - SAMJIN HELTHCARE</title>
+    <!-- jQuery CDN -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="css/import.css">
+
+    <script>
+        $(document).ready(function(){
+            $(window).scroll(function(){
+                $('[data-test="scroll"]').each(function(){
+                    if($(window).scrollTop() > $(this).offset().top - $(window).height() / 1.3){
+                        $(this).addClass('active');
+                    }else{
+                        $(this).removeClass('active');
+                    }
+                })
+            })
+            
+        })
+    </script>
+</head>
+<body>
+    <div class="subPage">
+        <header>
+            <div class="width1680">
+                <h1>Samjin HelthCare</h1>
+                <nav>
+                    <ul>
+                        <li><a href="index.html">home</a></li>
+                        <li><a href="aboutAs_helthCare.html">about Us</a></li>
+                        <li class="active"><a href="products.html">PRODUCTS</a></li>
+                        <li><a href="#">CUSTOMERS</a></li>
+                        <li><a href="#">SUPPORTS</a></li>
+                        <li>
+                            <a href="#" class="inquiry"><img src="images/inquiry.png" alt="문의하기"></a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+
+        <main class="products">
+            <div><img src="images/product01.png" alt=""></div>
+            <div><img src="images/product002.png" data-test="scroll" alt=""></div>
+            <div><img src="images/product003.png" data-test="scroll" alt=""></div>
+            <div><img src="images/product004.png" data-test="scroll" alt=""></div>
+            <div><img src="images/product005.png" data-test="scroll" alt=""></div>
+            <div><img src="images/product006.png" data-test="scroll" alt=""></div>
+            <div><img src="images/product007.png" data-test="scroll" alt=""></div>
+            <div><img src="images/product008.png" data-test="scroll" alt=""></div>
+            <div><img src="images/product009.png" data-test="scroll" alt=""></div>
+            <div><img src="images/product010.png" data-test="scroll" alt="">
+                <img src="images/product011.png" data-test="scroll" alt="">
+            </div>
+        </main>
+
+        <footer>
+            <div class="width1680">
+                <div class="top">
+                    <ul>
+                        <li><a href="#">이용약관</a></li>
+                        <li><a href="#">문의</a></li>
+                        <li><a href="#">자주묻는질문</a></li>
+                    </ul>
+                    <select>
+                        <option value="">관리사 바로가기</option>
+                    </select>
+                </div>
+                <div class="bottom">
+                    <h3><img src="images/footer_logo.png" alt="logo"></h3>
+                    <address>
+                        <p>(우) 04054  서울특별시 마포구 와\우산로 121 (서교동)</p>
+                        <a href="#">sjhealthcare@samjinpharm.co.kr</a>
+                        <a href="#">+82  2 2323 2596</a>
+                    </address>
+                    <div>
+                        <ul>
+                            <li class="youtube"><a href="#">youtube</a></li>
+                        </ul>
+                        <p>© 2021 Samjin Helthcare. All Rights Reserved.</p>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>    
+</body>
+</html>

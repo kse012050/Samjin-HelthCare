@@ -4,7 +4,34 @@ $(document).ready(function(){
     startAnimation();
     mainScrollEvent();
     menuClickEvent();
-    
+    $('.nextBtn').click(function(e){
+        e.stopPropagation();
+        
+        if($('.scrollBox div p').length - 1 == $(this).parent().index()){
+            $('.scrollBox div p').removeClass('active');
+            $('.scrollBox div p').eq(0).addClass('active');
+            $('.scrollBox div').animate({
+                left : 0
+            })
+        }else{
+            $('.scrollBox div p').removeClass('active');
+        
+            $(this).parent().next().addClass('active');
+            $('.scrollBox div').animate({
+                left : -$(this).parent().next().position().left
+            })
+        }
+        console.log();
+        console.log($(this).parent().index());
+        
+    })
+    $('.scrollBox div p').click(function(){
+        $('.scrollBox div p').removeClass('active');
+        $(this).addClass('active');
+        $('.scrollBox div').animate({
+            left : -$('.scrollBox div p.active').position().left
+        })
+    });
 });
 
 function startAnimation(){
@@ -30,7 +57,7 @@ function startAnimation(){
             $('.mainPage > div header').removeAttr('style');
             $('.mainPage main > div').removeClass('startAni');
             $('.mainPage main > div').removeAttr('style');
-            $('.contentArea ul li:first-child.active .eventBox .imgBox').removeClass('startAni');
+            $('.contentArea ol li:first-child.active .eventBox .imgBox').removeClass('startAni');
             $('.mainPage > span').css('pointer-events','none');
         },1000)
     },1000)
@@ -57,7 +84,6 @@ function mainScrollEvent(){
     var mainScrollFirstList = $('.mainPage main section .contentArea ol li').length - 1;
     var mainScrollListNumb = mainScrollList + mainScrollFirstList;
     var mainScrollPager = '';
-    var test = 0;
 
     for(var i = 0; i < mainScrollListNumb; i++){
         mainScrollPager += '<li>' + (i + 1)  + ' 페이지</li>';
@@ -102,21 +128,10 @@ function mainScrollEvent(){
             $('.mainPage main > div > *').removeClass('active');
             $('.mainPage main > div section .contentArea ol li').removeClass('active');
             $('.mainPage main > div section .contentArea ol li').eq(idx).addClass('active');
-            $('.mainPage main > div section .contentArea ul li').removeClass('active');
-            $('.mainPage main > div section .contentArea ul li').eq(idx).addClass('active');
-
-
-            test = 0;
-
-            for(var i = 0; i < idx; i++){
-                test = test + $('.mainPage main > div section .contentArea ol li').eq(i).outerWidth(true);
-            }
-            $('.mainPage main > div section .contentArea ol').animate({left : -test})
-            
             if(idx == mainScrollFirstList){
                 $('.mainPage').addClass('BGActive');
-                $('.mainPage main .monitorArea .contentArea ul li:nth-child(3) .eventBox').css({
-                    'bottom' : ($('.mainPage main .monitorArea .contentArea ul li:nth-child(3)').offset().top + $('.mainPage main .monitorArea .contentArea ol li:nth-child(3)').height()) - $(window).height()
+                $('.mainPage main .monitorArea .contentArea ol li:nth-child(3) .eventBox').css({
+                    'bottom' : ($('.mainPage main .monitorArea .contentArea ol li:nth-child(3)').offset().top + $('.mainPage main .monitorArea .contentArea ol li:nth-child(3)').height()) - $(window).height()
                 })
             }else{
                 $('.mainPage').removeClass('BGActive');
@@ -148,8 +163,14 @@ function mainScrollEvent(){
 }
 function mainIframe(boolean){
     if(boolean){
-        $('.videoArea iframe')[0].contentWindow.postMessage('{"event":"command","func":"playVideo","args":""}','*');
+        var vid = $('video');
+        console.log(vid);
+        $('video').trigger('play');
+        /* vid.autoplay = true;
+        vid.load(); */
+        // $('.videoArea iframe')[0].contentWindow.postMessage('{"event":"command","func":"playVideo","args":""}','*');
     }else{
-        $('.videoArea iframe')[0].contentWindow.postMessage('{"event":"command","func":"pauseVideo","args":""}','*');
+        $('video').trigger('pause');
+        // $('.videoArea iframe')[0].contentWindow.postMessage('{"event":"command","func":"pauseVideo","args":""}','*');
     }
 }

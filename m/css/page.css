@@ -52,6 +52,9 @@
     0%{top: -100%; right: -100%;}
     100%{top: 0; right: 0;}
 }
+
+
+
 .mainPage main > div .monitorArea > div .contentArea ol li:nth-child(3) .eventBox{position: absolute; left: -2.188rem; bottom: 0;}
 .mainPage main > div .monitorArea > div .contentArea ol li:nth-child(3) .eventBox{width: 28.125rem; height: 30.000rem; background: url('../images/main_thirdImg01.png') no-repeat center / cover;}
 .mainPage main > div .monitorArea > div .contentArea ol li:nth-child(3).active .eventBox{animation: eventBox03 1s 0.3s forwards; left: -30.313rem; bottom: -30rem;}

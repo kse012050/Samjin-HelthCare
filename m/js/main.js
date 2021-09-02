@@ -9,7 +9,9 @@ $(document).ready(function(){
 
     menuClickEvent();
     mainScrollEvent();
+   
 });
+
 
 function menuClickEvent(){
     $('.menuBtn').click(function(){
