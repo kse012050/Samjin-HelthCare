@@ -1,3 +1,18 @@
+[data-scroll]:not([data-scroll$="Area"]){ transition-duration: 0.5s; transition-property: transform , opacity;}
+[data-scroll="top"]{transform: translateY(100px); opacity: 0;}
+[data-scroll="top"].scrollEvent{transform: translateY(0); opacity: 1;}
+[data-scroll="left"]{transform: translateX(-100px); opacity: 0;}
+[data-scroll="left"].scrollEvent{transform: translateX(0); opacity: 1;}
+[data-scroll="right"]{transform: translateX(100px); opacity: 0;}
+[data-scroll="right"].scrollEvent{transform: translateX(0); opacity: 1;}
+
+[data-scroll$="Area"] > *{transition-duration: 0.5s; transition-property: transform , opacity; opacity: 0;}
+[data-scroll$="Area"].scrollEvent > *{opacity: 1;}
+[data-scroll="topArea"] > *{transform: translateY(100px);}
+[data-scroll="topArea"].scrollEvent > *{transform: translateX(0);}
+[data-scroll="leftArea"] > *{transform: translateY(-100px); opacity: 0;}
+[data-scroll="leftArea"].scrollEvent > *{transform: translateX(0);}
+
 
 /* 메인 페이지 */
 .mainPage main{height: 100vh;  position: relative; z-index: 20; pointer-events: none;}
@@ -211,7 +226,7 @@
 .productsArea .introArea > div > div{display: flex; align-items: flex-end;}
 .productsArea .introArea > div > div > *{flex: 1;}
 .productsArea .introArea > div > div div{margin-right: 55px;}
-.productsArea .introArea > div > div div img{width: 100%;}
+.productsArea .introArea > div > div div video{width: 100%;}
 .productsArea .introArea > div > div p{font-size: 20px; line-height: 30px;}
 
 .productsArea .testimonialArea{padding: 100px 0 140px; background: url('../images/testimonialBG.png') no-repeat center / cover;}
