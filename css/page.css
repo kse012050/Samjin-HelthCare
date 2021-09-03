@@ -9,8 +9,8 @@
 [data-scroll$="Area"] > *{transition-duration: 0.5s; transition-property: transform , opacity; opacity: 0;}
 [data-scroll$="Area"].scrollEvent > *{opacity: 1;}
 [data-scroll="topArea"] > *{transform: translateY(100px);}
-[data-scroll="topArea"].scrollEvent > *{transform: translateX(0);}
-[data-scroll="leftArea"] > *{transform: translateY(-100px); opacity: 0;}
+[data-scroll="topArea"].scrollEvent > *{transform: translateY(0);}
+[data-scroll="leftArea"] > *{transform: translateX(-100px); opacity: 0;}
 [data-scroll="leftArea"].scrollEvent > *{transform: translateX(0);}
 
 
