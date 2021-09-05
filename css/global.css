@@ -121,8 +121,10 @@ header h1{font-size: 22px; color: #3a3a40; text-transform: uppercase;}
 .mainPage footer > div > nav > ul > li > ul li:not(:last-child){margin-bottom: 25px;}
 .mainPage footer > div > div{flex: 325; display: flex; align-items: center; position: relative;}
 .mainPage footer > div > div::before{content: ''; position: absolute; left: 0; top: 0; width: 0; height: 1px; background-color: rgba(173, 173, 173, 0.37);}
-.mainPage footer > div > div ul{display: flex; align-items: center; margin-right: 80px;}
-.mainPage footer > div > div ul li{width: 75px; height: 75px; background-color: white; border-radius: 100%; text-align: center; line-height: 75px;}
+.mainPage footer > div > div ul{display: flex; align-items: center; margin-right: 50px;}
+.mainPage footer > div > div ul li{width: 75px; height: 75px; border-radius: 100%; text-align: center; line-height: 75px; }
+.mainPage footer > div > div ul li a{display: block; height: 100%; text-indent: -9999px; background-repeat: no-repeat; background-position: center; background-size: cover;}
+.mainPage footer > div > div ul li.youtube a{background-image: url('../images/main_youtube.png');}
 .mainPage footer > div > div ul li:not(:last-child){margin-right: 40px;}
 .mainPage footer > div > div > *{opacity: 0; transform: translateY(100px);}
 .mainPage footer > div > div address *{color: rgba(173, 173, 173, 0.37); font-style: normal;}
