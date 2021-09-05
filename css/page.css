@@ -140,12 +140,13 @@
 .aboutUsArea .subMenu li a::after{content: ''; position: absolute; left: 50%; bottom: 0; width: 0; height: 2px; background-color: black;}
 .aboutUsArea .subMenu li.active a::after , .subPage main .subMenu li:hover a::after {left: 0; width: 100%;}
 .aboutUsArea .subMenu li:hover a::after{transition-duration: 0.5s; transition-property: left , width;}
-.aboutUsArea strong{display: block; font-size: 42px; font-weight: 700; line-height: 54px; margin-bottom: 55px;}
+.aboutUsArea.case01 strong{display: block; font-size: 42px; font-weight: 700; line-height: 54px; margin-bottom: 55px;}
+.aboutUsArea.case02 strong{display: block; font-size: 48px; font-weight: 900;}
 
 /* about as - helthCare */
 .helthCareArea::after{content: ''; display: block; height: 470px; background: url('../images/aboutUs_helthCareImg02.png') no-repeat center / cover; width: 1680px; margin: 0 auto;}
 .helthCareArea > div{background: url('../images/aboutUs_helthCareImg01.png') no-repeat right top 260px;}
-.helthCareArea > div strong{display: block; font-size: 48px; font-weight: 900; margin-bottom: 60px;}
+.helthCareArea > div strong{margin-bottom: 60px;}
 .helthCareArea > div p{font-size: 15px; line-height: 28px; color: #565656; text-transform: uppercase; margin-bottom: 150px;}
 .helthCareArea > div q{display: block; font-family: 'Libre Baskerville', serif; font-size: 28px; line-height: 48px; margin-bottom: 190px;}
 
@@ -167,6 +168,10 @@
 .newsArea .newsList li figure figcaption h4{font-size: 24px; font-weight: 700; margin-bottom: 25px;}
 .newsArea .newsList li figure figcaption p{font-size: 14px; line-height: 24px;}
 .newsArea .newsList li figure figcaption a{position: absolute; left: 0; bottom: 0; font-size: 14px; color: #00b3e3;}
+
+/* about as - careers */
+.careersArea > div strong{margin-bottom: 30px;}
+.careersArea > div p{font-size: 15px; line-height: 28px; color: #565656;}
 
 
 /* products */
