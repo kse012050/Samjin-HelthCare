@@ -25,27 +25,31 @@
                 });
             });
 
+            scrollEvent()
             $(window).scroll(function(){
-                $('[data-scroll]:not([data-scroll$="Area"]) , [data-scroll$="Area"]').each(function(){
-                    if($(window).scrollTop() > $(this).offset().top - ($(window).height() / 1.2)){
-                        $(this).addClass('scrollEvent');
-                    }else{
-                        $(this).removeClass('scrollEvent');
-                    }
-                    if($(this).attr('data-scroll').includes('Area')){
-                        $(this).children().each(function(){
-                            console.log($(this).index());
-                            $(this).css('transition-delay',$(this).index() * 200 + 'ms');
-                        })
-                    }
-                })
-
+                scrollEvent()
             });
 
             $('.test').click(function(){
                 $('.videoBox video')[0].requestFullscreen();
             })
         })
+
+        function scrollEvent(){
+            $('[data-scroll]:not([data-scroll$="Area"]) , [data-scroll$="Area"]').each(function(){
+                if($(window).scrollTop() > $(this).offset().top - ($(window).height() / 1.2)){
+                    $(this).addClass('scrollEvent');
+                }else{
+                    $(this).removeClass('scrollEvent');
+                }
+                if($(this).attr('data-scroll').includes('Area')){
+                    $(this).children().each(function(){
+                        console.log($(this).index());
+                        $(this).css('transition-delay',$(this).index() * 200 + 'ms');
+                    })
+                }
+            })
+        }
     </script>
 
 </head>
@@ -93,7 +97,7 @@
 
         <main class="productsArea">
             <section class="topArea">
-                <div class="width1220">
+                <div class="width1220" data-scroll="topArea">
                     <h2><img src="images/S-PATCHEX03.png" alt="S-PATCHEX"></h2>
                     <strong>패치형 연속 측정 심전도 분석 솔루션</strong>
                     <p>
@@ -175,44 +179,47 @@
                 </div>
             </section>
 
-            <ul class="width1220 functionArea">
-                <li data-scroll="left">
-                    <strong>끊김 없는 연속 심전도 모니터링</strong>
-                    <p>
-                        S-PATCH EX는 내장 메모리로<br/>
-                        데이터 손실을 방지하여 보다 안정적으로 연속 심전도 모니터링이 가능합니다.
-                    </p>
-                </li>
-                <li data-scroll="left">
-                    <strong>환자의 착용 편의성 증대</strong>
-                    <p>
-                        패치타잎으로 작용후 편안한 일상생활이 가능합니다.<br/>
-                        얇은 두께(6mm)로 옷 밖으로 착용한 것이 보이지 않아 프라이버시를 보호할 수 있습니다.
-                    </p>
-                </li>
-                <li data-scroll="left">
-                    <strong>다양한 검사 기간 선택 가능</strong>
-                    <p>
-                        배터리와 전극(Electrode)의 교체로 반영구적으로 지속적인 사용이 가능하여, <br/>
-                        24시간 이상의 다양한 검사 시간으로 심전도를 모니터링 할 수 있습니다. 
-                    </p>
-                </li>
-                <li data-scroll="left">
-                    <strong>운영 효율성 재고</strong>
-                    <p>
-                        모바일 앱과 심전도 패치에서 모두 환자의 증상을 기록할 수 있습니다. <br/>
-                        측정된 심전데 데이터가 클라우드로 전송되어 환자가 방문하기 전에 판독을 완료하여 <br/>
-                        환자의 병원 방문 횟수를 줄일 수 있습니다
-                    </p>
-                </li>
-                <li data-scroll="left">
-                    <strong>비용 합리화</strong>
-                    <p>
-                        고가의 소프트웨어와 기기를 구매해야 하는 기존 솔류션 대비 경제적이며 <br/>
-                        분석 프로그램의 추가 구매가 필요하지 않습니다.
-                    </p>
-                </li>
-            </ul>
+            <div class="functionArea width1220">
+                <ul>
+                    <li data-scroll="left">
+                        <strong>끊김 없는 연속 심전도 모니터링</strong>
+                        <p>
+                            S-PATCH EX는 내장 메모리로<br/>
+                            데이터 손실을 방지하여 보다 안정적으로 연속 심전도 모니터링이 가능합니다.
+                        </p>
+                    </li>
+                    <li data-scroll="left">
+                        <strong>환자의 착용 편의성 증대</strong>
+                        <p>
+                            패치타잎으로 작용후 편안한 일상생활이 가능합니다.<br/>
+                            얇은 두께(6mm)로 옷 밖으로 착용한 것이 보이지 않아 프라이버시를 보호할 수 있습니다.
+                        </p>
+                    </li>
+                    <li data-scroll="left">
+                        <strong>다양한 검사 기간 선택 가능</strong>
+                        <p>
+                            배터리와 전극(Electrode)의 교체로 반영구적으로 지속적인 사용이 가능하여, <br/>
+                            24시간 이상의 다양한 검사 시간으로 심전도를 모니터링 할 수 있습니다. 
+                        </p>
+                    </li>
+                    <li data-scroll="left">
+                        <strong>운영 효율성 재고</strong>
+                        <p>
+                            모바일 앱과 심전도 패치에서 모두 환자의 증상을 기록할 수 있습니다. <br/>
+                            측정된 심전데 데이터가 클라우드로 전송되어 환자가 방문하기 전에 판독을 완료하여 <br/>
+                            환자의 병원 방문 횟수를 줄일 수 있습니다
+                        </p>
+                    </li>
+                    <li data-scroll="left">
+                        <strong>비용 합리화</strong>
+                        <p>
+                            고가의 소프트웨어와 기기를 구매해야 하는 기존 솔류션 대비 경제적이며 <br/>
+                            분석 프로그램의 추가 구매가 필요하지 않습니다.
+                        </p>
+                    </li>
+                </ul>
+                <img src="images/product_functionImg01.png" alt="나의 심전도 이미지" data-scroll="top">
+            </div>
 
             <section class="introArea case02 BGcolor">
                 <div class="width1220">
@@ -437,9 +444,10 @@
                         <li><a href="#">문의</a></li>
                         <li><a href="#">자주묻는질문</a></li>
                     </ul>
-                    <select>
+                    <!-- <select>
                         <option value="">관리사 바로가기</option>
-                    </select>
+                    </select> -->
+                    <a href="https://www.samjinpharm.co.kr/">관리사 바로가기</a>
                 </div>
                 <div class="bottom">
                     <h3><img src="images/footer_logo.png" alt="logo"></h3>

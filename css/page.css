@@ -196,12 +196,12 @@
 .productsArea .topArea > div p{font-size: 18px; line-height: 30px; color: #565656;} 
 .productsArea .topArea > div > img{position: absolute; right: -135px; top: 0;}
 
-.productsArea > div{padding: 50px 0; background-color: #042127;}
-.productsArea > div ul{display: flex; justify-content: space-between;}
-.productsArea > div ul li{text-align: center; color: white;}
-.productsArea > div ul li strong{font-size: 55px; display: block; margin-bottom: 25px;}
-.productsArea > div ul li strong small{font-size: 30px;}
-.productsArea > div ul li P{font-size: 15px;}
+.productsArea > div:first-of-type{padding: 50px 0; background-color: #042127;}
+.productsArea > div:first-of-type ul{display: flex; justify-content: space-between;}
+.productsArea > div:first-of-type ul li{text-align: center; color: white;}
+.productsArea > div:first-of-type ul li strong{font-size: 55px; display: block; margin-bottom: 25px;}
+.productsArea > div:first-of-type ul li strong small{font-size: 30px;}
+.productsArea > div:first-of-type ul li P{font-size: 15px;}
 
 .productsArea .detailArea > h2{margin-bottom: 40px;}
 .productsArea .detailArea > p{font-size: 24px; line-height: 36px; color: #1c1c1e; margin-bottom: 105px;}
@@ -231,17 +231,18 @@
 .productsArea .detailArea > div > ul > li:not(:first-child) p{color: #818181;}
 
 .productsArea .functionArea{padding: 180px 0; position: relative;}
-.productsArea .functionArea::after{content: ''; position: absolute; right: -110px; bottom: 0; width: 550px; height: 784px; background: url('../images/product_functionImg01.png') no-repeat center / cover;}
-.productsArea .functionArea li{padding-left: 70px; position: relative;}
-.productsArea .functionArea li::before{content: ''; position: absolute; left: 0; top: -20px; width: 57px; height: 57px; background-repeat: no-repeat; background-position: center; background-size: cover;}
-.productsArea .functionArea li:nth-child(1):before{background-image: url('../images/product_functionIcon01.png');}
-.productsArea .functionArea li:nth-child(2):before{background-image: url('../images/product_functionIcon02.png');}
-.productsArea .functionArea li:nth-child(3):before{background-image: url('../images/product_functionIcon03.png');}
-.productsArea .functionArea li:nth-child(4):before{background-image: url('../images/product_functionIcon04.png');}
-.productsArea .functionArea li:nth-child(5):before{background-image: url('../images/product_functionIcon05.png');}
-.productsArea .functionArea li:not(:last-child){margin-bottom: 40px;}
-.productsArea .functionArea li strong{font-size: 19px; font-weight: 700; color: #1c1c1e; display: block; margin-bottom: 15px;}
-.productsArea .functionArea li p{font-size: 17px; line-height: 20px; color: #8d8d8d;}
+/* .productsArea .functionArea::after{content: ''; position: absolute; right: -110px; bottom: 0; width: 550px; height: 784px; background: url('../images/product_functionImg01.png') no-repeat center / cover;} */
+.productsArea .functionArea > img{position: absolute; right: -110px; bottom: 0; }
+.productsArea .functionArea ul li{padding-left: 70px; position: relative;}
+.productsArea .functionArea ul li::before{content: ''; position: absolute; left: 0; top: -20px; width: 57px; height: 57px; background-repeat: no-repeat; background-position: center; background-size: cover;}
+.productsArea .functionArea ul li:nth-child(1):before{background-image: url('../images/product_functionIcon01.png');}
+.productsArea .functionArea ul li:nth-child(2):before{background-image: url('../images/product_functionIcon02.png');}
+.productsArea .functionArea ul li:nth-child(3):before{background-image: url('../images/product_functionIcon03.png');}
+.productsArea .functionArea ul li:nth-child(4):before{background-image: url('../images/product_functionIcon04.png');}
+.productsArea .functionArea ul li:nth-child(5):before{background-image: url('../images/product_functionIcon05.png');}
+.productsArea .functionArea ul li:not(:last-child){margin-bottom: 40px;}
+.productsArea .functionArea ul li strong{font-size: 19px; font-weight: 700; color: #1c1c1e; display: block; margin-bottom: 15px;}
+.productsArea .functionArea ul li p{font-size: 17px; line-height: 20px; color: #8d8d8d;}
 
 .productsArea .introArea{padding: 125px 0;}
 .productsArea .introArea > div h2{margin-bottom: 50px;}
