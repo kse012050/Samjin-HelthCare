@@ -41,6 +41,10 @@
                 })
 
             });
+
+            $('.test').click(function(){
+                $('.videoBox video')[0].requestFullscreen();
+            })
         })
     </script>
 
@@ -210,20 +214,23 @@
                 </li>
             </ul>
 
-            <section class="introArea case02">
+            <section class="introArea case02 BGcolor">
                 <div class="width1220">
                     <h2>소개 동영상</h2>
                     <div>
-                        <div data-scroll="left">
+                        <div class="videoBox" data-scroll="left">
                             <!-- <img src="images/product_intro.png" alt="소개 동영상 이미지"> -->
                             <video src="video/movie.mp4" controls></video>
                         </div>
-                        <p data-scroll="top">
-                            삼성 SDS Spin-off 회사인 웰리시스의 기술력과 삼진제약이<br/>
-                            수십년간 의료 시장에서 쌓아온 신뢰를 바탕으로 출시한 S-Patch Ex는<br/>
-                            번거롭고 불편했던 심전도 모니터링을 보다 쉽고 편리하게 변화시키고<br/>
-                            의료진의 심장질환의 진단을 돕고자 개발되었습니다. 
-                        </p>
+                        <div class="textBox">
+                            <p data-scroll="top">
+                                삼성 SDS Spin-off 회사인 웰리시스의 기술력과 삼진제약이<br/>
+                                수십년간 의료 시장에서 쌓아온 신뢰를 바탕으로 출시한 S-Patch Ex는<br/>
+                                번거롭고 불편했던 심전도 모니터링을 보다 쉽고 편리하게 변화시키고<br/>
+                                의료진의 심장질환의 진단을 돕고자 개발되었습니다. 
+                            </p>
+                            <button data-scroll="top" class="test">동영상보기</button>
+                        </div>
                     </div>
                 </div>
             </section>
@@ -279,7 +286,7 @@
                 </ol>
             </section>
 
-            <section class="resourceArea case02">
+            <section class="resourceArea case02 BGcolor">
                 <div class="width1220">
                     <h2 data-scroll="left">리소스</h2>
                     <ul>
@@ -356,10 +363,69 @@
                                 </tbody>
                             </table>
                         </div>
-                        <p data-scroll="left">[품목명] 홀터 심전계 [사용목적] 심근이 활동할 때 발생하는 활동 전위가 신체의 표면에 전달되어 발생하는 전위차를 일정 부위에 전극을 부착시켜 신호를 감지하고, 이 심전도 데이터를 무선 신호를 이용하여 표시해주는 기구</p>
-                        <p data-scroll="left">[주의] 이 제품은 의료기기이며 사용상의 주의 사항과 사용방법을 잘 읽고 사용하십시오 판매원: 삼진제약㈜ 제조원: 주식회사 웰리시스 </p>
                     </figcaption>
                 </figure>
+            </section>
+
+            <section class="certifiedArea case01 BGcolor">
+                <div class="width1220">
+                    <h2 data-scroll="top">
+                        <small>Certified</small>
+                        S-Patch Ex 인증 정보
+                    </h2>
+                    <ul>
+                        <li data-scroll="top">
+                            <dl>
+                                <dt>CE</dt>
+                                <dd>(Conformite Europeenne, 유럽)</dd>
+                            </dl>
+                        </li>
+                        <li data-scroll="top">
+                            <dl>
+                                <dt>MFDS</dt>
+                                <dd>(Ministry of Food and Drug Safety, 대한민국)</dd>
+                            </dl>
+                        </li>
+                        <li data-scroll="top">
+                            <dl>
+                                <dt>TGA</dt>
+                                <dd>(Therapeutic Goods Administration, 호주)</dd>
+                            </dl>
+                        </li>
+                        <li data-scroll="top">
+                            <dl>
+                                <dt>HSA</dt>
+                                <dd>(Health Sciences Authority, 싱가포르)</dd>
+                            </dl>
+                        </li>
+                        <li data-scroll="top">
+                            <dl>
+                                <dt>GMP</dt>
+                                <dd>(Good Manufacturing Practice, 대한민국)</dd>
+                            </dl>
+                        </li>
+                        <li data-scroll="top">
+                            <dl>
+                                <dt>ISO 13485</dt>
+                                <dd>(국제 표준 의료기기 품질경영시스템)</dd>
+                            </dl>
+                        </li>
+                        <li data-scroll="top">
+                            <dl>
+                                <dt>TFDA</dt>
+                                <dd>(Taiwan Food and Drug Administration, 태국)</dd>
+                            </dl>
+                        </li>
+                        <li data-scroll="top">
+                            <dl>
+                                <dt>Bo Y Te</dt>
+                                <dd>(Ministry of Health, 베트남)</dd>
+                            </dl>
+                        </li>
+                    </ul>
+                    <p data-scroll="left">[품목명] 홀터 심전계 [사용목적] 심근이 활동할 때 발생하는 활동 전위가 신체의 표면에 전달되어 발생하는 전위차를 일정 부위에 전극을 부착시켜 신호를 감지하고, 이 심전도 데이터를 무선 신호를 이용하여 표시해주는 기구</p>
+                    <p data-scroll="left">[주의] 이 제품은 의료기기이며 사용상의 주의 사항과 사용방법을 잘 읽고 사용하십시오 판매원: 삼진제약㈜ 제조원: 주식회사 웰리시스 </p>
+                </div>
             </section>
         </main>
 
