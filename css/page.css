@@ -490,3 +490,33 @@
 .solutionArea small{font-size: 14px; padding-left: 15px;}
 .solutionArea small b{position: relative; display: block; font-weight: 700; margin-bottom: 20px;}
 .solutionArea small b::before{content: '*'; position: absolute; left: -5px; top: 0;}
+
+
+/* customres - hawto*/
+.hawToArea .subMenu + div{text-align: center; margin-bottom: 130px;}
+.hawToArea .subMenu + div strong{margin-bottom: 30px;}
+.hawToArea .subMenu + div p{text-align: center; font-size: 18px; line-height: 36px;}
+
+.hawToArea .installationBox{margin-bottom: 150px; padding: 135px 0; background-color: #f5f8fa;}
+.hawToArea .installationBox ol{display: flex; text-align: center;}
+.hawToArea .installationBox ol li{flex: 1; counter-increment: appCount; font-size: 24px; color: #1c1c1e; padding-bottom: 25px; position: relative;}
+.hawToArea .installationBox ol li::before{content: counter(appCount); font-size: 16px; display: block; width: 30px; line-height: 30px; margin: 0 auto 25px; font-weight: 700; color: white; background-color: #0fb4da; border-radius: 100%;}
+.hawToArea .installationBox ol li:not(:last-child)::after{content: ''; position: absolute; right: -7.5px; top: 53%; width: 15px; height: 30px; background: url('../images/product_nextIcon.png') no-repeat center / cover;}
+.hawToArea .installationBox ol li .downArea{margin-top: 40px; padding-top: 110px; padding-left: 40px; background: url('../images/product_appImg01.png') no-repeat center top;}
+.hawToArea .installationBox ol li .downArea a{display: flex; align-items: center; font-size: 15px; font-weight: 700; color: #8d8d8d;}
+.hawToArea .installationBox ol li .downArea a::before{content: ''; width: 23px; height: 23px; background-repeat: no-repeat; background-position: center; background-size: cover; margin-right: 5px;}
+.hawToArea .installationBox ol li .downArea a:nth-of-type(1):before{background-image: url('../images/product_appIcon01.png');}
+.hawToArea .installationBox ol li .downArea a:nth-of-type(2):before{background-image: url('../images/product_appIcon02.png');}
+.hawToArea .installationBox ol li .downArea a:not(:last-of-type){margin-bottom: 8px;}
+.hawToArea .installationBox ol li:not(:first-child){background-repeat: no-repeat; background-position: center bottom;}
+.hawToArea .installationBox ol li:nth-child(2){background-image: url('../images/customres_appImg02.png');}
+.hawToArea .installationBox ol li:nth-child(3){background-image: url('../images/product_appImg03.png');}
+.hawToArea .installationBox ol li:nth-child(4){background-image: url('../images/product_appImg04.png');}
+
+.hawToArea .hawToBox h4{font-size: 32px; font-weight: 700; margin-bottom: 70px;}
+.hawToArea .hawToBox ol{padding-left: 485px; background: url('../images/customres_hawToImg.png') no-repeat left top;}
+.hawToArea .hawToBox ol li{counter-increment: hawToCount; font-size: 18px; line-height: 24px;}
+.hawToArea .hawToBox ol li:not(:last-child){margin-bottom: 50px;}
+.hawToArea .hawToBox ol li strong{font-weight: 700;}
+.hawToArea .hawToBox ol li strong::before{content:'step' counter(hawToCount) '.';}
+.hawToArea .hawToBox ol li span{color: #ff0000;}
