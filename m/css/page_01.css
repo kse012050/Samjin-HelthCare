@@ -2,7 +2,7 @@
 
 /* 서브페이지 */
 .subPage main{ margin-top: 85px; position: relative; z-index: 2; background-color: white;}
-.subPage main.aboutUsArea{padding-top: 85px; padding-bottom:200px;}
+.subPage main.aboutUsArea{padding-top: 85px; padding-bottom:200px; margin-bottom: 670px;}
 .subPage main.supportsArea{padding-top: 135px;}
 .subPage main.customresArea{padding-top: 135px; padding-bottom:200px;}
 /* .aboutUsArea{padding-top: 135px; padding-bottom:200px;} */
