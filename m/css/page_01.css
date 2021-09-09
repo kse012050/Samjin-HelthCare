@@ -1,0 +1,50 @@
+
+
+/* 서브페이지 */
+.subPage main{ margin-top: 85px; position: relative; z-index: 2; background-color: white;}
+.subPage main.aboutUsArea{padding-top: 85px; padding-bottom:200px;}
+.subPage main.supportsArea{padding-top: 135px;}
+.subPage main.customresArea{padding-top: 135px; padding-bottom:200px;}
+/* .aboutUsArea{padding-top: 135px; padding-bottom:200px;} */
+
+.subPage h2{font-size: 60px; font-weight: 900; margin-bottom: 60px;}
+
+.subPage .subMenu{display: flex; margin-bottom: 110px; overflow: auto;}
+.subPage .subMenu li:not(:last-child){margin-right: 35px;}
+.subPage .subMenu li a{font-size: 22px; font-weight: 500; padding-bottom: 15px; position: relative; white-space: nowrap;}
+.subPage .subMenu li a::after{content: ''; position: absolute; left: 50%; bottom: 0; width: 0; height: 2px; background-color: black;}
+.subPage .subMenu li.active a::after , .subPage main .subMenu li:hover a::after {left: 0; width: 100%;}
+.subPage .subMenu li:hover a::after{transition-duration: 0.5s; transition-property: left , width;}
+.subPage .subMenu + div > strong:not([lang="en"]){display: block; font-size: 42px; font-weight: 700; line-height: 54px; margin-bottom: 55px;}
+.subPage .subMenu + div > strong[lang="en"]{display: block; font-size: 48px; font-weight: 900;}
+
+
+/* about as - helthCare */
+.helthCareArea::after{content: ''; display: block; height: 470px; background: url('../images/aboutUs_helthCareImg02.png') no-repeat center / cover; }
+.helthCareArea .contentArea strong{margin-bottom: 60px;}
+.helthCareArea .contentArea p{font-size: 20px; line-height: 36px; color: #565656; text-transform: uppercase; margin-bottom: 60px;}
+.helthCareArea .contentArea img{width: 100%; margin-bottom: 70px;}
+.helthCareArea .contentArea q{display: block; font-family: 'Libre Baskerville', serif; font-size: 28px; line-height: 48px; margin-bottom: 150px;}
+
+/* about as - location */
+.locationArea .contentArea .locationBox{margin-bottom: 100px;}
+.locationArea .contentArea .locationBox img{width: 100%;}
+.locationArea .contentArea figure{display: flex; justify-content: space-between;}
+.locationArea .contentArea figure figcaption{width: 50%;}
+.locationArea .contentArea figure figcaption h4{font-size: 24px; font-weight: 800;}
+
+/* about as - news */
+.newsArea .contentArea .newsList li:not(:last-child){margin-bottom: 80px;}
+.newsArea .contentArea .newsList li figure{display: flex;}
+.newsArea .contentArea .newsList li figure img{width: 350px; border: 1px solid #e5e5e5; margin-right: 30px;}
+.newsArea .contentArea .newsList li figure figcaption{position: relative; padding-bottom: 15px;}
+.newsArea .contentArea .newsList li figure figcaption b{display: block; font-size: 14px; font-weight: 600; margin-bottom: 20px;}
+.newsArea .contentArea .newsList li figure figcaption b time{font-family: 'Noto Sans KR',sans-serif; font-weight: 600;}
+.newsArea .contentArea .newsList li figure figcaption b time::before{content: '| ';}
+.newsArea .contentArea .newsList li figure figcaption h4{font-size: 24px; font-weight: 700; margin-bottom: 25px;}
+.newsArea .contentArea .newsList li figure figcaption p{font-size: 14px; line-height: 24px;}
+.newsArea .contentArea .newsList li figure figcaption a{position: absolute; left: 0; bottom: 0; font-size: 14px; color: #00b3e3;}
+
+/* about as - careers */
+.careersArea .contentArea strong{margin-bottom: 30px;}
+.careersArea .contentArea p{font-size: 15px; line-height: 28px; color: #565656;}
