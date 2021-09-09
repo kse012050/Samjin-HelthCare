@@ -1,5 +1,9 @@
-@media screen and (max-width:533px) {
+/* @media screen and (max-width:533px) {
     html{font-size: 3.00187617260788vw;}
+} */
+
+@media screen and (max-width:640px) {
+    html{font-size: 2.5vw;}
 }
 [class |= "material"]{font-family: 'Material Icons';}
 .textHidden{ position: absolute; width: 1px; height: 1px; margin: -1px; overflow: hidden; clip-path: polygon(0 0, 0 0, 0 0);}

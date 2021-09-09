@@ -1,0 +1,75 @@
+header{position: fixed; left: 0; top: 0; width: 100%; height: 85px; border-bottom: 1px solid #dedede; background-color: white; box-sizing: border-box; z-index: 100;}
+header > div{height: 100%; display: flex; justify-content: space-between; align-items: center;}
+header > div > div{width: 100%; height: 100%; display: flex; align-items: center; justify-content: space-between;}
+header > div > div h1{font-size: 22px; color: #3a3a40; text-transform: uppercase;}
+header > div > div a{width: 84px; height: 34px; background: url('../images/inquiry.png') no-repeat center / cover; margin-right: 60px;}
+header > div > div button.menuBtn{width: 40px;}
+header > div > div button.menuBtn span{display: block; height: 2px; background-color: black;}
+header > div > div button.menuBtn span:not(:last-child){margin-bottom: 12px;}
+
+header > div > div button.menuBtn span:nth-child(1){animation:manuAnimate01_1 0.8s forwards;}
+header > div > div button.menuBtn span:nth-child(2){animation:manuAnimate02_1 0.8s forwards;}
+header > div > div button.menuBtn span:nth-child(3){animation:manuAnimate03_1 0.8s forwards;}
+header > div > div button.menuBtn.active span:nth-child(1){animation:manuAnimate01 0.8s forwards;}
+header > div > div button.menuBtn.active span:nth-child(2){animation:manuAnimate02 0s forwards;}
+header > div > div button.menuBtn.active span:nth-child(3){animation:manuAnimate03 0.8s forwards;}
+@keyframes manuAnimate01 {
+    0%{transform: translateY(0px) rotate(0deg);}
+    50%{transform: translateY(14px) rotate(0deg);}
+    100%{transform: translateY(14px) rotate(45deg);}
+}
+@keyframes manuAnimate01_1 {
+    0%{transform: translateY(14px) rotate(45deg);}
+    50%{transform: translateY(14px) rotate(0deg);}
+    100%{transform: translateY(0px) rotate(0deg);}
+}
+@keyframes manuAnimate02 {
+    0%{opacity: 1;}
+    100%{opacity: 0;}
+}
+@keyframes manuAnimate02_1 {
+    0%{opacity: 0;}
+    100%{opacity: 1;}
+}
+@keyframes manuAnimate03 {
+    0%{transform: translateY(0px) rotate(0deg);}
+    50%{transform: translateY(-14px) rotate(0deg);}
+    100%{transform: translateY(-14px) rotate(135deg);}
+}
+@keyframes manuAnimate03_1 {
+    0%{transform: translateY(-14px) rotate(135deg);}
+    50%{transform: translateY(-14px) rotate(0deg);}
+    100%{transform: translateY(0px) rotate(0deg);}
+}
+
+header > div nav{ display: none; position: fixed; left: 0; top: 85px; bottom: 0; width: 100%; background-color: white; z-index: 100;  overflow: auto; }
+header > div nav > ul{height: 100%; padding: 35px 0; box-sizing: border-box;}
+header > div nav > ul > li{padding: 35px 0;}
+header > div nav > ul > li a{display: block; color: #3a3a40;}
+header > div nav > ul > li > a{font-size: 24px; }
+header > div nav > ul > li ul{display: none; padding: 25px 0; margin-top: 20px; border-width: 2px 0; border-style: solid; border-color: black;}
+header > div nav > ul > li ul li a{font-size: 22px; padding: 25px 30px;}
+
+
+
+/* 서브페이지 footer */
+.subPage footer{background-color: #1f2222; position: fixed; left: 0; bottom: 0; width: 100%; padding-top: 80px; z-index: 0;}
+.subPage footer > div > div.top{padding-bottom: 60px; border-bottom: 1px solid #323737;}
+.subPage footer > div > div.top ul{display: flex; justify-content: center; margin-bottom: 40px;}
+.subPage footer > div > div.top ul li:not(:last-child){margin-right: 20px;}
+.subPage footer > div > div.top ul li a{font-size: 22px; font-weight: 300; color: white;}
+/* .subPage footer > div > div.top select{width: 100%; line-height: 60px; font-size: 18px; font-weight: 300; color: white; background-color: transparent; padding: 0 15px; box-sizing: border-box;} */
+.subPage footer > div > div.top > a{width: 100%; line-height: 60px; font-size: 18px; font-weight: 300; color: white; background-color: transparent; padding: 0 15px; box-sizing: border-box; border: 1px solid rgb(118, 118, 118);}
+.subPage footer > div > div.bottom{padding: 50px 0; color: white; position: relative; text-align: center;}
+.subPage footer > div > div.bottom > ul li:not(:last-child){margin-right: 30px;}
+.subPage footer > div > div.bottom > ul li a{display: inline-block; width: 80px; height: 80px; border: 1px solid white; border-radius: 100%;}
+.subPage footer > div > div.bottom h3{max-width: 240px; margin:0 auto 30px;}
+.subPage footer > div > div.bottom h3 img{width: 100%;}
+.subPage footer > div > div.bottom address{font-style: normal;  opacity: 0.3; margin-bottom: 80px;}
+.subPage footer > div > div.bottom address *{display: block; font-size: 18px; color: white;}
+.subPage footer > div > div.bottom address *:not(:last-child){margin-bottom: 15px;}
+/* .subPage footer > div > div.bottom > div{position: absolute; right: 0; bottom: 75px;} */
+.subPage footer > div > div.bottom > div ul{margin-bottom: 20px;}
+.subPage footer > div > div.bottom > div ul li a{text-indent: -9999px; width: 64px; height: 64px; background-repeat: no-repeat; background-position: center; background-size: cover;}
+.subPage footer > div > div.bottom > div ul li.youtube a{background-image: url('../images/youtube.png');}
+.subPage footer > div > div.bottom > div p{font-size: 18px; opacity: 0.3; }
