@@ -1,6 +1,6 @@
 .textHidden{ position: absolute; width: 1px; height: 1px; margin: -1px; overflow: hidden; clip-path: polygon(0 0, 0 0, 0 0);}
 
-.width1220,.width1680{margin: 0 auto;}
+.width1220,.width1680{display: block; margin: 0 auto;}
 .width1220{width: 1220px;}
 .width1680{width: 1680px;}
 
