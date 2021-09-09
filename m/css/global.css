@@ -6,7 +6,7 @@
 .mobileWidth{width: calc(100% - 4.375rem); /* max-width: 533px; */ margin: 0 auto;}
 
 /* h 937   1vh = 9.37*/
-.mainPage{overflow: hidden;}
+/* .mainPage{overflow: hidden;}
 .mainPage header{position: fixed; left: 0; top: 0; width: 100%; padding-top: 5.3361vh; z-index: 10;}
 .mainPage header > div > div{display: flex; justify-content: space-between;}
 .mainPage header > div > div h1{font-size: 1.375rem; color: #3a3a40;}
@@ -15,4 +15,56 @@
 .mainPage header > div > div button span:not(:last-child){margin-bottom: 0.250rem;}
 .mainPage header > div > nav{display: none;}
 
-.mainPage footer{display: none;}
+.mainPage footer{display: none;} */
+
+header{height: 85px; border-bottom: 1px solid #dedede; box-sizing: border-box;}
+header > div{height: 100%; display: flex; justify-content: space-between; align-items: center;}
+header > div > div{width: 100%; height: 100%; display: flex; align-items: center; justify-content: space-between;}
+header > div > div h1{font-size: 22px; color: #3a3a40; text-transform: uppercase;}
+header > div > div a{width: 84px; height: 34px; background: url('../images/inquiry.png') no-repeat center / cover; margin-right: 60px;}
+header > div > div button.menuBtn{width: 40px;}
+header > div > div button.menuBtn span{display: block; height: 2px; background-color: black;}
+header > div > div button.menuBtn span:not(:last-child){margin-bottom: 12px;}
+
+header > div > div button.menuBtn span:nth-child(1){animation:manuAnimate01_1 0.8s forwards;}
+header > div > div button.menuBtn span:nth-child(2){animation:manuAnimate02_1 0.8s forwards;}
+header > div > div button.menuBtn span:nth-child(3){animation:manuAnimate03_1 0.8s forwards;}
+header > div > div button.menuBtn.active span:nth-child(1){animation:manuAnimate01 0.8s forwards;}
+header > div > div button.menuBtn.active span:nth-child(2){animation:manuAnimate02 0s forwards;}
+header > div > div button.menuBtn.active span:nth-child(3){animation:manuAnimate03 0.8s forwards;}
+@keyframes manuAnimate01 {
+    0%{transform: translateY(0px) rotate(0deg);}
+    50%{transform: translateY(14px) rotate(0deg);}
+    100%{transform: translateY(14px) rotate(45deg);}
+}
+@keyframes manuAnimate01_1 {
+    0%{transform: translateY(14px) rotate(45deg);}
+    50%{transform: translateY(14px) rotate(0deg);}
+    100%{transform: translateY(0px) rotate(0deg);}
+}
+@keyframes manuAnimate02 {
+    0%{opacity: 1;}
+    100%{opacity: 0;}
+}
+@keyframes manuAnimate02_1 {
+    0%{opacity: 0;}
+    100%{opacity: 1;}
+}
+@keyframes manuAnimate03 {
+    0%{transform: translateY(0px) rotate(0deg);}
+    50%{transform: translateY(-14px) rotate(0deg);}
+    100%{transform: translateY(-14px) rotate(135deg);}
+}
+@keyframes manuAnimate03_1 {
+    0%{transform: translateY(-14px) rotate(135deg);}
+    50%{transform: translateY(-14px) rotate(0deg);}
+    100%{transform: translateY(0px) rotate(0deg);}
+}
+
+header > div nav{ display: none; position: fixed; left: 0; top: 85px; bottom: 0; width: 100%; background-color: white; z-index: 100;}
+header > div nav > ul{height: 100%; padding: 35px 0; overflow: auto; }
+header > div nav > ul > li{padding: 35px 0;}
+header > div nav > ul > li a{display: block; color: #3a3a40;}
+header > div nav > ul > li > a{font-size: 24px; }
+header > div nav > ul > li ul{display: none; padding: 25px 0; margin-top: 20px; border-width: 2px 0; border-style: solid; border-color: black;}
+header > div nav > ul > li ul li a{font-size: 22px; padding: 25px 30px;}

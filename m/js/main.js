@@ -7,7 +7,7 @@ $(document).ready(function(){
         })
     },100)
 
-    menuClickEvent();
+    // menuClickEvent();
     mainScrollEvent();
    
 });

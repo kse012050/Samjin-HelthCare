@@ -49,4 +49,4 @@ table {
 }
 
 a{color: black; text-decoration: none; display: inline-block;}
-button{border: none; background-color: transparent; cursor: pointer;}
+button{border: none; background-color: transparent; cursor: pointer; padding: 0;}
