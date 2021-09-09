@@ -207,6 +207,7 @@
 
 /* supports */
 .supportsArea > div:first-of-type{margin-bottom: 30px;}
+.subPage .supportsArea .subMenu{margin: 0; padding-bottom: 250px; margin-bottom: 30px; background: url('../images/supports_BG.png') no-repeat right bottom / 345px;}
 .supportsArea .subMenu + div{background:url('../images/supports_BG.png') no-repeat right bottom; padding-bottom: 65px;}
 .supportsArea .subMenu + div strong{margin-bottom: 50px;}
 .supportsArea .contentArea{padding: 100px 0; background-color: #f8f8f8;}
