@@ -29,14 +29,17 @@
 /* about as - location */
 .locationArea .contentArea .locationBox{margin-bottom: 100px;}
 .locationArea .contentArea .locationBox img{width: 100%;}
-.locationArea .contentArea figure{display: flex; justify-content: space-between;}
-.locationArea .contentArea figure figcaption{width: 50%;}
-.locationArea .contentArea figure figcaption h4{font-size: 24px; font-weight: 800;}
+.locationArea .contentArea figure{padding: 0 45px; box-sizing: border-box;}
+.locationArea .contentArea figure img{width: 100%; margin-bottom: 35px;}
+.locationArea .contentArea figure figcaption h4{font-size: 28px; font-weight: 800; margin-bottom: 35px;}
+.locationArea .contentArea figure figcaption address{font-style: normal;}
+.locationArea .contentArea figure figcaption address ul{font-size: 18px; line-height: 32px;}
+.locationArea .contentArea figure figcaption address ul li{display: flex;}
+.locationArea .contentArea figure figcaption address ul li strong{font-weight: 700; width: 95px;}
 
 /* about as - news */
 .newsArea .contentArea .newsList li:not(:last-child){margin-bottom: 80px;}
 .newsArea .contentArea .newsList li figure img{width: 100%; border: 1px solid #e5e5e5; margin-bottom: 30px; box-sizing: border-box;}
-.newsArea .contentArea .newsList li figure figcaption{}
 .newsArea .contentArea .newsList li figure figcaption b{display: block; font-size: 18px; font-weight: 600; margin-bottom: 15px;}
 .newsArea .contentArea .newsList li figure figcaption b time{font-family: 'Noto Sans KR',sans-serif; font-weight: 600;}
 .newsArea .contentArea .newsList li figure figcaption b time::before{content: '| '; display: inline-block; margin: 0 15px;}
