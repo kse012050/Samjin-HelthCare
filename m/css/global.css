@@ -1,6 +1,7 @@
 @media screen and (max-width:533px) {
     html{font-size: 3.00187617260788vw;}
 }
+[class |= "material"]{font-family: 'Material Icons';}
 .textHidden{ position: absolute; width: 1px; height: 1px; margin: -1px; overflow: hidden; clip-path: polygon(0 0, 0 0, 0 0);}
 /* body{max-width: 533px; margin: 0 auto;} */
 .mobileWidth{width: calc(100% - 4.375rem); /* max-width: 533px; */ margin: 0 auto;}

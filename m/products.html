@@ -1,0 +1,459 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>products - SAMJIN HELTHCARE</title>
+    <!-- jQuery CDN -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <!-- bxslider -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css">
+    <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
+    <!-- material icon -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+    <script src="js/common.js"></script>
+    <link rel="stylesheet" href="css/import.css">
+    <script>
+        $(document).ready(function(){
+            $(document).ready(function(){
+                $('.productsArea .testimonialArea .slider').bxSlider({
+                    slideWidth : 715,
+                    prevText:'<span class="material-icons-outlined">chevron_left</span>',
+                    nextText:'<span class="material-icons-outlined">navigate_next</span>',
+                });
+            });
+
+            scrollEvent()
+            $(window).scroll(function(){
+                scrollEvent()
+            });
+
+            $('.test').click(function(){
+                $('.videoBox video')[0].requestFullscreen();
+            })
+        })
+
+        function scrollEvent(){
+            $('[data-scroll]:not([data-scroll$="Area"]) , [data-scroll$="Area"]').each(function(){
+                if($(window).scrollTop() > $(this).offset().top - ($(window).height() / 1.2)){
+                    $(this).addClass('scrollEvent');
+                }else{
+                    $(this).removeClass('scrollEvent');
+                }
+                if($(this).attr('data-scroll').includes('Area')){
+                    $(this).children().each(function(){
+                        console.log($(this).index());
+                        $(this).css('transition-delay',$(this).index() * 200 + 'ms');
+                    })
+                }
+            })
+        }
+    </script>
+
+</head>
+<body>
+    <div class="subPage">
+        <header>
+            <div class="mobileWidth">
+                <div>
+                    <h1>Samjin HelthCare</h1>
+                    <div>
+                        <a href="supports_contactUs.html"></a>
+                        <button class="menuBtn">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </button>
+                    </div>
+                </div>
+                <nav>
+                    <ul class="mobileWidth">
+                        <li><a href="index.html">HOME</a></li>
+                        <li><a href="aboutAs_helthCare.html">ABOUT US</a>
+                            <ul>
+                                <li><a href="aboutAs_helthCare.html">Samjin Helthcare</a></li>
+                                <li><a href="aboutAs_location.html">Location</a></li>
+                                <li><a href="aboutAs_news.html">Lateset News</a></li>
+                                <li><a href="aboutAs_careers.html">Careers</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="products.html">PRODUCTS</a>
+                            <ul>
+                                <li><a href="products.html">S-Patch EX</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="customres_solution.html">CUSTOMERS</a>
+                            <ul>
+                                <li><a href="supports_contactUs.html">S-Patch Solution</a></li>
+                                <li><a href="customres_hawTo.html">How to care</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="supports_contactUs.html">SUPPORTS</a>
+                            <ul>
+                                <li><a href="supports_faq.html">FAQs</a></li>
+                                <li><a href="supports_download.html">Download</a></li>
+                                <li><a href="supports_contactUs.html">Contact Us</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+
+        <main class="productsArea">
+            <section class="topArea">
+                <div class="mobileWidth" data-scroll="topArea">
+                    <h2><img src="images/S-PATCHEX03.png" alt="S-PATCHEX"></h2>
+                    <strong>패치형 연속 측정 심전도<br/> 분석 솔루션</strong>
+                    <p>
+                        S-Patch Ex는 웨어러블 심전도 모니터링 디바이스를 활용한<br/>
+                        Continuous ECG data 분석 솔루션입니다. <br/>
+                        언제 어디서든 심전도를 측정하세요.
+                    </p>
+                </div>
+                <img src="images/product_productImg01.png" alt="제품 이미지">
+            </section>
+
+            <div>
+                <ul class="mobileWidth" data-scroll="topArea">
+                    <li>
+                        <strong>99.72<small>%</small></strong>
+                        <p>AI 기반의 분석 정확도<br/> (MIT-BIH기준)</p>
+                    </li>
+                    <li>
+                        <strong>8.5g</strong>
+                        <p>편리한 초경량 <br/>웨어러블 디바이스</p>
+                    </li>
+                    <li>
+                        <strong>100<small>h</small></strong>
+                        <p>연속으로 검사할 수<br/> 있는 시간</p>
+                    </li>
+                </ul>
+            </div>
+
+            <section class="detailArea case01">
+                <h2 data-scroll="top">
+                    <small>PRODUCT detail</small>
+                    웨어러블 심전도 패치를 활용한<br/> 심전도 분석 솔루션
+                </h2>
+                <p data-scroll="top">
+                    S-Patch Ex의 모바일 앱을 통해 수집된 심전도 데이터는<br/>
+                    안전하게 클라우드로 전송되어 분석되고 부정맥 등<br/>
+                    심장질환 진단지원에 활용됩니다. 
+                </p>
+                <div>
+                    <ul class="mobileWidth" data-scroll="leftArea">
+                        <li>
+                            <h3>모바일 앱 연동</h3>
+                            <p>
+                                모바일 앱 , 패치의 버튼을 통해
+                                증상 추가 가능
+                            </p>
+                            <p>
+                                모바일 앱을 통해 실시간으로
+                                측정되는 심전도 확인
+                            </p>
+                            <ul>
+                                <li><img src="images/product_detailImg02.png" alt="75BPM"></li>
+                                <li><img src="images/product_detailImg03.png" alt=""></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <h3>데이터 분석</h3>
+                            <p>
+                                검사 종료 후 수집된<br/>
+                                데이터를 전송하여 분석
+                            </p>
+                            <p>
+                                AI기반 소프트 웨어가 <br/>
+                                심전도 데이터를 분석하여<br/>
+                                의료진에게 결과 제공 
+                            </p>
+                        </li>
+                        <li>
+                            <h3>분석 리포트</h3>
+                            <p>
+                                의료진이 최종 판독 후 임상 진단
+                                (부정맥, 심장 관련 질환 진단)
+                            </p>
+                            <p>
+                                판독과 진단에 있어
+                                시간적, 공간적 제한이 적음
+                            </p>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+
+            <div class="functionArea mobileWidth">
+                <ul>
+                    <li data-scroll="left">
+                        <strong>끊김 없는 연속 심전도 모니터링</strong>
+                        <p>
+                            S-PATCH EX는 내장 메모리로<br/>
+                            데이터 손실을 방지하여 보다 안정적으로 연속 심전도 모니터링이 가능합니다.
+                        </p>
+                    </li>
+                    <li data-scroll="left">
+                        <strong>환자의 착용 편의성 증대</strong>
+                        <p>
+                            패치타잎으로 작용후 편안한 일상생활이 가능합니다.<br/>
+                            얇은 두께(6mm)로 옷 밖으로 착용한 것이 보이지 않아 프라이버시를 보호할 수 있습니다.
+                        </p>
+                    </li>
+                    <li data-scroll="left">
+                        <strong>다양한 검사 기간 선택 가능</strong>
+                        <p>
+                            배터리와 전극(Electrode)의 교체로 반영구적으로 지속적인 사용이 가능하여, <br/>
+                            24시간 이상의 다양한 검사 시간으로 심전도를 모니터링 할 수 있습니다. 
+                        </p>
+                    </li>
+                    <li data-scroll="left">
+                        <strong>운영 효율성 재고</strong>
+                        <p>
+                            모바일 앱과 심전도 패치에서 모두 환자의 증상을 기록할 수 있습니다. <br/>
+                            측정된 심전데 데이터가 클라우드로 전송되어 환자가 방문하기 전에 판독을 완료하여 <br/>
+                            환자의 병원 방문 횟수를 줄일 수 있습니다
+                        </p>
+                    </li>
+                    <li data-scroll="left">
+                        <strong>비용 합리화</strong>
+                        <p>
+                            고가의 소프트웨어와 기기를 구매해야 하는 기존 솔류션 대비 경제적이며 <br/>
+                            분석 프로그램의 추가 구매가 필요하지 않습니다.
+                        </p>
+                    </li>
+                </ul>
+                <img src="images/product_functionImg01.png" alt="나의 심전도 이미지" data-scroll="top">
+            </div>
+
+            <section class="introArea case02 BGcolor">
+                <div class="mobileWidth">
+                    <h2>소개 동영상</h2>
+                    <div>
+                        <div class="videoBox" data-scroll="left">
+                            <!-- <img src="images/product_intro.png" alt="소개 동영상 이미지"> -->
+                            <video src="../video/movie.mp4" controls></video>
+                        </div>
+                        <div class="textBox">
+                            <p data-scroll="top">
+                                삼성 SDS Spin-off 회사인 웰리시스의 기술력과 삼진제약이
+                                수십년간 의료 시장에서 쌓아온 신뢰를 바탕으로 출시한 S-Patch Ex는
+                                번거롭고 불편했던 심전도 모니터링을 보다 쉽고 편리하게 변화시키고
+                                의료진의 심장질환의 진단을 돕고자 개발되었습니다. 
+                            </p>
+                            <button data-scroll="top" class="test">동영상보기</button>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="testimonialArea">
+                <div class="mobileWidth">
+                    <h2>TESTIMONIAL</h2>
+                    <div class="slideBox" data-scroll="right">
+                        <div class="slider">
+                            <div>
+                                <p>
+                                    S-patch ex를 통해 우리는 고품질 심전도 데이터 수집이 
+                                    가능했고, 더 정확하고 빠르게 환자의 심질환 상태를 진단할 수 
+                                    있었습니다.
+                                </p>
+                                <small>Dr. Rob Adam, 영국 UHS 병원 심장 전문의</small>
+                            </div>
+                            <div>
+                                <p>
+                                    S-patch ex를 통해 우리는 고품질 심전도 데이터 수집이 
+                                    가능했고, 더 정확하고 빠르게 환자의 심질환 상태를 진단할 수 
+                                    있었습니다.
+                                </p>
+                                <small>Dr. Rob Adam, 영국 UHS 병원 심장 전문의</small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="appArea case01">
+                <h2 data-scroll="top">
+                    <small>how to use</small>
+                    쉽고 편리한 S-Patch Ex<br/> 모바일 앱 
+                </h2>
+                <ol class="mobileWidth" data-scroll="topArea">
+                    <li>
+                        앱 설치하기
+                        <div class="downArea">
+                            <a href="#">애플 앱스토어 다운로드</a>
+                            <a href="#">구글 플레이스토어 다운로드</a>
+                        </div>
+                    </li>
+                    <li>
+                        <span>
+                            부착 및 연결
+                        </span>
+                        <img src="images/product_appImg02.png" alt="">
+                    </li>
+                    <li>
+                        <span>
+                            검사 및 진단하기
+                        </span>
+                        <img src="images/product_appImg03.png" alt="">
+                    </li>
+                    <li>
+                        <span>
+                            검사기록 전송
+                        </span>
+                        <img src="images/product_appImg04.png" alt="">
+                    </li>
+                </ol>
+            </section>
+
+            <section class="resourceArea case02 BGcolor">
+                <div class="mobileWidth">
+                    <h2 data-scroll="left">리소스</h2>
+                    <ul>
+                        <li data-scroll="top"><a href="#">S-Patch EX 사용법 알아보기</a></li>
+                        <li data-scroll="top"><a href="#">사용하기 편리하고 정교한 심전도 분석<br/> 소프트 웨어 자세히 보기 </a></li>
+                    </ul>
+                </div>
+            </section>
+
+            <section class="infoArea case01">
+                <h2 data-scroll="top">
+                    <small>Specifications</small>
+                    S-Patch Ex 제품 정보 
+                </h2>
+                <figure>
+                    <img src="images/product_info.png" alt="제품 이미지" data-scroll="top">
+                    <figcaption class="mobileWidth">
+                        <div data-scroll="topArea">
+                            <table>
+                                <thead>
+                                    <th colspan="2">구분</th>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <th>모델명</th>
+                                        <td>S-Patch Ex</td>
+                                    </tr>
+                                    <tr>
+                                        <th>품목명</th>
+                                        <td>홀터심전계</td>
+                                    </tr>
+                                    <tr>
+                                        <th>허가번호</th>
+                                        <td>제인 21-4345호</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                            <table>
+                                <thead>
+                                    <th colspan="2">스펙</th>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <th>무게</th>
+                                        <td>9g±0.5g (배터리 제외)</td>
+                                    </tr>
+                                    <tr>
+                                        <th>사이즈</th>
+                                        <td>186mm(총길이)X30mm(너비)X6mm(두께)</td>
+                                    </tr>
+                                    <tr>
+                                        <th>배터리</th>
+                                        <td>100시간 (교체형 코인배터리 사용, CR 2032)</td>
+                                    </tr>
+                                    <tr>
+                                        <th>방진방수 등급</th>
+                                        <td>IP55</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                            <table>
+                                <thead>
+                                    <th colspan="2">기능</th>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <th>메모리</th>
+                                        <td>내장형 메모리 장착</td>
+                                    </tr>
+                                    <tr>
+                                        <th>지원 OS</th>
+                                        <td>Android,iOS</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </figcaption>
+                </figure>
+            </section>
+
+            <section class="certifiedArea case01 BGcolor">
+                <div class="mobileWidth">
+                    <h2 data-scroll="top">
+                        <small>Certified</small>
+                        S-Patch Ex 인증 정보
+                    </h2>
+                    <ul>
+                        <li data-scroll="top">
+                            <dl>
+                                <dt>CE</dt>
+                                <dd>(Conformite Europeenne, 유럽)</dd>
+                            </dl>
+                        </li>
+                        <li data-scroll="top">
+                            <dl>
+                                <dt>MFDS</dt>
+                                <dd>(Ministry of Food and Drug Safety, 대한민국)</dd>
+                            </dl>
+                        </li>
+                        <li data-scroll="top">
+                            <dl>
+                                <dt>TGA</dt>
+                                <dd>(Therapeutic Goods Administration, 호주)</dd>
+                            </dl>
+                        </li>
+                        <li data-scroll="top">
+                            <dl>
+                                <dt>HSA</dt>
+                                <dd>(Health Sciences Authority, 싱가포르)</dd>
+                            </dl>
+                        </li>
+                        <li data-scroll="top">
+                            <dl>
+                                <dt>GMP</dt>
+                                <dd>(Good Manufacturing Practice, 대한민국)</dd>
+                            </dl>
+                        </li>
+                        <li data-scroll="top">
+                            <dl>
+                                <dt>ISO 13485</dt>
+                                <dd>(국제 표준 의료기기 품질경영시스템)</dd>
+                            </dl>
+                        </li>
+                        <li data-scroll="top">
+                            <dl>
+                                <dt>TFDA</dt>
+                                <dd>(Taiwan Food and Drug Administration, 태국)</dd>
+                            </dl>
+                        </li>
+                        <li data-scroll="top">
+                            <dl>
+                                <dt>Bo Y Te</dt>
+                                <dd>(Ministry of Health, 베트남)</dd>
+                            </dl>
+                        </li>
+                    </ul>
+                    <p data-scroll="left">[품목명] 홀터 심전계 [사용목적] 심근이 활동할 때 발생하는 활동 전위가 신체의 표면에 전달되어 발생하는 전위차를 일정 부위에 전극을 부착시켜 신호를 감지하고, 이 심전도 데이터를 무선 신호를 이용하여 표시해주는 기구</p>
+                    <p data-scroll="left">[주의] 이 제품은 의료기기이며 사용상의 주의 사항과 사용방법을 잘 읽고 사용하십시오 판매원: 삼진제약㈜ 제조원: 주식회사 웰리시스 </p>
+                </div>
+            </section>
+        </main>
+
+       
+    </div>    
+</body>
+</html>
