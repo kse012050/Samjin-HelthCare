@@ -202,3 +202,34 @@
 .productsArea .certifiedArea > div ul li dl dt{font-weight: 700;}
 .productsArea .certifiedArea > div ul li dl dd{font-weight: 700;}
 .productsArea .certifiedArea > div > p{font-size: 16px; line-height: 36px; color: #1c1c1e; text-align: left;}
+
+
+/* customres - hawto*/
+.hawToArea .subMenu + div{text-align: center; margin-bottom: 130px;}
+.hawToArea .subMenu + div strong{line-height: 58px; margin-bottom: 20px;}
+.hawToArea .subMenu + div p{text-align: center; font-size: 22px; line-height: 36px;}
+
+.hawToArea .installationBox{margin-bottom: 150px; padding: 135px 0 200px; background-color: #f5f8fa;}
+.hawToArea .installationBox ol li{text-align: center; counter-increment: appCount; font-size: 28px; color: #1c1c1e; position: relative;}
+.hawToArea .installationBox ol li::before{content: counter(appCount); font-size: 20px; display: block; width: 36px; line-height: 36px; margin: 0 auto 30px; font-weight: 700; color: white; background-color: #0fb4da; border-radius: 100%;}
+.hawToArea .installationBox ol li:not(:last-child){margin-bottom: 140px;}
+.hawToArea .installationBox ol li:not(:last-child)::after{content: ''; position: absolute; left: calc(50% - 18px); bottom: -80px; width: 36px; height: 18px; background: url('../images/product_nextIcon.png') no-repeat center / cover;}
+.hawToArea .installationBox ol li .downArea{padding-top: 130px; max-width: 240px; margin: 50px auto 0; background: url('../images/product_appImg01.png') no-repeat center top;}
+.hawToArea .installationBox ol li .downArea a{display: flex; align-items: center; font-size: 15px; font-weight: 700; color: #8d8d8d;}
+.hawToArea .installationBox ol li .downArea a::before{content: ''; width: 28px; height: 28px; background-repeat: no-repeat; background-position: center; background-size: cover; margin-right: 10px;}
+.hawToArea .installationBox ol li .downArea a:nth-of-type(1):before{background-image: url('../images/product_appIcon01.png');}
+.hawToArea .installationBox ol li .downArea a:nth-of-type(2):before{background-image: url('../images/product_appIcon02.png');}
+.hawToArea .installationBox ol li .downArea a:not(:last-of-type){margin-bottom: 8px;}
+.hawToArea .installationBox ol li > span{display: block; margin-bottom: 30px;}
+.hawToArea .installationBox ol li p{font-size: 18px; margin-top: 40px;}
+.hawToArea .installationBox ol li p b{font-weight: 700;}
+.hawToArea .installationBox ol li p span{display: block; margin-top: 15px;}
+
+.hawToArea .hawToBox h4{font-size: 36px; font-weight: 700; text-align: center; margin-bottom: 50px;}
+.hawToArea .hawToBox ol{padding-top: 470px; background: url('../images/customres_hawToImg.png') no-repeat center top / 400px;}
+.hawToArea .hawToBox ol li{counter-increment: hawToCount; font-size: 22px; line-height: 30px;}
+.hawToArea .hawToBox ol li:not(:last-child){margin-bottom: 30px;}
+.hawToArea .hawToBox ol li strong{font-weight: 700;}
+.hawToArea .hawToBox ol li strong::before{content:'step' counter(hawToCount) '.';}
+.hawToArea .hawToBox ol li span{color: #ff0000;}
+.hawToArea .hawToBox ol li img{width: 100%; max-width: 580px; margin-top: 35px;}
