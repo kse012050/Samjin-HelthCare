@@ -520,3 +520,4 @@
 .hawToArea .hawToBox ol li strong{font-weight: 700;}
 .hawToArea .hawToBox ol li strong::before{content:'step' counter(hawToCount) '.';}
 .hawToArea .hawToBox ol li span{color: #ff0000;}
+.hawToArea .hawToBox ol li img{margin-top: 20px;}
