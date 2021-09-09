@@ -225,20 +225,20 @@
 .FAQsArea .contentArea .tabArea > li ul{border-top: 1px solid black;}
 .FAQsArea .contentArea .tabArea > li ul li{border-bottom: 1px solid black;}
 .FAQsArea .contentArea .tabArea > li ul li > button{font-size: 20px; width: 100%; padding: 26px 0; text-align: left; display: flex; justify-content: space-between; align-items: center; letter-spacing: -1px;}
-.FAQsArea .contentArea .tabArea > li ul li > button::after{content: ''; width: 10px; height: 8px; background: url('../images/supports_FAQsTabIcon.png') no-repeat center / cover; transition: 0.5s transform;}
+.FAQsArea .contentArea .tabArea > li ul li > button::after{content: ''; width: 12px; height: 10px; background: url('../images/supports_FAQsTabIcon.png') no-repeat center / cover; transition: 0.5s transform;}
 .FAQsArea .contentArea .tabArea > li ul li.active > button::after{transform: rotate(180deg);}
 .FAQsArea .contentArea .tabArea > li ul li > div{display: none; font-size: 14px; padding: 21px 20px; background-color: white;}
 
 
 /* supports - download */
 .downloadArea .contentArea ul::after{ content: ''; display: block; clear: both;}
-.downloadArea .contentArea ul li{float: left; width: calc((100% - 150px) / 4);}
-.downloadArea .contentArea ul li:not(:nth-child(4n)){margin-right: 50px;}
-.downloadArea .contentArea ul li:not(:nth-child(-n + 4)){margin-top: 50px;}
-.downloadArea .contentArea ul li img{width: 100%; border: 1px solid black; box-sizing: border-box; margin-bottom: 17px;}
-.downloadArea .contentArea ul li p{font-size: 16px; font-weight: 700; margin-bottom: 20px;}
-.downloadArea .contentArea ul li a{font-size: 14px; font-weight: bold; color: #0fb4da; display: inline-flex; align-items: center;}
-.downloadArea .contentArea ul li a span{font-size: 20px;}
+.downloadArea .contentArea ul li{float: left; width: calc((100% - 20px) / 2);}
+.downloadArea .contentArea ul li:not(:nth-child(2n)){margin-right: 20px;}
+.downloadArea .contentArea ul li:not(:nth-child(-n + 2)){margin-top: 60px;}
+.downloadArea .contentArea ul li img{width: 100%; border: 1px solid black; box-sizing: border-box; margin-bottom: 20px;}
+.downloadArea .contentArea ul li p{font-size: 20px; font-weight: 700; margin-bottom: 15px;}
+.downloadArea .contentArea ul li a{font-size: 18px; font-weight: bold; color: #0fb4da; display: inline-flex; align-items: center;}
+.downloadArea .contentArea ul li a span{font-size: 22px;}
 
 
 /* supports - contactUs */
