@@ -11,8 +11,10 @@ function menu(){
     });
 
     $('header > div nav > ul > li > a').click(function(e){
-        e.preventDefault();
-        $(this).next().slideToggle();
+        if($(this).next().length){
+            e.preventDefault();
+            $(this).next().slideToggle();
+        }
     })
 }
 
