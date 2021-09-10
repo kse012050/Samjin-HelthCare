@@ -148,6 +148,19 @@
 .newsArea .contentArea .newsList li figure figcaption p{font-size: 1.250rem; line-height: 1.875rem; margin-bottom: 1.875rem;}
 .newsArea .contentArea .newsList li figure figcaption a{font-size: 1.125rem; font-weight: 700; color: #00b3e3;}
 
+/* about as - detail */
+.detailArea .contentArea > div{ padding-bottom: 5.000rem;}
+.detailArea .contentArea > div h4{font-size: 2.625rem; line-height: 3.375rem; font-weight: 800; margin-bottom: 1.250rem;}
+.detailArea .contentArea > div b{font-size: 1.125rem; font-weight: 800; display: flex; margin-bottom: 3.750rem;}
+.detailArea .contentArea > div b time{font-weight: 800;  margin-left: 1.250rem; padding-left: 1.250rem; border-left: 0.063rem solid black;}
+.detailArea .contentArea > div img{ margin-bottom: 3.438rem; display: block; width: 100%;}
+.detailArea .contentArea > div p{font-size: 1.250rem; line-height: 1.750rem;}
+.detailArea .contentArea > ul{border-bottom: 0.063rem solid black; margin-bottom: 3.750rem;}
+.detailArea .contentArea > ul li{border-top: 0.063rem solid #d9d9d9;}
+.detailArea .contentArea > ul li a{display: block; line-height: 3.750rem; font-size: 1.125rem;}
+.detailArea .contentArea > ul li a strong{font-weight: 700; margin-right: 0.625rem;}
+.detailArea .contentArea > a{width: 18.750rem; line-height: 4.375rem; font-size: 1.500rem; color: white; font-weight: 700; text-align: center; display: block; margin: 0 auto; background-color: black; border-radius: 6.250rem;}
+
 /* about as - careers */
 .careersArea .contentArea strong{margin-bottom: 1.875rem;}
 .careersArea .contentArea p{font-size: 1.250rem; line-height: 2.250rem; color: #565656;}

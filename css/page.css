@@ -173,6 +173,20 @@
 .newsArea .contentArea .newsList li figure figcaption p{font-size: 14px; line-height: 24px;}
 .newsArea .contentArea .newsList li figure figcaption a{position: absolute; left: 0; bottom: 0; font-size: 14px; color: #00b3e3;}
 
+/* about as - detail */
+.detailArea .contentArea > div{ padding-bottom: 80px;}
+.detailArea .contentArea > div h4{font-size: 42px; font-weight: 800; margin-bottom: 30px;}
+.detailArea .contentArea > div b{font-size: 14px; font-weight: 800; display: flex; margin-bottom: 80px;}
+.detailArea .contentArea > div b time{font-weight: 800;  margin-left: 20px; padding-left: 20px; border-left: 1px solid black;}
+.detailArea .contentArea > div img{ margin-bottom: 70px; display: block;}
+.detailArea .contentArea > div p{font-size: 16px; line-height: 28px;}
+.detailArea .contentArea > ul{border-bottom: 1px solid black; margin-bottom: 60px;}
+.detailArea .contentArea > ul li{border-top: 1px solid #d9d9d9;}
+.detailArea .contentArea > ul li a{display: block; line-height: 60px; font-size: 14px;}
+.detailArea .contentArea > ul li a strong{font-weight: 700; margin-right: 10px;}
+.detailArea .contentArea > a{width: 260px; line-height: 60px; font-size: 20px; color: white; font-weight: 700; text-align: center; display: block; margin: 0 auto; background-color: black; border-radius: 100px;}
+
+
 /* about as - careers */
 .careersArea .contentArea strong{margin-bottom: 30px;}
 .careersArea .contentArea p{font-size: 15px; line-height: 28px; color: #565656;}
@@ -357,7 +371,7 @@
 .FAQsArea .contentArea .tabArea > li ul li > button{font-size: 16px; width: 100%; padding: 17px 20px; text-align: left; display: flex; justify-content: space-between; align-items: center;}
 .FAQsArea .contentArea .tabArea > li ul li > button::after{content: ''; width: 10px; height: 8px; background: url('../images/supports_FAQsTabIcon.png') no-repeat center / cover; transition: 0.5s transform;}
 .FAQsArea .contentArea .tabArea > li ul li.active > button::after{transform: rotate(180deg);}
-.FAQsArea .contentArea .tabArea > li ul li > div{display: none; font-size: 14px; padding: 21px 20px; background-color: white;}
+.FAQsArea .contentArea .tabArea > li ul li > div{display: none; font-size: 14px; line-height: 18px; padding: 21px 20px; background-color: white;}
 
 
 /* supports - download */
