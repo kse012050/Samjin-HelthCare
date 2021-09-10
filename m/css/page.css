@@ -208,7 +208,7 @@
 
 .productsArea .functionArea{padding: 8.125rem 0 63.125rem; position: relative;}
 /* .productsArea .functionArea::after{content: ''; position: absolute; right: -6.875rem; bottom: 0; width: 550px; height: 784px; background: url('../images/product_functionImg01.png') no-repeat center / cover;} */
-.productsArea .functionArea > img{position: absolute; right: 0; bottom: 0; width: 100%;  max-width: 28.375rem;}
+.productsArea .functionArea > img{position: absolute; right: 0; bottom: 0; width: 100%;  max-width: 36.250rem;}
 .productsArea .functionArea ul li{padding-left: 4.688rem; position: relative;}
 .productsArea .functionArea ul li::before{content: ''; position: absolute; left: 0; top: -1.250rem; width: 3.563rem; height: 3.563rem; background-repeat: no-repeat; background-position: center; background-size: cover;}
 .productsArea .functionArea ul li:nth-child(1):before{background-image: url('../images/product_functionIcon01.png');}
