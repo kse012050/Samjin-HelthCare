@@ -119,9 +119,9 @@ header h1{font-size: 22px; color: #3a3a40; text-transform: uppercase;}
 .mainPage footer > div > nav > ul > li > ul li a::after{content: ''; position: absolute; left: 50%; bottom: -10px; width: 0%; height: 1px; background-color: white;}
 .mainPage footer > div > nav > ul > li > ul li a:hover::after{left: 0; width: 100%;  transition-duration: 0.5s; transition-property: width, left;}
 .mainPage footer > div > nav > ul > li > ul li:not(:last-child){margin-bottom: 25px;}
-.mainPage footer > div > div{flex: 325; display: flex; align-items: center; position: relative;}
+.mainPage footer > div > div{flex: 325; display: flex; justify-content: space-between; align-items: center; position: relative;}
 .mainPage footer > div > div::before{content: ''; position: absolute; left: 0; top: 0; width: 0; height: 1px; background-color: rgba(173, 173, 173, 0.37);}
-.mainPage footer > div > div ul{display: flex; align-items: center; margin-right: 50px;}
+.mainPage footer > div > div ul{display: flex; align-items: center; }
 .mainPage footer > div > div ul li{width: 75px; height: 75px; border-radius: 100%; text-align: center; line-height: 75px; }
 .mainPage footer > div > div ul li a{display: block; height: 100%; text-indent: -9999px; background-repeat: no-repeat; background-position: center; background-size: cover;}
 .mainPage footer > div > div ul li.youtube a{background-image: url('../images/main_youtube.png');}
@@ -178,7 +178,7 @@ header h1{font-size: 22px; color: #3a3a40; text-transform: uppercase;}
 .subPage footer > div > div.top ul li:not(:last-child){margin-right: 20px;}
 .subPage footer > div > div.top ul li a{font-size: 18px; font-weight: 300; color: white;}
 .subPage footer > div > div.top select{width: 230px; height: 40px; font-size: 14px; font-weight: 300; color: white; background-color: transparent; padding: 0 15px; box-sizing: border-box;}
-.subPage footer > div > div.top > a{width: 230px; line-height: 40px; font-size: 14px; font-weight: 300; color: white; background-color: transparent; padding: 0 15px; box-sizing: border-box; border: 1px solid rgb(118, 118, 118);}
+.subPage footer > div > div.top > a{width: 230px; line-height: 40px; font-size: 14px; font-weight: 300; text-align: center; color: white; background-color: transparent; padding: 0 15px; box-sizing: border-box; border: 1px solid rgb(118, 118, 118);}
 .subPage footer > div > div.bottom > ul li:not(:last-child){margin-right: 30px;}
 .subPage footer > div > div.bottom > ul li a{display: inline-block; width: 80px; height: 80px; border: 1px solid white; border-radius: 100%;}
 .subPage footer > div > div.bottom{padding: 75px 0; color: white; position: relative;}

@@ -92,9 +92,9 @@
 .mainPage main .monitorArea .contentArea ol li:nth-child(3).active .eventBox{opacity: 1; /* top: -215px; */}
 
 /* 마우스휠을 돌려주세요 */
-.mainPage main .monitorArea .contentArea .scrollIcon{position: absolute; bottom: -90px; left: 550px; font-size: 12px; font-weight: 600;}
-.mainPage main .monitorArea .contentArea .scrollIcon div{text-indent: -9999px; width: 20px; height: 35px; border: 1px solid black; border-radius: 10px; margin: 0 auto; margin-bottom: 15px; position: relative;}
-.mainPage main .monitorArea .contentArea .scrollIcon div::after{content: ''; position: absolute; left: calc(50% - 1px); top: 10px; width: 2px; height: 4px; background-color: black; 
+.mainPage .scrollIcon{position: fixed; top: 60%; left: 2vw; font-size: 12px; font-weight: 600;}
+.mainPage .scrollIcon div{text-indent: -9999px; width: 20px; height: 35px; border: 1px solid black; border-radius: 10px; margin-bottom: 15px; padding: 0; position: relative;}
+.mainPage .scrollIcon div::after{content: ''; position: absolute; left: calc(50% - 1px); top: 10px; width: 2px; height: 4px; background-color: black; 
     animation: scrollIcon 1s linear infinite alternate;    
 }
 @keyframes scrollIcon {
@@ -109,10 +109,10 @@
 
 /* 메인페이지 - 두번째 화면 */
 .mainPage main div.videoArea{position: fixed; z-index: 11; left: 100%; top: 0; width: 100%;  height: 100%; background-color: rgba(0, 0, 0, 0.7); transition: 0.5s left;}
-.mainPage main div.videoArea > div{ position: relative; z-index: 20; height: 100%; display: flex; align-items: flex-end; opacity: 0; }
+.mainPage main div.videoArea > div{ position: relative; z-index: 20; height: 100%; display: flex; align-items: flex-end; justify-content: center; opacity: 0; }
 .mainPage main div.videoArea > div img{width: 100%; cursor: pointer; position: relative; z-index: 20;} 
 .mainPage main div.videoArea > div iframe{width: 100%; height: calc(100% - 60px);}
-.mainPage main div.videoArea > div video{width: 100%; height: calc(100% - 60px);}
+.mainPage main div.videoArea > div video{width: 80%; height: calc(100% - 60px);}
 .mainPage main div.videoArea.active{left: 0;}
 .mainPage main div.videoArea.active > div{opacity: 1; transition: 0.5s opacity 0.5s;}
 
@@ -337,8 +337,9 @@
 
 
 /* supports */
-.supportsArea > div:first-of-type{margin-bottom: 30px;}
-.supportsArea .subMenu + div{background:url('../images/supports_BG.png') no-repeat right bottom; padding-bottom: 65px;}
+.supportsArea > div:first-of-type{margin-bottom: 30px; background:url('../images/supports_BG.png') no-repeat right bottom;}
+.supportsArea > div{ padding-bottom: 65px;}
+/* .supportsArea .subMenu + div{background:url('../images/supports_BG.png') no-repeat right bottom; padding-bottom: 65px;} */
 .supportsArea .subMenu + div strong{margin-bottom: 50px;}
 .supportsArea .subMenu + div p{font-size: 15px; line-height: 28px; color: #565656;}
 .supportsArea .contentArea{padding: 100px 0; background-color: #f8f8f8;}
