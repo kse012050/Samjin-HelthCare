@@ -240,6 +240,10 @@
 .productsArea .introArea > div > div div.textBox p{font-size: 1.500rem; line-height: 2.125rem; margin-bottom: 2.813rem;}
 .productsArea .introArea > div > div div.textBox button{display: flex; align-items: center; font-size: 1.500rem; color: #0fb4da;}
 .productsArea .introArea > div > div div.textBox button::before{content: ''; width: 1.500rem; height: 1.563rem; background: url('../images/product_videoIcon.png') no-repeat center / cover; margin-right: 0.938rem;}
+.productsArea .introArea .videoPopup{display: none; position: fixed; left: 0; top: 0; width: 100%; height: 100%; background-color: rgba(0, 0, 0, 0.7); z-index: 10;}
+.productsArea .introArea .videoPopup div{position: absolute; width: 80%; top: 50%; left: 50%; transform: translateX(-50%) translateY(-50%);}
+.productsArea .introArea .videoPopup div video{width: 100%;}
+.productsArea .introArea .videoPopup div span{position: absolute; right: 0; top: -25px; font-size: 25px; background-color: black; color: white; cursor: pointer;}
 
 .productsArea .testimonialArea{padding: 6.250rem 0 1.875rem; background: url('../images/testimonialBG.png') no-repeat center / cover;}
 .productsArea .testimonialArea > div h2{font-size: 3.000rem; font-weight: 700; color: white; margin-bottom: 5.938rem;}

@@ -31,7 +31,23 @@
             });
 
             $('.test').click(function(){
-                $('.videoBox video')[0].requestFullscreen();
+                // $('.videoBox video')[0].requestFullscreen();
+                $('.videoPopup').fadeIn();
+                $('header').css('z-index',0);
+                $('body').css('overflow','hidden');
+            })
+
+            $('.videoPopup ,.videoPopup div span').click(function(){
+                $('.videoPopup').fadeOut();
+                $('header').removeAttr('style');
+                $('body').removeAttr('style');
+            })
+            $('.videoPopup').on('mousewheel',function(e){
+                e.preventDefault();
+            })
+
+            $('.videoPopup > div').click(function(e){
+                e.stopPropagation();
             })
         })
 
@@ -245,6 +261,13 @@
                                 의료진의 심장질환의 진단을 돕고자 개발되었습니다. 
                             </p>
                             <button data-scroll="top" class="test">동영상보기</button>
+                            <div class="videoPopup">
+                                <div><video src="../video/movie.mp4" controls></video>
+                                    <span class="material-icons-outlined">
+                                        close
+                                    </span>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
