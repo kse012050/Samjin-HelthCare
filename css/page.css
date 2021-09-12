@@ -30,10 +30,10 @@
 .mainPage main h2{font-size: 48px; line-height: 60px; margin-bottom: 70px;}
 .mainPage main p{font-size: 19px; line-height: 28px;}
 
-.mainPage main .fullPager{position: fixed; left: 50px; top: 0; height: 100%; display: flex; flex-direction: column; justify-content: center; z-index: 99;}
-.mainPage main .fullPager li{width: 13px; height: 13px; border-radius: 100%; background-color: black; opacity: 0.2; text-indent: -9999px; transition: 0.5s opacity; pointer-events: all; cursor: pointer;}
-.mainPage main .fullPager li:not(:last-child){margin-bottom: 15px;}
-.mainPage main .fullPager li.active{opacity: 1;}
+.mainPage main .fullPagelist{position: fixed; left: 50px; top: 0; height: 100%; display: flex; flex-direction: column; justify-content: center; z-index: 99;}
+.mainPage main .fullPagelist li{width: 13px; height: 13px; border-radius: 100%; background-color: black; opacity: 0.2; text-indent: -9999px; transition: 0.5s opacity; pointer-events: all; cursor: pointer;}
+.mainPage main .fullPagelist li:not(:last-child){margin-bottom: 15px;}
+.mainPage main .fullPagelist li.active{opacity: 1;}
 
 /* 메인페이지 - 첫번째 화면 */
 .mainPage main .monitorArea h2 div{width: 553px; height: 75px; background-image: url('../images/S-PATCHEX01.png'); background-repeat: no-repeat; text-indent: -9999px; margin-top: 15px;}
@@ -142,12 +142,18 @@
 
 /* 서브페이지 */
 .subPage main{ margin-top: 100px; margin-bottom: 616px; position: relative; z-index: 2; background-color: white;}
-.subPage main.aboutUsArea{padding-top: 135px; padding-bottom:200px;}
-.subPage main.supportsArea{padding-top: 135px;}
-.subPage main.customresArea{padding-top: 135px; padding-bottom:200px;}
+.subPage main.aboutUsArea{padding-bottom:200px;}
+.subPage main.supportsArea{}
+.subPage main.customresArea{ padding-bottom:200px;}
 /* .aboutUsArea{padding-top: 135px; padding-bottom:200px;} */
 
-.subPage h2{font-size: 60px; font-weight: 900; margin-bottom: 60px;}
+.subPage main .subTitlaBox{height: 380px; display: flex; flex-direction: column; justify-content: center; align-items: center;  background-repeat: no-repeat; background-position: center; background-size: cover; margin-bottom: 30px;}
+.subPage main .subTitlaBox h3{font-size: 48px; font-weight: 900; margin-bottom: 30px;}
+.subPage main .subTitlaBox p{font-size: 15px; font-weight: 300;}
+
+.subPage main.aboutUsArea .subTitlaBox{background-image: url('../images/aboutUs_titleBG.png'); color: white;}
+
+/* .subPage h2{font-size: 60px; font-weight: 900; margin-bottom: 60px;} */
 
 .subPage .subMenu{display: flex; margin-bottom: 110px;}
 .subPage .subMenu li:not(:last-child){margin-right: 35px;}
@@ -157,6 +163,10 @@
 .subPage .subMenu li:hover a::after{transition-duration: 0.5s; transition-property: left , width;}
 .subPage .subMenu + div > strong:not([lang="en"]){display: block; font-size: 42px; font-weight: 700; line-height: 54px; margin-bottom: 55px;}
 .subPage .subMenu + div > strong[lang="en"]{display: block; font-size: 48px; font-weight: 900;}
+
+.subPage .subPageName{font-size: 12px; font-weight: 700; color: #33475b; text-transform: uppercase; margin-bottom: 100px;}
+.subPage .subPageName + div > strong:not([lang="en"]){display: block; font-size: 42px; font-weight: 700; line-height: 54px; margin-bottom: 55px;}
+.subPage .subPageName + div > strong[lang="en"]{display: block; font-size: 48px; font-weight: 900;}
 
 
 /* about as - helthCare */

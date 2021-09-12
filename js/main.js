@@ -90,8 +90,8 @@ function mainScrollEvent(){
         mainScrollPager += '<li>' + (i + 1)  + ' 페이지</li>';
     }
 
-    $('.mainPage main .fullPager').html(mainScrollPager);
-    $('.mainPage main .fullPager').children().first().addClass('active');
+    $('.mainPage main .fullPagelist').html(mainScrollPager);
+    $('.mainPage main .fullPagelist').children().first().addClass('active');
 
     $('.mainPage').on('mousewheel',function(e){
         var delta = e.originalEvent.wheelDelta;
@@ -116,8 +116,8 @@ function mainScrollEvent(){
         e.stopPropagation();
     });
 
-    $('.fullPager li').click(function(){
-        $('.fullPager li').removeClass('active')
+    $('.fullPagelist li').click(function(){
+        $('.fullPagelist li').removeClass('active')
         $(this).addClass('active');
         mainAnimation($(this).index());
     });
@@ -160,7 +160,7 @@ function mainScrollEvent(){
     }
 
     function mainPager(idx){
-        $('.mainPage main .fullPager').children().eq(idx).addClass('active').siblings().removeClass('active');
+        $('.mainPage main .fullPagelist').children().eq(idx).addClass('active').siblings().removeClass('active');
     }
 
 }
