@@ -386,6 +386,9 @@
 /* .supportsArea .subMenu + div strong{margin-bottom: 50px;}
 .supportsArea .subMenu + div p{font-size: 15px; line-height: 28px; color: #565656;}
 .supportsArea .contentArea{padding: 100px 0; background-color: #f8f8f8;} */
+.subPage main.supportsArea .subTitlaBox .searchBox{position: relative; margin-top: 50px;}
+.subPage main.supportsArea .subTitlaBox .searchBox input[type="search"]{width: 555px; height: 66px; border: 1px solid #dedede; border-radius: 100px; padding: 0 50px;/*  box-sizing: border-box; */}
+.subPage main.supportsArea .subTitlaBox .searchBox button{text-indent: -9999px; position: absolute; right: 0; top: 0px; width: 66px; height: 66px; background: url('../images/searchIcon.png') no-repeat center / cover;}
 
 /* supports - FAQs*/
 /* .FAQsArea .contentArea .tabBtn{display: flex; margin-bottom: 50px;}
