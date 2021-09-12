@@ -415,9 +415,12 @@
 .FAQsArea .contentArea .tabContents ul{border-top: 1px solid #d9d9d9; margin-bottom: 110px;}
 .FAQsArea .contentArea .tabContents ul li{display: flex; border-bottom: 1px solid #d9d9d9; padding: 24px 0;}
 .FAQsArea .contentArea .tabContents ul li mark , .FAQsArea .contentArea .tabContents ul li div > *{line-height: 29px;}
-.FAQsArea .contentArea .tabContents ul li mark{font-size: 12px; font-weight: 700; margin-right: 40px;}
-.FAQsArea .contentArea .tabContents ul li div > *{padding-left: 80px; background-repeat: no-repeat; background-position: left center;}
-.FAQsArea .contentArea .tabContents ul li div button{background-image: url('../images/QIcon.png');}
+.FAQsArea .contentArea .tabContents ul li mark{font-size: 12px; font-weight: 700; margin-right: 40px; flex-shrink: 0;}
+.FAQsArea .contentArea .tabContents ul li div{width: 100%;}
+.FAQsArea .contentArea .tabContents ul li div > *{font-size: 16px; padding-left: 80px; background-repeat: no-repeat; background-position: left center;}
+.FAQsArea .contentArea .tabContents ul li div button{background-image: url('../images/QIcon.png'); width: 100%; display: flex; justify-content: space-between; align-items: center; padding-right: 20px;}
+.FAQsArea .contentArea .tabContents ul li div button::after{content: ''; width: 15px; height: 9px; background: url('../images/supports_FAQsTabIcon.png') no-repeat center / cover; transition: 0.5s transform;}
+.FAQsArea .contentArea .tabContents ul li div button.active::after{transform: rotate(180deg);}
 .FAQsArea .contentArea .tabContents ul li div p{display: none; background-image: url('../images/AIcon.png'); margin-top: 15px;}
 
 .FAQsArea .contentArea .curiousArea{padding: 90px 0; background-color: #f7f8fc; color: #282828;}

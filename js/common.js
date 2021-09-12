@@ -30,6 +30,7 @@ function FAQsTab(){
     }) */
 
     $('.FAQsArea .contentArea .tabContents ul li button').click(function(){
+        $(this).toggleClass('active');
         $(this).next().stop().slideToggle();  
     });
 }
