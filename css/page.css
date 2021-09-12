@@ -443,6 +443,7 @@
 
 
 /* supports - contactUs */
+.contactUsArea .contentArea{padding-bottom: 90px;}
 .contactUsArea .contentArea fieldset{padding: 0 105px 0 70px;}
 .contactUsArea .contentArea fieldset ul{padding-bottom: 45px; border-bottom: 1px solid #dcdfe1; margin-bottom: 45px;}
 .contactUsArea .contentArea fieldset ul li::after{content: ''; display: block; clear: both;}
@@ -455,30 +456,44 @@
 .contactUsArea .contentArea fieldset ul li input ,
 .contactUsArea .contentArea fieldset ul li textarea ,
 .contactUsArea .contentArea fieldset ul li select ,
-.contactUsArea .contentArea fieldset ul li > div div ,
+/* .contactUsArea .contentArea fieldset ul li > div div , */
 .contactUsArea .contentArea fieldset ul li > div input[type="file"] ~ label,
 .contactUsArea .contentArea fieldset ul li > div input[type="checkbox"] + label::before{
     border: 1px solid #d1d1d1;
 }
 .contactUsArea .contentArea fieldset ul li *::placeholder,.contactUsArea .contentArea fieldset ul li select{
     color: #a2a2a2;}
-.contactUsArea .contentArea fieldset ul li mark{font-size: 16px; margin-top: 12px;}
+.contactUsArea .contentArea fieldset ul li > mark{font-size: 16px; margin-top: 12px;}
 .contactUsArea .contentArea fieldset ul li textarea{height: 225px; padding: 15px; resize: none;}
-.contactUsArea .contentArea fieldset ul li .fileArea{margin-bottom: 55px;}
+.contactUsArea .contentArea fieldset ul li .fileArea{margin-bottom: 25px;}
 .contactUsArea .contentArea fieldset ul li .fileArea::after{content: ''; display: block; clear: both;}
 .contactUsArea .contentArea fieldset ul li .fileArea input[type="file"]{display: none;}
 .contactUsArea .contentArea fieldset ul li .fileArea > *{float: left; /* border: 1px solid #d1d1d1; */ box-sizing: border-box;}
 .contactUsArea .contentArea fieldset ul li .fileArea input{font-size: 18px; height: 50px; padding: 0 15px; width: 680px; margin-right: 5px; background-color: white;}
-.contactUsArea .contentArea fieldset ul li .fileArea label{font-size: 20px; line-height: 48px; width: 215px; text-align: center; background-color: black; color: white; }
-.contactUsArea .contentArea fieldset ul li .agreementArea div{font-size: 18px; height: 170px; /* border: 1px solid #d1d1d1; */ background-color: white; padding: 20px 15px; box-sizing: border-box; overflow: auto; margin-bottom: 20px;}
+.contactUsArea .contentArea fieldset ul li .fileArea label{font-size: 20px; line-height: 48px; width: 215px; text-align: center; background-color: #1c75c7; color: white; }
+/* .contactUsArea .contentArea fieldset ul li .agreementArea div{font-size: 18px; height: 170px;  background-color: white; padding: 20px 15px; box-sizing: border-box; overflow: auto; margin-bottom: 20px;}
 .contactUsArea .contentArea fieldset ul li .agreementArea div strong{display: block; margin-bottom: 35px;}
 .contactUsArea .contentArea fieldset ul li .agreementArea div p{line-height: 28px; color:#a2a2a2;}
 .contactUsArea .contentArea fieldset ul li .agreementArea input[type="checkbox"]{display: none;}
 .contactUsArea .contentArea fieldset ul li .agreementArea label{font-size: 18px; display: flex; align-items: center;}
 .contactUsArea .contentArea fieldset ul li .agreementArea label:not(:last-of-type){margin-bottom: 10px;}
-.contactUsArea .contentArea fieldset ul li .agreementArea label::before{content: ''; width: 25px; height: 25px; /* border: 1px solid #d1d1d1; */ box-sizing: border-box; background-color: white; margin-right: 10px;}
-.contactUsArea .contentArea fieldset ul li .agreementArea input[type="checkbox"]:checked + label::before{background:white url('../images/supports_contactUsChk.png') no-repeat center / cover;}
-.contactUsArea .contentArea fieldset input[type="submit"]{font-size: 20px; font-weight: 700; color: white; width: 260px; height: 60px; background-color: black; border-radius: 100px; border: none; display: block; margin: 0 auto;}
+.contactUsArea .contentArea fieldset ul li .agreementArea label::before{content: ''; width: 25px; height: 25px; box-sizing: border-box; background-color: white; margin-right: 10px;}
+.contactUsArea .contentArea fieldset ul li .agreementArea input[type="checkbox"]:checked + label::before{background:white url('../images/supports_contactUsChk.png') no-repeat center / cover;} */
+.contactUsArea .contentArea fieldset ul li .agreementArea input[type="checkbox"]{display: none;}
+.contactUsArea .contentArea fieldset ul li .agreementArea div{font-size: 18px; line-height: 32px; padding-left: 35px; letter-spacing: -1px; position: relative;}
+.contactUsArea .contentArea fieldset ul li .agreementArea div:not(:last-of-type){margin-bottom: 15px;}
+.contactUsArea .contentArea fieldset ul li .agreementArea div::before{content: ''; width: 25px; height: 25px; box-sizing: border-box; background-color: white; border: 1px solid #d1d1d1;  position: absolute; left: 0; top: 4px; }
+.contactUsArea .contentArea fieldset ul li .agreementArea input[type="checkbox"]:checked + div::before{background:white url('../images/supports_contactUsChk.png') no-repeat center / cover;} 
+.contactUsArea .contentArea fieldset ul li .agreementArea div p{margin-bottom: 15px;}
+.contactUsArea .contentArea fieldset ul li .agreementArea div p label{font-weight: 700;}
+.contactUsArea .contentArea fieldset ul li .agreementArea div table{font-size: 16px; border: 1px solid #d1d1d1;}
+.contactUsArea .contentArea fieldset ul li .agreementArea div table th ,.contactUsArea .contentArea fieldset ul li .agreementArea div table td{padding-left: 20px; padding-right: 20px;}
+.contactUsArea .contentArea fieldset ul li .agreementArea div table thead{}
+.contactUsArea .contentArea fieldset ul li .agreementArea div table thead th{width: 33.33%; border-width: 0 1px 1px 0; border-style: solid; border-color: #d1d1d1; padding-top:10px; padding-bottom: 10px;}
+.contactUsArea .contentArea fieldset ul li .agreementArea div table tbody td{border-right: 1px solid #d1d1d1; padding-top: 20px; padding-bottom: 20px;}
+.contactUsArea .contentArea fieldset ul li .agreementArea div mark{margin-top: 10px;}
+
+.contactUsArea .contentArea fieldset input[type="submit"]{font-size: 20px; font-weight: 700; color: white; width: 260px; height: 60px; background-color: #1c75c7; border-radius: 100px; border: none; display: block; margin: 0 auto;}
 
 
 /* customres */
