@@ -207,7 +207,7 @@
 .detailArea .contentArea > ul li{border-top: 1px solid #d9d9d9;}
 .detailArea .contentArea > ul li a{display: block; line-height: 60px; font-size: 14px;}
 .detailArea .contentArea > ul li a strong{font-weight: 700; margin-right: 10px;}
-.detailArea .contentArea > a{width: 260px; line-height: 60px; font-size: 20px; color: white; font-weight: 700; text-align: center; display: block; margin: 0 auto; background-color: black; border-radius: 100px;}
+.detailArea .contentArea > a{width: 260px; line-height: 60px; font-size: 20px; color: white; font-weight: 700; text-align: center; display: block; margin: 0 auto; background-color: #1c75c7; border-radius: 100px;}
 
 
 /* about as - careers */
