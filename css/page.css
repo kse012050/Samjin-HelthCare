@@ -141,7 +141,7 @@
 
 
 /* 서브페이지 */
-.subPage main{ margin-top: 100px; margin-bottom: 440px; position: relative; z-index: 2; background-color: white;}
+.subPage main{ margin-top: 100px; margin-bottom: 616px; position: relative; z-index: 2; background-color: white;}
 .subPage main.aboutUsArea{padding-top: 135px; padding-bottom:200px;}
 .subPage main.supportsArea{padding-top: 135px;}
 .subPage main.customresArea{padding-top: 135px; padding-bottom:200px;}
@@ -160,7 +160,7 @@
 
 
 /* about as - helthCare */
-.helthCareArea::after{content: ''; display: block; height: 470px; background: url('../images/aboutUs_helthCareImg02.png') no-repeat center / cover; width: 1680px; margin: 0 auto;}
+.helthCareArea::after{content: ''; display: block; height: 470px; background: url('../images/aboutUs_helthCareImg02.png') no-repeat center / cover;  margin: 0 auto;}
 .helthCareArea .contentArea{background: url('../images/aboutUs_helthCareImg01.png') no-repeat right top;}
 .helthCareArea .contentArea strong{margin-bottom: 60px;}
 .helthCareArea .contentArea p{font-size: 15px; line-height: 28px; color: #565656; text-transform: uppercase; margin-bottom: 150px;}
