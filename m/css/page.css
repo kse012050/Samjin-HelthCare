@@ -103,12 +103,19 @@
 
 /* 서브페이지 */
 .subPage main{ margin-top: 5.313rem; position: relative; z-index: 2; background-color: white; margin-bottom: 41.875rem;}
-.subPage main.aboutUsArea{padding-top: 5.313rem; padding-bottom:12.500rem; }
+.subPage main.aboutUsArea{/* padding-top: 5.313rem; */ padding-bottom:12.500rem; }
 .subPage main.supportsArea{padding-top: 8.438rem;}
 .subPage main.customresArea{padding-top: 8.438rem; padding-bottom:12.500rem;}
 /* .aboutUsArea{padding-top: 8.438rem; padding-bottom:12.500rem;} */
 
-.subPage h2{font-size: 3.750rem; font-weight: 900; margin-bottom: 3.750rem;}
+.subPage main .subTitlaBox{height: 175px; display: flex; flex-direction: column; justify-content: center; align-items: center;  background-repeat: no-repeat; background-position: center; background-size: cover;}
+.subPage main .subTitlaBox h3{font-size: 48px; font-weight: 900; margin-bottom: 30px;}
+.subPage main .subTitlaBox p{font-size: 15px; font-weight: 300;}
+
+.subPage main.aboutUsArea .subTitlaBox{background-image: url('../images/aboutUs_titleBG.png'); color: white; margin-bottom: 30px;}
+.subPage main.supportsArea .subTitlaBox{background-color: #f7f8fc; margin-bottom: 90px;}
+
+/* .subPage h2{font-size: 3.750rem; font-weight: 900; margin-bottom: 3.750rem;} */
 
 .subPage .subMenu{display: flex; margin-bottom: 6.875rem; overflow: auto;}
 .subPage .subMenu li:not(:last-child){margin-right: 2.188rem;}
@@ -119,6 +126,10 @@
 .subPage .subMenu + div > strong:not([lang="en"]){display: block; font-size: 2.625rem; font-weight: 700; line-height: 3.375rem; margin-bottom: 3.438rem;}
 .subPage .subMenu + div > strong[lang="en"]{display: block; font-size: 3.000rem; font-weight: 900;}
 
+.subPage .subPageName{font-size: 12px; font-weight: 700; color: #33475b; text-transform: uppercase; margin-bottom: 100px;}
+.subPage .subPageName + div > strong:not([lang="en"]){display: block; font-size: 42px; font-weight: 700; line-height: 54px; margin-bottom: 55px;}
+.subPage .subPageName + div > strong[lang="en"]{display: block; font-size: 48px; font-weight: 900;}
+
 
 /* about as - helthCare */
 .helthCareArea::after{content: ''; display: block; height: 29.375rem; background: url('../images/aboutUs_helthCareImg02.png') no-repeat center / cover; }
@@ -128,15 +139,11 @@
 .helthCareArea .contentArea q{display: block; font-family: 'Libre Baskerville', serif; font-size: 1.750rem; line-height: 3.000rem; margin-bottom: 9.375rem;}
 
 /* about as - location */
-.locationArea .contentArea .locationBox{margin-bottom: 6.250rem;}
-.locationArea .contentArea .locationBox img{width: 100%;}
-.locationArea .contentArea figure{padding: 0 2.813rem; box-sizing: border-box;}
-.locationArea .contentArea figure img{width: 100%; margin-bottom: 2.188rem;}
-.locationArea .contentArea figure figcaption h4{font-size: 1.750rem; font-weight: 800; margin-bottom: 2.188rem;}
-.locationArea .contentArea figure figcaption address{font-style: normal;}
-.locationArea .contentArea figure figcaption address ul{font-size: 1.125rem; line-height: 2.000rem;}
-.locationArea .contentArea figure figcaption address ul li{display: flex;}
-.locationArea .contentArea figure figcaption address ul li strong{font-weight: 700; width: 5.938rem;}
+.locationArea .contentArea .locationBox{margin-bottom: 50px; }
+.locationArea .contentArea .locationBox iframe{width: 100%; height: 600px;}
+.locationArea .contentArea .textBox h4{font-size: 36px; color: #3a3a40; margin-bottom: 40px; text-transform: uppercase;}
+.locationArea .contentArea .textBox ul li ,.locationArea .contentArea .textBox ul li a{font-size: 24px;}
+.locationArea .contentArea .textBox ul li:not(:last-child){margin-bottom: 15px;}
 
 /* about as - news */
 .newsArea .contentArea .newsList li:not(:last-child){margin-bottom: 5.000rem;}
@@ -159,7 +166,7 @@
 .detailArea .contentArea > ul li{border-top: 0.063rem solid #d9d9d9;}
 .detailArea .contentArea > ul li a{display: block; line-height: 3.750rem; font-size: 1.125rem;}
 .detailArea .contentArea > ul li a strong{font-weight: 700; margin-right: 0.625rem;}
-.detailArea .contentArea > a{width: 18.750rem; line-height: 4.375rem; font-size: 1.500rem; color: white; font-weight: 700; text-align: center; display: block; margin: 0 auto; background-color: black; border-radius: 6.250rem;}
+.detailArea .contentArea > a{width: 18.750rem; line-height: 4.375rem; font-size: 1.500rem; color: white; font-weight: 700; text-align: center; display: block; margin: 0 auto; background-color: #1c75c7; border-radius: 6.250rem;}
 
 /* about as - careers */
 .careersArea .contentArea strong{margin-bottom: 1.875rem;}
