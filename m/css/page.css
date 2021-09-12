@@ -111,9 +111,9 @@
 .subPage main.aboutUsArea .subTitlaBox{height: 175px;}
 .subPage main.supportsArea .subTitlaBox{height: 430px;}
 
-.subPage main .subTitlaBox{ display: flex; flex-direction: column; justify-content: center; align-items: center;  background-repeat: no-repeat; background-position: center; background-size: cover;}
-.subPage main .subTitlaBox h3{font-size: 48px; font-weight: 900; margin-bottom: 30px;}
-.subPage main .subTitlaBox p{font-size: 15px; font-weight: 300;}
+.subPage main .subTitlaBox{ display: flex; flex-direction: column; justify-content: center; align-items: center;  background-repeat: no-repeat; background-position: center; background-size: cover; text-align: center;}
+.subPage main .subTitlaBox h3{font-size: 48px; font-weight: 900; margin-bottom: 20px;}
+.subPage main .subTitlaBox p{font-size: 18px; font-weight: 300; line-height: 36px;}
 
 .subPage main.aboutUsArea .subTitlaBox{background-image: url('../images/aboutUs_titleBG.png'); color: white; margin-bottom: 30px;}
 .subPage main.supportsArea .subTitlaBox{background-color: #f7f8fc; margin-bottom: 90px;}
@@ -385,6 +385,7 @@
 
 
 /* supports - download */
+.downloadArea .contentArea{padding-bottom: 90px;}
 .downloadArea .contentArea ul::after{ content: ''; display: block; clear: both;}
 .downloadArea .contentArea ul li{float: left; width: calc((100% - 1.250rem) / 2);}
 .downloadArea .contentArea ul li:not(:nth-child(2n)){margin-right: 1.250rem;}
