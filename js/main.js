@@ -86,7 +86,7 @@ function mainScrollEvent(){
     var mainScrollListNumb = mainScrollList + mainScrollFirstList;
     var mainScrollPager = '';
 
-    for(var i = 0; i < mainScrollListNumb; i++){
+    for(var i = 0; i < mainScrollListNumb -1; i++){
         mainScrollPager += '<li>' + (i + 1)  + ' 페이지</li>';
     }
 
@@ -141,6 +141,7 @@ function mainScrollEvent(){
             $('.monitorArea .pageArea span:first-child').html('0' + (idx + 1));
             mainIframe(false);
         }else{
+            $('.monitorArea .pageArea span:first-child').html('0' + (idx + 1));
             if(idx == 3){
                 mainIframe(true);
             }else{
@@ -154,6 +155,7 @@ function mainScrollEvent(){
                 $('header').addClass('active');
                 $('.mainPage main > div > *').eq(idx).addClass('active');
             }
+            
         }
     }
 
