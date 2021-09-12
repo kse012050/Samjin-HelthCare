@@ -156,7 +156,7 @@
 
 /* .subPage h2{font-size: 60px; font-weight: 900; margin-bottom: 60px;} */
 
-.subPage .subMenu{display: flex; margin-bottom: 110px;}
+.subPage .subMenu{display: flex; margin-bottom: 110px; display: none;}
 .subPage .subMenu li:not(:last-child){margin-right: 35px;}
 .subPage .subMenu li a{font-size: 18px; font-weight: 500; padding-bottom: 15px; position: relative;}
 .subPage .subMenu li a::after{content: ''; position: absolute; left: 50%; bottom: 0; width: 0; height: 2px; background-color: black;}
@@ -596,7 +596,8 @@
 
 
 /* customres - hawto*/
-.hawToArea .subMenu + div{text-align: center; margin-bottom: 130px;}
+.hawToArea h2{display: none;}
+.hawToArea .subMenu + div{text-align: center; /* margin-bottom: 130px; */ padding: 130px 0;}
 .hawToArea .subMenu + div strong{margin-bottom: 30px;}
 .hawToArea .subMenu + div p{text-align: center; font-size: 18px; line-height: 36px;}
 
