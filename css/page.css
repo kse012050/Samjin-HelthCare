@@ -147,11 +147,12 @@
 .subPage main.customresArea{ padding-bottom:200px;}
 /* .aboutUsArea{padding-top: 135px; padding-bottom:200px;} */
 
-.subPage main .subTitlaBox{height: 380px; display: flex; flex-direction: column; justify-content: center; align-items: center;  background-repeat: no-repeat; background-position: center; background-size: cover; margin-bottom: 30px;}
+.subPage main .subTitlaBox{height: 380px; display: flex; flex-direction: column; justify-content: center; align-items: center;  background-repeat: no-repeat; background-position: center; background-size: cover;}
 .subPage main .subTitlaBox h3{font-size: 48px; font-weight: 900; margin-bottom: 30px;}
 .subPage main .subTitlaBox p{font-size: 15px; font-weight: 300;}
 
-.subPage main.aboutUsArea .subTitlaBox{background-image: url('../images/aboutUs_titleBG.png'); color: white;}
+.subPage main.aboutUsArea .subTitlaBox{background-image: url('../images/aboutUs_titleBG.png'); color: white; margin-bottom: 30px;}
+.subPage main.supportsArea .subTitlaBox{background-color: #f7f8fc; margin-bottom: 90px;}
 
 /* .subPage h2{font-size: 60px; font-weight: 900; margin-bottom: 60px;} */
 
@@ -379,15 +380,15 @@
 
 
 /* supports */
-.supportsArea > div:first-of-type{margin-bottom: 30px; background:url('../images/supports_BG.png') no-repeat right bottom;}
-.supportsArea > div{ padding-bottom: 65px;}
+/* .supportsArea > div:first-of-type{margin-bottom: 30px; background:url('../images/supports_BG.png') no-repeat right bottom;}
+.supportsArea > div{ padding-bottom: 65px;} */
 /* .supportsArea .subMenu + div{background:url('../images/supports_BG.png') no-repeat right bottom; padding-bottom: 65px;} */
-.supportsArea .subMenu + div strong{margin-bottom: 50px;}
+/* .supportsArea .subMenu + div strong{margin-bottom: 50px;}
 .supportsArea .subMenu + div p{font-size: 15px; line-height: 28px; color: #565656;}
-.supportsArea .contentArea{padding: 100px 0; background-color: #f8f8f8;}
+.supportsArea .contentArea{padding: 100px 0; background-color: #f8f8f8;} */
 
 /* supports - FAQs*/
-.FAQsArea .contentArea .tabBtn{display: flex; margin-bottom: 50px;}
+/* .FAQsArea .contentArea .tabBtn{display: flex; margin-bottom: 50px;}
 .FAQsArea .contentArea .tabBtn li:not(:last-child){margin-right: 20px;}
 .FAQsArea .contentArea .tabBtn li button{width: 280px; height: 50px; font-size: 18px; font-weight: 700; background-color: white}
 .FAQsArea .contentArea .tabBtn li.active button{color: white; background-color: black;}
@@ -399,7 +400,31 @@
 .FAQsArea .contentArea .tabArea > li ul li > button{font-size: 16px; width: 100%; padding: 17px 20px; text-align: left; display: flex; justify-content: space-between; align-items: center;}
 .FAQsArea .contentArea .tabArea > li ul li > button::after{content: ''; width: 10px; height: 8px; background: url('../images/supports_FAQsTabIcon.png') no-repeat center / cover; transition: 0.5s transform;}
 .FAQsArea .contentArea .tabArea > li ul li.active > button::after{transform: rotate(180deg);}
-.FAQsArea .contentArea .tabArea > li ul li > div{display: none; font-size: 14px; line-height: 18px; padding: 21px 20px; background-color: white;}
+.FAQsArea .contentArea .tabArea > li ul li > div{display: none; font-size: 14px; line-height: 18px; padding: 21px 20px; background-color: white;} */
+
+.FAQsArea .contentArea .tabBtn{display: flex; justify-content: center; margin-bottom: 50px;}
+.FAQsArea .contentArea .tabBtn li{border: 1px solid #dedede; border-radius: 5px;}
+.FAQsArea .contentArea .tabBtn li:not(:last-child){margin-right: 10px;}
+.FAQsArea .contentArea .tabBtn li button{width: 200px; height: 70px; font-size: 18px; font-weight: 700; color: #848484; }
+.FAQsArea .contentArea .tabBtn li.active{border-color: #1c75c7;}
+.FAQsArea .contentArea .tabBtn li.active button{color: #1c75c7;}
+
+.FAQsArea .contentArea .tabContents ul{border-top: 1px solid #d9d9d9; margin-bottom: 110px;}
+.FAQsArea .contentArea .tabContents ul li{display: flex; border-bottom: 1px solid #d9d9d9; padding: 24px 0;}
+.FAQsArea .contentArea .tabContents ul li mark , .FAQsArea .contentArea .tabContents ul li div > *{line-height: 29px;}
+.FAQsArea .contentArea .tabContents ul li mark{font-size: 12px; font-weight: 700; margin-right: 40px;}
+.FAQsArea .contentArea .tabContents ul li div > *{padding-left: 80px; background-repeat: no-repeat; background-position: left center;}
+.FAQsArea .contentArea .tabContents ul li div button{background-image: url('../images/QIcon.png');}
+.FAQsArea .contentArea .tabContents ul li div p{display: none; background-image: url('../images/AIcon.png'); margin-top: 15px;}
+
+.FAQsArea .contentArea .curiousArea{padding: 90px 0; background-color: #f7f8fc; color: #282828;}
+.FAQsArea .contentArea .curiousArea div{text-align: center;}
+.FAQsArea .contentArea .curiousArea div > *{display: block;}
+.FAQsArea .contentArea .curiousArea div h4{font-size: 24px; margin-bottom: 60px;}
+.FAQsArea .contentArea .curiousArea div button{font-size: 24px; font-weight: 900; color: white; text-align: center; width: 395px; height: 80px; margin: 0 auto; background-color: #1c75c7; border-radius: 100px; margin-bottom: 60px;}
+.FAQsArea .contentArea .curiousArea div a{font-size: 18px; line-height: 24px;}
+.FAQsArea .contentArea .curiousArea div a:last-of-type{margin-bottom: 30px;}
+.FAQsArea .contentArea .curiousArea div p{font-size: 18px;}
 
 
 /* supports - download */

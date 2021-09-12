@@ -24,8 +24,12 @@ function tab(){
 }
 
 function FAQsTab(){
-    $('.FAQsArea .contentArea .tabArea > li ul li > button').click(function(){
+    /* $('.FAQsArea .contentArea .tabArea > li ul li > button').click(function(){
         $(this).parent().toggleClass('active');
         $(this).next().slideToggle();
-    })
+    }) */
+
+    $('.FAQsArea .contentArea .tabContents ul li button').click(function(){
+        $(this).next().stop().slideToggle();  
+    });
 }
