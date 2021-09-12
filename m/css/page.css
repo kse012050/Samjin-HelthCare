@@ -104,11 +104,14 @@
 /* 서브페이지 */
 .subPage main{ margin-top: 5.313rem; position: relative; z-index: 2; background-color: white; margin-bottom: 41.875rem;}
 .subPage main.aboutUsArea{/* padding-top: 5.313rem; */ padding-bottom:12.500rem; }
-.subPage main.supportsArea{padding-top: 8.438rem;}
+.subPage main.supportsArea{/* padding-top: 8.438rem; */ }
 .subPage main.customresArea{/* padding-top: 8.438rem; */ padding-bottom:12.500rem;}
 /* .aboutUsArea{padding-top: 8.438rem; padding-bottom:12.500rem;} */
 
-.subPage main .subTitlaBox{height: 175px; display: flex; flex-direction: column; justify-content: center; align-items: center;  background-repeat: no-repeat; background-position: center; background-size: cover;}
+.subPage main.aboutUsArea .subTitlaBox{height: 175px;}
+.subPage main.supportsArea .subTitlaBox{height: 430px;}
+
+.subPage main .subTitlaBox{ display: flex; flex-direction: column; justify-content: center; align-items: center;  background-repeat: no-repeat; background-position: center; background-size: cover;}
 .subPage main .subTitlaBox h3{font-size: 48px; font-weight: 900; margin-bottom: 30px;}
 .subPage main .subTitlaBox p{font-size: 15px; font-weight: 300;}
 
@@ -329,14 +332,17 @@
 
 
 /* supports */
-.supportsArea > div:first-of-type{margin-bottom: 1.875rem;}
+/* .supportsArea > div:first-of-type{margin-bottom: 1.875rem;}
 .subPage .supportsArea .subMenu{margin: 0; padding-bottom: 15.625rem; margin-bottom: 1.875rem; background: url('../images/supports_BG.png') no-repeat right bottom / 21.563rem;}
 .supportsArea .subMenu + div{background:url('../images/supports_BG.png') no-repeat right bottom; padding-bottom: 4.063rem;}
 .supportsArea .subMenu + div strong{margin-bottom: 3.125rem;}
-.supportsArea .contentArea{padding: 6.250rem 0; background-color: #f8f8f8;}
+.supportsArea .contentArea{padding: 6.250rem 0; background-color: #f8f8f8;} */
+.subPage main.supportsArea .subTitlaBox .searchBox{position: relative; margin-top: 50px;}
+.subPage main.supportsArea .subTitlaBox .searchBox input[type="search"]{width: 555px; height: 66px; border: 1px solid #dedede; border-radius: 100px; padding: 0 50px;/*  box-sizing: border-box; */}
+.subPage main.supportsArea .subTitlaBox .searchBox button{text-indent: -9999px; position: absolute; right: 0; top: 0px; width: 66px; height: 66px; background: url('../images/searchIcon.png') no-repeat center / cover;}
 
 /* supports - FAQs*/
-.FAQsArea .contentArea .tabBtn{display: flex; flex-wrap: wrap; margin-bottom: 3.125rem;}
+/* .FAQsArea .contentArea .tabBtn{display: flex; flex-wrap: wrap; margin-bottom: 3.125rem;}
 .FAQsArea .contentArea .tabBtn li{width: calc((100% - 1.563rem) / 2); border: 0.063rem solid black; box-sizing: border-box;}
 .FAQsArea .contentArea .tabBtn li:nth-child(2n + 1){margin-right: 1.563rem;}
 .FAQsArea .contentArea .tabBtn li:not(:nth-child(-n + 2)){margin-top: 1.563rem;}
@@ -350,7 +356,32 @@
 .FAQsArea .contentArea .tabArea > li ul li > button{font-size: 1.250rem; width: 100%; padding: 1.625rem 0; text-align: left; display: flex; justify-content: space-between; align-items: center; letter-spacing: -0.063rem;}
 .FAQsArea .contentArea .tabArea > li ul li > button::after{content: ''; width: 0.750rem; height: 0.625rem; background: url('../images/supports_FAQsTabIcon.png') no-repeat center / cover; transition: 0.5s transform;}
 .FAQsArea .contentArea .tabArea > li ul li.active > button::after{transform: rotate(180deg);}
-.FAQsArea .contentArea .tabArea > li ul li > div{display: none; font-size: 1.125rem; line-height: 1.750rem; padding: 1.563rem 1.875rem; background-color: white;}
+.FAQsArea .contentArea .tabArea > li ul li > div{display: none; font-size: 1.125rem; line-height: 1.750rem; padding: 1.563rem 1.875rem; background-color: white;} */
+
+.FAQsArea .contentArea .tabBtn{display: flex; justify-content: center; margin-bottom: 50px;}
+.FAQsArea .contentArea .tabBtn li{width: calc((100% - 30px) / 4); border: 2px solid #dedede;}
+.FAQsArea .contentArea .tabBtn li:not(:last-child){margin-right: 10px;}
+.FAQsArea .contentArea .tabBtn li button{width: 100%; height: 70px; font-size: 18px; font-weight: 700; color: #848484; }
+.FAQsArea .contentArea .tabBtn li.active{border-color: #1c75c7;}
+.FAQsArea .contentArea .tabBtn li.active button{color: #1c75c7;}
+
+.FAQsArea .contentArea .tabContents ul{border-top: 1px solid #d9d9d9; margin-bottom: 110px;}
+.FAQsArea .contentArea .tabContents ul li::after{content: ''; display: block; clear: both;}
+.FAQsArea .contentArea .tabContents ul li{display: flex; border-bottom: 1px solid #d9d9d9; padding: 24px 0;}
+.FAQsArea .contentArea .tabContents ul li mark , .FAQsArea .contentArea .tabContents ul li div > *{line-height: 29px;}
+.FAQsArea .contentArea .tabContents ul li mark{font-size: 12px; font-weight: 700; margin-right: 40px; flex-shrink: 0;}
+.FAQsArea .contentArea .tabContents ul li div > *{padding-left: 80px; background-repeat: no-repeat; background-position: left center;}
+.FAQsArea .contentArea .tabContents ul li div button{background-image: url('../images/QIcon.png');}
+.FAQsArea .contentArea .tabContents ul li div p{display: none; background-image: url('../images/AIcon.png'); margin-top: 15px;}
+
+.FAQsArea .contentArea .curiousArea{padding: 90px 0; background-color: #f7f8fc; color: #282828;}
+.FAQsArea .contentArea .curiousArea div{text-align: center;}
+.FAQsArea .contentArea .curiousArea div > *{display: block;}
+.FAQsArea .contentArea .curiousArea div h4{font-size: 24px; margin-bottom: 60px;}
+.FAQsArea .contentArea .curiousArea div button{font-size: 24px; font-weight: 900; color: white; text-align: center; width: 395px; height: 80px; margin: 0 auto; background-color: #1c75c7; border-radius: 100px; margin-bottom: 60px;}
+.FAQsArea .contentArea .curiousArea div a{font-size: 18px; line-height: 24px;}
+.FAQsArea .contentArea .curiousArea div a:last-of-type{margin-bottom: 30px;}
+.FAQsArea .contentArea .curiousArea div p{font-size: 18px;}
 
 
 /* supports - download */
