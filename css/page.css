@@ -428,6 +428,7 @@
 
 
 /* supports - download */
+.downloadArea .contentArea{padding-bottom: 90px;}
 .downloadArea .contentArea ul::after{ content: ''; display: block; clear: both;}
 .downloadArea .contentArea ul li{float: left; width: calc((100% - 150px) / 4);}
 .downloadArea .contentArea ul li:not(:nth-child(4n)){margin-right: 50px;}
