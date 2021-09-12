@@ -177,11 +177,12 @@
 .helthCareArea .contentArea q{display: block; font-family: 'Libre Baskerville', serif; font-size: 28px; line-height: 48px; margin-bottom: 190px;}
 
 /* about as - location */
-.locationArea .contentArea .locationBox{margin-bottom: 100px;}
-.locationArea .contentArea .locationBox img{width: 100%;}
-.locationArea .contentArea figure{display: flex; justify-content: space-between;}
-.locationArea .contentArea figure figcaption{width: 50%;}
-.locationArea .contentArea figure figcaption h4{font-size: 24px; font-weight: 800;}
+.locationArea .contentArea .locationBox{margin-bottom: 45px; }
+.locationArea .contentArea .locationBox iframe{width: 100%; height: 600px;}
+.locationArea .contentArea .textBox{padding-bottom: 50px; border-bottom: 1px solid #8e8e8e;}
+.locationArea .contentArea .textBox h4{font-size: 36px; color: #3a3a40; margin-bottom: 45px; text-transform: uppercase;}
+.locationArea .contentArea .textBox ul li ,.locationArea .contentArea .textBox ul li a{font-size: 14px;}
+.locationArea .contentArea .textBox ul li:not(:last-child){margin-bottom: 20px;}
 
 /* about as - news */
 .newsArea .contentArea .newsList li:not(:last-child){margin-bottom: 80px;}
