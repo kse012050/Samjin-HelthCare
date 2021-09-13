@@ -135,7 +135,7 @@
 
 
 /* about as - helthCare */
-.helthCareArea::after{content: ''; display: block; height: 29.375rem; background: url('../images/aboutUs_helthCareImg02.png') no-repeat center / cover; }
+.helthCareArea .contentArea::after{content: ''; display: block; height: 29.375rem; background: url('../images/aboutUs_helthCareImg02.png') no-repeat center / cover; }
 .helthCareArea .contentArea strong{margin-bottom: 3.750rem;}
 .helthCareArea .contentArea p{font-size: 1.250rem; line-height: 2.250rem; color: #565656; text-transform: uppercase; margin-bottom: 3.750rem;}
 .helthCareArea .contentArea img{width: 100%; margin-bottom: 4.375rem;}

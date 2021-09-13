@@ -52,7 +52,7 @@ header > div > div div button.menuBtn.active span:nth-child(3){animation:manuAni
     100%{transform: translateY(0px) rotate(0deg);}
 }
 
-header > div nav{ display: none; position: fixed; left: 0; top: 5.313rem; bottom: 0; width: 100%; background-color: black; z-index: 100;  overflow: auto; }
+header > div nav{ display: none; position: fixed; left: 0; top: 5.313rem; bottom: 0; width: 100%; background-color: #1c1c1e; z-index: 100;  overflow: auto; }
 header > div nav > ul{height: 100%; padding: 2.188rem 0; box-sizing: border-box;}
 header > div nav > ul > li{padding: 2.188rem 0;}
 header > div nav > ul > li a{display: block; color: /* #3a3a40 */ white;}
