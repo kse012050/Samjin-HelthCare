@@ -1,6 +1,6 @@
 .mainPage{overflow: hidden;}
 .mainPage main > div h2{font-size: 1.875rem; font-weight: 900; color: #1c1c1e; margin-bottom: 5.8697vh;}
-.mainPage main > div p{font-size: 0.938rem; font-weight: 300; color: #3a3a40; line-height: 1.375rem; margin-bottom: 3.2017vh;}
+.mainPage main > div p{font-size: 1.1rem; font-weight: 700; color: #3a3a40; line-height: 1.75rem; margin-bottom: 3.2017vh;}
 /* .mainPage main > div > * > div{padding-bottom: 25.8271vh; box-sizing: border-box;} */
 .mainPage main .contentArea .pageArea{display: flex; margin-bottom: 3.7353vh;}
 .mainPage main .contentArea .pageArea span{font-size: 0.875rem; font-weight: 900;}

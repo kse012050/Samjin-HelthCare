@@ -14,7 +14,7 @@ header > div{height: 100%; display: flex; justify-content: space-between; align-
 header > div > div{width: 100%; height: 100%; display: flex; align-items: center; justify-content: space-between;}
 header > div > div h1{font-size: 1.375rem; color: #3a3a40; text-transform: uppercase;}
 header > div > div div > a{width: 5.250rem; height: 2.125rem; background: url('../images/inquiry.png') no-repeat center / cover; margin-right: 3.750rem;}
-header > div > div div button.menuBtn{width: 2.500rem;}
+header > div > div div button.menuBtn{width: 2.500rem; vertical-align: unset;}
 header > div > div div button.menuBtn span{display: block; height: 0.125rem; background-color: black;}
 header > div > div div button.menuBtn span:not(:last-child){margin-bottom: 0.750rem;}
 
