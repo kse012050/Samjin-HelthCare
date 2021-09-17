@@ -164,6 +164,7 @@
 .subPage .subMenu li:hover a::after{transition-duration: 0.5s; transition-property: left , width;}
 .subPage .subMenu + div > strong:not([lang="en"]){display: block; font-size: 42px; font-weight: 700; line-height: 54px; margin-bottom: 55px;}
 .subPage .subMenu + div > strong[lang="en"]{display: block; font-size: 48px; font-weight: 900;}
+.subPage .subMenu + div > strong[lang="en"] b{font-weight: 700;}
 
 .subPage .subPageName{font-size: 12px; font-weight: 700; color: #33475b; text-transform: uppercase; margin-bottom: 100px;}
 .subPage .subPageName + div > strong:not([lang="en"]){display: block; font-size: 42px; font-weight: 700; line-height: 54px; margin-bottom: 55px;}
@@ -171,7 +172,7 @@
 
 
 /* about as - helthCare */
-.helthCareArea::after{content: ''; display: block; height: 470px; background: url('../images/aboutUs_helthCareImg02.png') no-repeat center / cover;  margin: 0 auto;}
+.helthCareArea .contentArea::after{content: ''; display: block; height: 470px; background: url('../images/aboutUs_helthCareImg02.png') no-repeat right;  margin: 0 auto;}
 .helthCareArea .contentArea{background: url('../images/aboutUs_helthCareImg01.png') no-repeat right top;}
 .helthCareArea .contentArea strong{margin-bottom: 60px;}
 .helthCareArea .contentArea p{font-size: 15px; line-height: 28px; color: #565656; text-transform: uppercase; margin-bottom: 150px;}
@@ -236,11 +237,15 @@
 .productsArea .topArea > div > img{position: absolute; right: -135px; top: 0;}
 
 .productsArea > div:first-of-type{padding: 50px 0; background-color: #042127;}
-.productsArea > div:first-of-type ul{display: flex; justify-content: space-between;}
+.productsArea > div:first-of-type ul{display: flex; justify-content: space-between; border-right: 1px solid #1e383d; border-left: 1px solid #1e383d;}
 .productsArea > div:first-of-type ul li{text-align: center; color: white;}
+.productsArea > div:first-of-type ul li:not(:last-child){border-right: 1px solid #1e383d;}
 .productsArea > div:first-of-type ul li strong{font-size: 55px; display: block; margin-bottom: 25px;}
 .productsArea > div:first-of-type ul li strong small{font-size: 30px;}
-.productsArea > div:first-of-type ul li P{font-size: 15px;}
+.productsArea > div:first-of-type ul li img{width: 100%; margin-bottom: 15px}
+.productsArea > div:first-of-type ul li mark{display: block; font-size: 18px; font-weight: 700; margin-bottom: 10px;} 
+.productsArea > div:first-of-type ul li P{font-size: 14px;}
+
 
 .productsArea .detailArea > h2{margin-bottom: 40px;}
 .productsArea .detailArea > p{font-size: 24px; line-height: 36px; color: #1c1c1e; margin-bottom: 105px;}
@@ -336,13 +341,22 @@
 .productsArea .appArea ol li:nth-child(3){background-image: url('../images/product_appImg03.png');}
 .productsArea .appArea ol li:nth-child(4){background-image: url('../images/product_appImg04.png');}
 
-.productsArea .resourceArea{padding: 100px 0;}
+/* .productsArea .resourceArea{padding: 100px 0;}
 .productsArea .resourceArea > div h2{margin-bottom: 20px;}
 .productsArea .resourceArea > div ul{border-top: 2px solid black;}
 .productsArea .resourceArea > div ul li{border-bottom: 1px solid #c6c6c6;}
 .productsArea .resourceArea > div ul li a{display: block; font-size: 24px; font-weight: 700; line-height: 90px; background-repeat: no-repeat; background-position: right 15px center; }
 .productsArea .resourceArea > div ul li:nth-child(1) a{background-image: url('../images/product_resourcIcon01.png');}
-.productsArea .resourceArea > div ul li:nth-child(2) a{background-image: url('../images/product_resourcIcon02.png');}
+.productsArea .resourceArea > div ul li:nth-child(2) a{background-image: url('../images/product_resourcIcon02.png');} */
+
+.softwareArea{padding: 100px 0; background-color: #f5f8fa;}
+.softwareArea h2{font-size: 48px; font-weight: 700; text-align: center; margin-bottom: 75px; }
+.softwareArea ul{display: flex; justify-content: space-between;}
+.softwareArea ul li{width: 23.5%; }
+.softwareArea ul li mark{display: block; padding: 5px 5.2%; color: white; background-color: #00b3e3;}
+.softwareArea ul li div{padding: 5.2%; border-width: 0px 1px 1px; border-style: solid; border-color: #dbdbdb; height: 320px; background-color: white; }
+.softwareArea ul li div img{width: 100%; margin-bottom:30px;}
+.softwareArea ul li div p{font-size: 14px; line-height: 18px;}
 
 .productsArea .infoArea h2{margin-bottom: 100px;}
 .productsArea .infoArea figure img{width: 100%; margin-bottom: 75px;}
@@ -418,8 +432,8 @@
 .FAQsArea .contentArea .tabContents ul li mark{font-size: 12px; font-weight: 700; margin-right: 40px; flex-shrink: 0;}
 .FAQsArea .contentArea .tabContents ul li div{width: 100%;}
 .FAQsArea .contentArea .tabContents ul li div > *{font-size: 16px; padding-left: 80px; background-repeat: no-repeat; background-position: left center;}
-.FAQsArea .contentArea .tabContents ul li div button{background-image: url('../images/QIcon.png'); width: 100%; display: flex; justify-content: space-between; align-items: center; padding-right: 20px;}
-.FAQsArea .contentArea .tabContents ul li div button::after{content: ''; width: 15px; height: 9px; background: url('../images/supports_FAQsTabIcon.png') no-repeat center / cover; transition: 0.5s transform;}
+.FAQsArea .contentArea .tabContents ul li div button{background-image: url('../images/QIcon.png'); width: 100%; display: flex; justify-content: flex-start; align-items: center; padding-right: 20px;}
+.FAQsArea .contentArea .tabContents ul li div button::after{content: ''; width: 15px; height: 9px; background: url('../images/supports_FAQsTabIcon.png') no-repeat center / cover; transition: 0.5s transform; margin-left: auto;}
 .FAQsArea .contentArea .tabContents ul li div button.active::after{transform: rotate(180deg);}
 .FAQsArea .contentArea .tabContents ul li div p{display: none; background-image: url('../images/AIcon.png'); margin-top: 15px;}
 
@@ -624,5 +638,6 @@
 .hawToArea .hawToBox ol li:not(:last-child){margin-bottom: 50px;}
 .hawToArea .hawToBox ol li strong{font-weight: 700;}
 .hawToArea .hawToBox ol li strong::before{content:'step' counter(hawToCount) '.';}
-.hawToArea .hawToBox ol li span{color: #ff0000;}
+.hawToArea .hawToBox ol li mark{color: #ff0000;}
+.hawToArea .hawToBox ol li span{display: inline-block; font-size: 14px; line-height: 26px; padding: 0 18px; color: white; background-color: #6277c4; border-radius: 100px; vertical-align: bottom;}
 .hawToArea .hawToBox ol li img{margin-top: 20px;}

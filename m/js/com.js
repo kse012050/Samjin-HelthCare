@@ -2,6 +2,7 @@ $(document).ready(function(){
     menu();
     tab();
     FAQsTab();
+    contactUsFIle();
 });
 
 function menu(){
@@ -37,4 +38,10 @@ function FAQsTab(){
         $(this).toggleClass('active');
         $(this).next().stop().slideToggle();  
     });
+}
+
+function contactUsFIle(){
+    $('input[type="file"]').change(function(){
+        $(this).next().val($(this).val());
+    })
 }

@@ -193,14 +193,18 @@
 .productsArea .topArea > div h2 img{width: 100%;}
 .productsArea .topArea > div strong{font-size: 3.000rem; line-height: 3.625rem; display: block; margin-bottom: 1.563rem;}
 .productsArea .topArea > div p{font-size: 1.375rem; line-height: 2.125rem; color: #565656;} 
-.productsArea .topArea > img{position: absolute; right:0; top: 0; width: 100%;  pointer-events: none;}
+.productsArea .topArea > img{position: absolute; right:0; top: 0; width: 100%; max-width: 40.000rem;  pointer-events: none;}
 
-.productsArea > div:first-of-type{padding: 3.125rem 0; background-color: #042127;}
-.productsArea > div:first-of-type ul{display: flex; justify-content: space-between;}
+.productsArea > div:first-of-type{padding: 3.125rem 0; background-color: #042127; overflow: auto;}
+.productsArea > div:first-of-type ul{display: flex; justify-content: space-between; width: 76.250rem;}
 .productsArea > div:first-of-type ul li{text-align: center; color: white;}
+.productsArea > div:first-of-type ul li:not(:last-child){border-right: 0.063rem solid #1e383d;}
 .productsArea > div:first-of-type ul li strong{font-size: 3.438rem; display: block; margin-bottom: 1.250rem;}
 .productsArea > div:first-of-type ul li strong small{font-size: 1.875rem;}
 .productsArea > div:first-of-type ul li P{font-size: 1.188rem; line-height: 1.875rem;}
+.productsArea > div:first-of-type ul li img{width: 100%; margin-bottom: 0.938rem}
+.productsArea > div:first-of-type ul li mark{display: block; font-size: 1.125rem; font-weight: 700; margin-bottom: 0.625rem;} 
+.productsArea > div:first-of-type ul li P{font-size: 0.875rem;}
 
 .productsArea .detailArea > h2{margin-bottom: 2.188rem;}
 .productsArea .detailArea > p{font-size: 1.625rem; line-height: 2.250rem; color: #1c1c1e; margin-bottom: 5.938rem;}
@@ -289,13 +293,23 @@
 .productsArea .appArea ol li .downArea a:not(:last-of-type){margin-bottom: 0.500rem;}
 .productsArea .appArea ol li span{display: block; margin-bottom: 1.875rem;}
 
-.productsArea .resourceArea{padding: 5.625rem 0;}
+/* .productsArea .resourceArea{padding: 5.625rem 0;}
 .productsArea .resourceArea > div h2{margin-bottom: 1.250rem;}
 .productsArea .resourceArea > div ul{border-top: 0.125rem solid black;}
 .productsArea .resourceArea > div ul li{border-bottom: 0.063rem solid #c6c6c6;}
 .productsArea .resourceArea > div ul li a{display: block; font-size: 1.750rem; font-weight: 700; line-height: 2.375rem; padding: 1.563rem 0; background-repeat: no-repeat; background-position: right 0.938rem center; }
 .productsArea .resourceArea > div ul li:nth-child(1) a{background-image: url('../images/product_resourcIcon01.png');}
-.productsArea .resourceArea > div ul li:nth-child(2) a{background-image: url('../images/product_resourcIcon02.png');}
+.productsArea .resourceArea > div ul li:nth-child(2) a{background-image: url('../images/product_resourcIcon02.png');} */
+
+.softwareArea{padding: 6.250rem 0; background-color: #f5f8fa;}
+.softwareArea h2{font-size: 3.000rem; font-weight: 700; margin-bottom: 4.688rem; text-align: center;}
+.softwareArea ul{display: flex; justify-content: space-between; flex-wrap: wrap;}
+.softwareArea ul li{width: 48.27%; }
+.softwareArea ul li:not(:nth-child(-n + 2)){margin-top: 3.125rem;}
+.softwareArea ul li mark{display: block; padding: 5px 5.2%; color: white; background-color: #00b3e3;}
+.softwareArea ul li div{padding: 5.2%; border-width: 0px 0.063rem 0.063rem; border-style: solid; border-color: #dbdbdb; min-height: 20.000rem; background-color: white; }
+.softwareArea ul li div img{width: 100%; margin-bottom:1.875rem;}
+.softwareArea ul li div p{font-size: 0.875rem; line-height: 1.125rem;}
 
 .productsArea .infoArea h2{margin-bottom: 6.250rem;}
 .productsArea .infoArea figure img{width: 100%; margin-bottom: 4.688rem;}
@@ -372,8 +386,8 @@
 .FAQsArea .contentArea .tabContents ul li mark{font-size: 0.750rem; font-weight: 700; margin-right: 2.500rem; flex-shrink: 0;}
 .FAQsArea .contentArea .tabContents ul li div{width: 100%;}
 .FAQsArea .contentArea .tabContents ul li div > *{font-size: 1.000rem; padding-left: 5.000rem; background-repeat: no-repeat; background-position: left center; background-size: 1.813rem;}
-.FAQsArea .contentArea .tabContents ul li div button{background-image: url('../images/QIcon.png');  width: 100%; display: flex; justify-content: space-between; align-items: center; padding-right: 1.250rem;}
-.FAQsArea .contentArea .tabContents ul li div button::after{content: ''; width: 0.938rem; height: 0.563rem; background: url('../images/supports_FAQsTabIcon.png') no-repeat center / cover; transition: 0.5s transform;}
+.FAQsArea .contentArea .tabContents ul li div button{background-image: url('../images/QIcon.png');  width: 100%; display: flex; justify-content: flex-start; align-items: center; padding-right: 1.250rem;}
+.FAQsArea .contentArea .tabContents ul li div button::after{content: ''; width: 0.938rem; height: 0.563rem; background: url('../images/supports_FAQsTabIcon.png') no-repeat center / cover; transition: 0.5s transform; margin-left: auto;}
 .FAQsArea .contentArea .tabContents ul li div button.active::after{transform: rotate(180deg);}
 .FAQsArea .contentArea .tabContents ul li div p{display: none; background-image: url('../images/AIcon.png'); margin-top: 0.938rem;}
 
@@ -465,7 +479,7 @@
 
 .subPage .solutionArea .subMenu{margin-bottom: 0;}
 .solutionArea .startArea{text-align: center; position: relative; margin-bottom: 13.750rem; padding: 9.375rem 0 0;/*   background-color: #f5f8fa; */}
-.solutionArea .startArea::before{content: ''; position: absolute; left: 0; top: /* -6.875rem */0; width: 100%; height: 38.000rem;background-color: #f5f8fa; z-index: -1;}
+.solutionArea .startArea::before{content: ''; position: absolute; left: 0; top: /* -6.875rem */0; width: 100%; height: 32.000rem;background-color: #f5f8fa; z-index: -1;}
 .solutionArea .startArea h4{font-size: 3.000rem; font-weight: 400; line-height: 3.625rem; margin-bottom: 2.188rem;}
 .solutionArea .startArea h4 b{font-weight: 700;}
 .solutionArea .startArea p{font-size: 1.375rem; line-height: 2.250rem; margin-bottom: 7.188rem;}
@@ -574,5 +588,6 @@
 .hawToArea .hawToBox ol li:not(:last-child){margin-bottom: 1.875rem;}
 .hawToArea .hawToBox ol li strong{font-weight: 700;}
 .hawToArea .hawToBox ol li strong::before{content:'step' counter(hawToCount) '.';}
-.hawToArea .hawToBox ol li span{color: #ff0000;}
+.hawToArea .hawToBox ol li mark{color: #ff0000;}
+.hawToArea .hawToBox ol li span{display: inline-block; font-size: 0.875rem; line-height: 1.625rem; padding: 0 1.125rem; color: white; background-color: #6277c4; border-radius: 6.250rem; vertical-align: bottom;}
 .hawToArea .hawToBox ol li img{width: 100%; max-width: 36.250rem; margin-top: 2.188rem;}

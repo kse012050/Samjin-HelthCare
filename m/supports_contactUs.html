@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>contact us - SAMJIN HELTHCARE</title>
+    <title>contact us - SAMJIN HEALTHCARE</title>
     <!-- jQuery CDN -->
     <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
     <!-- material icon -->
@@ -16,51 +16,51 @@
 <body>
     <div class="subPage">
         <header>
-            <div class="mobileWidth">
-                <div>
-                    <h1><a href="index.html">Samjin HelthCare</a></h1>
+                <div class="mobileWidth">
                     <div>
-                        <a href="supports_contactUs.html"></a>
-                        <button class="menuBtn">
-                            <span></span>
-                            <span></span>
-                            <span></span>
-                        </button>
+                        <h1><a href="index.html">Samjin HealthCare</a></h1>
+                        <div>
+                            <a href="supports_contactUs.html"></a>
+                            <button class="menuBtn">
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                            </button>
+                        </div>
                     </div>
+                    <nav>
+                        <ul class="mobileWidth">
+                           <!-- <li><a href="index.html">HOME</a></li> -->
+                            <li><a href="aboutUs_helthCare.html">ABOUT US</a>
+                                <ul>
+                                    <li><a href="aboutUs_helthCare.html">Samjin HealthCare</a></li>
+                                    <li><a href="aboutUs_location.html">Location</a></li>
+                                    <li><a href="aboutUs_news.html">Latest News</a></li>
+                                    <li><a href="https://www.samjinpharm.co.kr/SJ_recruit/front/main/index.asp">Careers</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="products.html">PRODUCTS</a>
+                                <ul>
+                                    <li><a href="products.html">S-Patch Ex</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="customres_solution.html">CUSTOMERS</a>
+                                <ul>
+                                    <li><a href="customres_solution.html">Why S-Patch Ex</a></li>
+                                    <li><a href="customres_howTo.html">How to Use</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="supports_contactUs.html">SUPPORTS</a>
+                                <ul>
+                                    <li><a href="supports_faq.html">FAQs</a></li>
+                                    <!-- <li><a href="supports_download.html">Download</a></li> -->
+                                    <li><a href="supports_contactUs.html">Contact Us</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </nav>
                 </div>
-                <nav>
-                    <ul class="mobileWidth">
-                        <li><a href="index.html">HOME</a></li>
-                        <li><a href="aboutUs_helthCare.html">ABOUT US</a>
-                            <ul>
-                                <li><a href="aboutUs_helthCare.html">Samjin Helthcare</a></li>
-                                <li><a href="aboutUs_location.html">Location</a></li>
-                                <li><a href="aboutUs_news.html">Lateset News</a></li>
-                                <li><a href="https://www.samjinpharm.co.kr/SJ_recruit/front/main/index.asp">Careers</a></li>
-                            </ul>
-                        </li>
-                        <li><a href="products.html">PRODUCTS</a>
-                            <ul>
-                                <li><a href="products.html">S-Patch EX</a></li>
-                            </ul>
-                        </li>
-                        <li><a href="customres_solution.html">CUSTOMERS</a>
-                            <ul>
-                                <li><a href="customres_solution.html">S-Patch Solution</a></li>
-                                <li><a href="customres_howTo.html">How to Use</a></li>
-                            </ul>
-                        </li>
-                        <li><a href="supports_contactUs.html">SUPPORTS</a>
-                            <ul>
-                                <li><a href="supports_faq.html">FAQs</a></li>
-                                <li><a href="supports_download.html">Download</a></li>
-                                <li><a href="supports_contactUs.html">Contact Us</a></li>
-                            </ul>
-                        </li>
-                    </ul>
-                </nav>
-            </div>
-        </header>
+            </header>
 
         <main class="supportsArea contactUsArea">
             <div class="subTitlaBox">
@@ -94,9 +94,9 @@
                                     <input type="text" placeholder="이름" required>
                                 </li>
                                 <li class="required">
-                                    <label for="">직책</label>
+                                    <label for="">구분</label>
                                     <select id="" required>
-                                        <option>직책을 선택해주세요</option>
+                                        <option>선택해주세요</option>
                                         <option value="">환자</option>
                                         <option value="">의사</option>
                                         <option value="">간호사</option>
@@ -115,6 +115,7 @@
                                 <li class="required">
                                     <label for="">소속기관</label>
                                     <input type="text" placeholder="소속기관" required>
+                                    <mark>개인일경우 소속기관 항목을 "개인"으로 넣어주세요.</mark>
                                 </li>
                                 <li class="required">
                                     <label for="">카테고리</label>
@@ -134,9 +135,9 @@
                                 <li>
                                     <label for="">첨부파일</label>
                                     <div class="fileArea">
-                                        <input type="file">
+                                        <input type="file" id="fileSelect">
                                         <input type="text" placeholder="파일을 선택해주세요" disabled />
-                                        <label for="">파일선택</label>
+                                        <label for="fileSelect">파일선택</label>
                                     </div>
                                     <div class="agreementArea">
                                         <!-- <div>
@@ -148,10 +149,10 @@
                                         <input type="checkbox">
                                         <label for="">개인정보의 마케팅 활용에 대한 동의(선택)에 동의합니다.</label> -->
 
-                                        <input type="checkbox" id="test">
+                                        <input type="checkbox" id="chk01">
                                         <div>
                                             <p>
-                                                <label for="test">개인정보 수집 및 이용에 대한 동의</label> 회사는 원활한 상담 서비스 제공을 위해 최초 아래와 같은 개인정보를 수집하고 있습니다. 
+                                                <label for="chk01">개인정보 수집 및 이용에 대한 동의</label> 회사는 원활한 상담 서비스 제공을 위해 최초 아래와 같은 개인정보를 수집하고 있습니다. 
                                                 아래 개인정보는 서비스 제공을 위해서 필요한 최소한의 개인정보이므로 동의를 해주셔야만 서비스를 제공받으실 수 있습니다.
                                             </p>
                                             <div>
@@ -181,10 +182,10 @@
                                             <mark>* 개인정보 수집 및 이용에 관한 설명을 모두 이해하였고, 이에 동의합니다.</mark>
                                         </div>
 
-                                        <input type="checkbox">
+                                        <input type="checkbox" id="chk02">
                                         <div>
                                             <p>
-                                                <label for="#">개인정보의 마케팅 활용에 대한 동의(선택)</label> 회사는 뉴스레터 등 마케팅 활용을 위해 최초 문의 접수 당시 아래와 같은 
+                                                <label for="chk02">개인정보의 마케팅 활용에 대한 동의(선택)</label> 회사는 뉴스레터 등 마케팅 활용을 위해 최초 문의 접수 당시 아래와 같은 
                                                 개인정보를 수집하고 있습니다. 이에 대해 동의하지 아니한 경우에도 상담 서비스를 제공받으실 수 있으나, 뉴스레터 발송, 
                                                 제품의 교육 및 최신 학계 정보의 업데이트, 제품 홍보 및 마케팅 행사 또는 이벤트 초청 등은 제한될 수 있습니다.
                                             </p>
@@ -225,24 +226,24 @@
             <div class="mobileWidth">
                 <div class="top">
                     <ul>
-                        <li><a href="#">이용약관</a></li>
-                        <li><a href="#">문의</a></li>
-                        <li><a href="#">자주묻는질문</a></li>
+                        <li><a href="https://www.samjinpharm.co.kr/front/kr/terms/privacy_policy.asp">이용약관</a></li>
+                        <li><a href="supports_contactUs.html">문의</a></li>
+                        <li><a href="supports_faq.html">자주묻는질문</a></li>
                     </ul>
-                    <a href="https://www.samjinpharm.co.kr/">관리사 바로가기</a>
+                    <a href="https://www.samjinpharm.co.kr/">삼진제약 바로가기</a>
                 </div>
                 <div class="bottom">
                     <h3><img src="images/footer_logo.png" alt="logo"></h3>
                     <address>
                         <p>(우) 04054  서울특별시 마포구 와우산로 121 (서교동)</p>
-                        <a href="#">sjhealthcare@samjinpharm.co.kr</a>
-                        <a href="#">+82  2 2323 2596</a>
+                       <a href="mailto:sjhealthcare@samjinpharm.co.kr">sjhealthcare@samjinpharm.co.kr</a>
+                        <a href="tel:+82223232596">+82 2 2323 2596</a>
                     </address>
                     <div>
                         <ul>
                             <li class="youtube"><a href="#">youtube</a></li>
                         </ul>
-                        <p>© 2021 Samjin Helthcare. All Rights Reserved.</p>
+                        <p>© 2021 Samjin Healthcare. All Rights Reserved.</p>
                     </div>
                 </div>
             </div>
