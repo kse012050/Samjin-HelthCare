@@ -5,6 +5,7 @@
 .textHidden{ position: absolute; width: 1px; height: 1px; margin: -1px; overflow: hidden; clip-path: polygon(0 0, 0 0, 0 0);}
 .mobileWidth{width: calc(100% - 4.375rem); margin: 0 auto;}
 
+.fullPage{-webkit-overflow-scrolling : touch;}
 
 
 

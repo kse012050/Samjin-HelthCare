@@ -35,6 +35,10 @@ function mainScrollEvent(){
         touchStartEventY = e.changedTouches[0].clientY;
     })
 
+    $('.mainPage').on('touchmove',function(e){
+        e.preventDefault();
+    });
+
     $('.mainPage').on('touchend',function(e){
         var delta = e.changedTouches[0].clientY - touchStartEventY;
         touchCompareX = Math.abs(touchStartEventX - e.changedTouches[0].clientX);
