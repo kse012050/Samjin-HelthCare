@@ -499,10 +499,10 @@
 .contactUsArea .contentArea fieldset ul li .agreementArea input[type="checkbox"]{display: none;}
 .contactUsArea .contentArea fieldset ul li .agreementArea div{font-size: 18px; line-height: 32px; padding-left: 35px; letter-spacing: -1px; position: relative;}
 .contactUsArea .contentArea fieldset ul li .agreementArea div:not(:last-of-type){margin-bottom: 15px;}
-.contactUsArea .contentArea fieldset ul li .agreementArea div::before{content: ''; width: 25px; height: 25px; box-sizing: border-box; background-color: white; border: 1px solid #d1d1d1;  position: absolute; left: 0; top: 4px; }
-.contactUsArea .contentArea fieldset ul li .agreementArea input[type="checkbox"]:checked + div::before{background:white url('../images/supports_contactUsChk.png') no-repeat center / cover;} 
 .contactUsArea .contentArea fieldset ul li .agreementArea div p{margin-bottom: 15px;}
 .contactUsArea .contentArea fieldset ul li .agreementArea div p label{font-weight: 700;}
+.contactUsArea .contentArea fieldset ul li .agreementArea div p label::before{content: ''; width: 25px; height: 25px; box-sizing: border-box; background-color: white; border: 1px solid #d1d1d1;  position: absolute; left: 0; top: 4px; }
+.contactUsArea .contentArea fieldset ul li .agreementArea input[type="checkbox"]:checked + div p label::before{background:white url('../images/supports_contactUsChk.png') no-repeat center / cover;} 
 .contactUsArea .contentArea fieldset ul li .agreementArea div table{font-size: 16px; border: 1px solid #d1d1d1;}
 .contactUsArea .contentArea fieldset ul li .agreementArea div table th ,.contactUsArea .contentArea fieldset ul li .agreementArea div table td{padding-left: 20px; padding-right: 20px;}
 .contactUsArea .contentArea fieldset ul li .agreementArea div table thead th{width: 33.33%; border-width: 0 1px 1px 0; border-style: solid; border-color: #d1d1d1; padding-top:10px; padding-bottom: 10px;}

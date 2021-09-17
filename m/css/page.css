@@ -452,10 +452,10 @@
 .contactUsArea .contentArea fieldset ul li .agreementArea input[type="checkbox"]{display: none;}
 .contactUsArea .contentArea fieldset ul li .agreementArea > div{font-size: 1.125rem; line-height: 2.000rem; padding-left: 2.188rem; letter-spacing: -0.063rem; position: relative;}
 .contactUsArea .contentArea fieldset ul li .agreementArea > div:not(:last-of-type){margin-bottom: 0.938rem;}
-.contactUsArea .contentArea fieldset ul li .agreementArea > div::before{content: ''; width: 1.563rem; height: 1.563rem; box-sizing: border-box; background-color: white; border: 0.063rem solid #d1d1d1;  position: absolute; left: 0; top: 0.250rem; }
-.contactUsArea .contentArea fieldset ul li .agreementArea input[type="checkbox"]:checked + div::before{background:white url('../images/supports_contactUsChk.png') no-repeat center / cover;} 
 .contactUsArea .contentArea fieldset ul li .agreementArea > div p{margin-bottom: 0.938rem;}
 .contactUsArea .contentArea fieldset ul li .agreementArea > div p label{font-weight: 700;}
+.contactUsArea .contentArea fieldset ul li .agreementArea > div p label::before{content: ''; width: 1.563rem; height: 1.563rem; box-sizing: border-box; background-color: white; border: 0.063rem solid #d1d1d1;  position: absolute; left: 0; top: 0.250rem; }
+.contactUsArea .contentArea fieldset ul li .agreementArea input[type="checkbox"]:checked + div p label::before{background:white url('../images/supports_contactUsChk.png') no-repeat center / cover;} 
 .contactUsArea .contentArea fieldset ul li .agreementArea > div div{width: 34.063rem; overflow: auto; box-sizing: border-box;}
 .contactUsArea .contentArea fieldset ul li .agreementArea > div div table{font-size: 1.000rem; border: 0.063rem solid #d1d1d1; width: 62.500rem; }
 .contactUsArea .contentArea fieldset ul li .agreementArea > div div table th ,.contactUsArea .contentArea fieldset ul li .agreementArea div table td{padding-left: 1.250rem; padding-right: 1.250rem;}
