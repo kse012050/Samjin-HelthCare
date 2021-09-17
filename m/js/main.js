@@ -35,9 +35,13 @@ function mainScrollEvent(){
         touchStartEventY = e.changedTouches[0].clientY;
     })
 
-    $('.mainPage').on('touchmove',function(e){
+  /*   $('.mainPage').on('touchmove',function(e){
         e.preventDefault();
-    });
+    }); */
+   /*  $('video').on('touchmove',function(e){
+        e.stopPropagation();
+    }); */
+    
 
     $('.mainPage').on('touchend',function(e){
         var delta = e.changedTouches[0].clientY - touchStartEventY;
